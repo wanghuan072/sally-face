@@ -1,0 +1,163 @@
+.notFound {
+  display: grid;
+  min-height: 70vh;
+  place-items: center;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.code {
+  color: var(--green);
+  font-family: "Amatic SC", sans-serif;
+  font-size: clamp(6rem, 18vw, 12rem);
+  line-height: 0.8;
+  text-shadow: 5px 4px 0 rgba(150, 112, 181, 0.18);
+}
+
+.notFound h1 {
+  margin: 18px 0 12px;
+}
+
+.notFound p {
+  max-width: 520px;
+  margin-inline: auto;
+}
+
+.sourcesHero {
+  padding: 22px 0 58px;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(115deg, rgba(18, 23, 19, 0.92), rgba(24, 13, 28, 0.45));
+}
+
+.sourcesHero h1 {
+  max-width: 850px;
+  margin: 28px 0 14px;
+}
+
+.sourcesHero h1 span {
+  color: var(--green-bright);
+}
+
+.sourcesHero > div > p:last-child {
+  max-width: 920px;
+  font-size: 1.08rem;
+}
+
+.sourcesEyebrow {
+  margin-top: 24px;
+  color: var(--green);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.sourcesContent {
+  display: grid;
+  gap: 54px;
+  padding-block: 48px 72px;
+}
+
+.sourcesContent h2 {
+  margin-bottom: 20px;
+}
+
+.sourceGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.sourceCard,
+.imageSourceList article,
+.correctionNote {
+  padding: 22px;
+  border: 1px solid var(--border);
+  background: rgba(8, 12, 10, 0.72);
+}
+
+.sourceCard > span {
+  color: var(--green);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.sourceCard h3 {
+  margin: 8px 0 12px;
+}
+
+.sourceCard h3 a,
+.imageSourceList a,
+.correctionNote a {
+  color: var(--green-bright);
+}
+
+.sourceCard p:last-child {
+  margin-bottom: 0;
+  color: var(--text-muted);
+}
+
+.imageSourceList {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.imageSourceList h3 {
+  color: var(--text);
+}
+
+.correctionNote {
+  border-color: rgba(150, 112, 181, 0.52);
+  background: linear-gradient(110deg, rgba(150, 112, 181, 0.09), rgba(8, 12, 10, 0.76));
+}
+
+.correctionNote li::marker {
+  color: var(--purple);
+}
+
+.sourcesHero {
+  position: relative;
+  overflow: hidden;
+  padding: 28px 0 64px;
+  background:
+    radial-gradient(circle at 82% 22%, rgba(150, 112, 181, 0.16), transparent 28%),
+    linear-gradient(115deg, rgba(7, 11, 9, 0.98), rgba(18, 12, 24, 0.62));
+}
+
+.sourcesHero > div {
+  position: relative;
+  padding: 30px 36px 30px 40px;
+  border: 1px solid rgba(137, 159, 121, 0.32);
+  border-left: 4px solid var(--green);
+  background: linear-gradient(118deg, rgba(7, 11, 9, 0.9), rgba(10, 15, 12, 0.64));
+  box-shadow: 18px 18px 0 rgba(0, 0, 0, 0.16);
+}
+
+.sourcesHero > div::before {
+  position: absolute;
+  top: -10px;
+  left: 28px;
+  width: 96px;
+  height: 18px;
+  transform: rotate(-2deg);
+  background: rgba(170, 174, 144, 0.4);
+  content: "";
+}
+
+.sourcesHero h1 {
+  font-size: clamp(3rem, 5vw, 5.25rem);
+  line-height: 0.92;
+}
+
+@media (max-width: 768px) {
+  .sourcesHero > div {
+    padding: 27px 24px 25px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .sourceGrid,
+  .imageSourceList {
+    grid-template-columns: 1fr;
+  }
+}

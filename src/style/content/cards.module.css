@@ -1,0 +1,224 @@
+.episodeGrid,
+.characterGrid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.episodeCard,
+.characterCard {
+  position: relative;
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  border: 1px solid var(--border-strong);
+  background: rgba(9, 13, 12, 0.88);
+  box-shadow: var(--shadow);
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.episodeCard::before,
+.characterCard::before {
+  position: absolute;
+  z-index: 3;
+  top: -8px;
+  left: 13px;
+  width: 46px;
+  height: 16px;
+  transform: rotate(-8deg);
+  background: rgba(169, 174, 144, 0.46);
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.25);
+  content: "";
+}
+
+.episodeCard:hover,
+.characterCard:hover {
+  transform: translateY(-4px) rotate(-0.2deg);
+  border-color: rgba(112, 170, 126, 0.65);
+}
+
+.episodeCardRow {
+  display: grid;
+  grid-template-columns: minmax(248px, 39%) minmax(0, 1fr);
+  min-height: 258px;
+}
+
+.episodeCardRow .imageWrap {
+  height: auto;
+  min-height: 258px;
+  border-right: 1px solid var(--border);
+  border-bottom: 0;
+}
+
+.episodeCardRow .imageWrap::after {
+  position: absolute;
+  inset: auto 0 0;
+  height: 46%;
+  background: linear-gradient(0deg, rgba(4, 8, 7, 0.65), transparent);
+  content: "";
+}
+
+.episodeCardRow .body {
+  min-height: 258px;
+  padding: 23px 26px 20px;
+}
+
+.episodeCardRow .summary {
+  max-width: 62ch;
+  -webkit-line-clamp: 2;
+}
+
+.episodeCardRow .title {
+  font-size: clamp(2rem, 3vw, 2.45rem);
+}
+
+.imageWrap {
+  position: relative;
+  height: 210px;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+}
+
+.characterCard .imageWrap {
+  height: 278px;
+}
+
+.image {
+  object-fit: cover;
+  filter: saturate(0.75) contrast(1.04) brightness(0.82);
+  transition: filter 180ms ease, transform 400ms ease;
+}
+
+.episodeCard:hover .image,
+.characterCard:hover .image {
+  transform: scale(1.025);
+  filter: saturate(0.92) contrast(1.05) brightness(0.92);
+}
+
+.body {
+  display: flex;
+  min-height: 190px;
+  flex: 1;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.characterCard .body {
+  min-height: 172px;
+}
+
+.eyebrow {
+  margin-bottom: 3px;
+  color: var(--green);
+  font-size: 0.92rem;
+}
+
+.title {
+  margin: 0 0 8px;
+  color: var(--text);
+  font-family: "Amatic SC", sans-serif;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.summary {
+  display: -webkit-box;
+  margin-bottom: 16px;
+  overflow: hidden;
+  color: var(--text-soft);
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.action {
+  width: fit-content;
+  padding: 5px 11px;
+  border: 1px solid rgba(112, 170, 126, 0.55);
+  color: var(--text-soft);
+}
+
+.action:hover {
+  color: var(--green-bright);
+}
+
+.achievementCount {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 6px;
+  margin: auto 0 12px;
+  color: var(--green);
+  font-size: 0.87rem;
+}
+
+.achievementCount:hover {
+  color: var(--green-bright);
+}
+
+.cardActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-top: auto;
+}
+
+.secondaryAction {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.secondaryAction:hover {
+  color: var(--text);
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 14px;
+  margin: auto 0 13px;
+  color: var(--muted);
+  font-size: 0.87rem;
+}
+
+@media (max-width: 1024px) {
+  .episodeGrid,
+  .characterGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .episodeGrid,
+  .characterGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .episodeCardRow {
+    display: flex;
+    min-height: 0;
+    flex-direction: column;
+  }
+
+  .episodeCardRow .imageWrap {
+    height: 205px;
+    min-height: 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .episodeCardRow .body {
+    min-height: 0;
+    padding: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .episodeGrid,
+  .characterGrid {
+    grid-template-columns: 1fr;
+  }
+}

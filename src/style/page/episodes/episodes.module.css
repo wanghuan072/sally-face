@@ -1,0 +1,277 @@
+.hero {
+  position: relative;
+  min-height: 330px;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+  background: #050807;
+}
+
+.heroImage {
+  object-fit: cover;
+  object-position: 62% 28%;
+  opacity: 0.65;
+  filter: saturate(0.65) brightness(0.7);
+}
+
+.hero::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(5, 8, 7, 1) 0 38%, rgba(5, 8, 7, 0.48) 60%, rgba(5, 8, 7, 0.22)), linear-gradient(0deg, var(--bg), transparent 50%);
+  content: "";
+}
+
+.heroInner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  min-height: 330px;
+  max-width: 650px;
+  align-items: center;
+  padding-block: 44px;
+}
+
+.hero h1 {
+  margin-bottom: 14px;
+}
+
+.hero h1 span {
+  color: var(--green-bright);
+}
+
+.hero p {
+  max-width: 560px;
+  font-size: 1.1rem;
+}
+
+.explorer {
+  padding-top: 28px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 34px;
+}
+
+.episodeList {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 22px;
+}
+
+.empty {
+  grid-column: 1 / -1;
+  padding: 48px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  text-align: center;
+}
+
+.sidebar {
+  display: grid;
+  align-content: start;
+  gap: 22px;
+}
+
+.sidePanel {
+  position: relative;
+  padding: 22px;
+  border: 1px solid var(--border-strong);
+  background: rgba(10, 14, 12, 0.82);
+}
+
+.sidePanel::before {
+  position: absolute;
+  top: -8px;
+  right: 20px;
+  width: 58px;
+  height: 16px;
+  transform: rotate(7deg);
+  background: rgba(158, 164, 137, 0.35);
+  content: "";
+}
+
+.sidePanel h2 {
+  margin-bottom: 16px;
+  color: var(--green-bright);
+  font-size: 2rem;
+}
+
+.characterRow {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.characterImage {
+  position: relative;
+  width: 72px;
+  height: 72px;
+  overflow: hidden;
+  border: 1px solid var(--border-strong);
+}
+
+.characterImage img {
+  object-fit: cover;
+}
+
+.characterRow h3 {
+  margin: 1px 0 2px;
+  font-size: 1.55rem;
+}
+
+.characterRow p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.characterRow span {
+  color: var(--green);
+  font-size: 0.86rem;
+}
+
+.promo {
+  position: relative;
+  min-height: 260px;
+  overflow: hidden;
+  border: 1px solid rgba(150, 112, 181, 0.55);
+}
+
+.promo img {
+  object-fit: cover;
+  opacity: 0.48;
+}
+
+.promoCopy {
+  position: absolute;
+  z-index: 2;
+  inset: auto 20px 20px;
+}
+
+.promoCopy h2 {
+  margin-bottom: 7px;
+  color: #c4a2dc;
+}
+
+.faqSection {
+  padding-top: 54px;
+}
+
+/* The chapter directory opens as a pinned route card, not loose text on art. */
+.hero {
+  min-height: 410px;
+}
+
+.heroInner {
+  display: grid;
+  grid-template-columns: minmax(0, 780px) minmax(220px, 1fr);
+  gap: 42px;
+  min-height: 410px;
+  max-width: none;
+  align-items: center;
+}
+
+.heroInner > div {
+  position: relative;
+  width: min(780px, 100%);
+  max-width: 780px;
+  padding: 28px 32px 27px;
+  border: 1px solid rgba(137, 159, 121, 0.34);
+  border-left: 4px solid var(--green);
+  background: linear-gradient(118deg, rgba(7, 11, 9, 0.96), rgba(10, 15, 12, 0.78));
+  box-shadow: 18px 18px 0 rgba(0, 0, 0, 0.18);
+}
+
+.heroInner > div::before {
+  position: absolute;
+  top: -9px;
+  left: 27px;
+  width: 88px;
+  height: 17px;
+  transform: rotate(-2deg);
+  background: rgba(170, 174, 144, 0.38);
+  content: "";
+}
+
+.hero h1 {
+  max-width: 600px;
+  font-size: clamp(2.5rem, 4.25vw, 4.4rem);
+  line-height: 0.95;
+}
+
+.heroMeta {
+  display: grid;
+  width: min(100%, 270px);
+  gap: 10px;
+  justify-self: end;
+}
+
+.heroMeta div {
+  display: grid;
+  grid-template-columns: 62px 1fr;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 14px;
+  border: 1px solid rgba(137, 159, 121, 0.34);
+  background: rgba(5, 9, 7, 0.7);
+}
+
+.heroMeta strong {
+  color: var(--green-bright);
+  font-family: "Amatic SC", sans-serif;
+  font-size: 2.3rem;
+  font-weight: 400;
+  line-height: 0.8;
+  text-align: center;
+}
+
+.heroMeta span {
+  color: var(--text-soft);
+  font-size: 0.9rem;
+  line-height: 1.1;
+}
+
+@media (max-width: 1024px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .hero,
+  .heroInner {
+    min-height: 390px;
+  }
+
+  .heroInner > div {
+    padding: 24px 22px 23px;
+  }
+
+  .heroInner {
+    display: flex;
+    gap: 22px;
+    padding-block: 42px;
+  }
+
+  .heroMeta {
+    width: 100%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .heroMeta div {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    text-align: center;
+  }
+
+  .sidebar {
+    grid-template-columns: 1fr;
+  }
+}

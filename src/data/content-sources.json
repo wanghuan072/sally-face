@@ -1,0 +1,127 @@
+{
+  "verifiedOn": "2026-08-31",
+  "methodology": "This is an independent fan guide, not an official Portable Moose site. Release and platform details are kept in step with Portable Moose and storefront pages. Chapter routes focus on reproducible in-game steps, while character pages avoid fan theories and unsupported plot claims.",
+  "factSources": [
+    {
+      "name": "Sally Face Press Kit",
+      "authority": "Official · Portable Moose",
+      "url": "https://portablemoose.com/sally-face-press-kit",
+      "usedFor": "Original episode dates, platforms, mobile launch, languages, rating, game description, and press-kit screenshots.",
+      "note": "The Fast Facts table lists Episode Five as December 13, 2019. A 2020 date appearing once in the narrative history is contradicted by the official 2019 launch news and is treated as a typo."
+    },
+    {
+      "name": "Episode Five launch announcement",
+      "authority": "Official · Portable Moose",
+      "url": "https://portablemoose.com/news/sally-face-episode-five-memories-and-dreams",
+      "usedFor": "Confirms the December 13, 2019 release of Memories and Dreams.",
+      "note": "Used to resolve the date inconsistency inside the current Press Kit."
+    },
+    {
+      "name": "Sally Face 2 Press Kit",
+      "authority": "Official · Portable Moose",
+      "url": "https://portablemoose.com/sally-face-2-press-kit",
+      "usedFor": "TBD release date, single-player format, Steam Early Access first, later console/mobile plans, team history, and all sequel screenshots.",
+      "note": "No unannounced date or platform promise is inferred."
+    },
+    {
+      "name": "Portable Moose FAQ",
+      "authority": "Official · Portable Moose",
+      "url": "https://portablemoose.com/faq",
+      "usedFor": "Confirms that Sal is male and that the Sally Face 2 date remains TBA.",
+      "note": "Also confirms Sanity's Fall is a fictional in-world band."
+    },
+    {
+      "name": "Sally Face Steam store listing",
+      "authority": "Official storefront",
+      "url": "https://store.steampowered.com/app/541570/Sally_Face__Episode_One/",
+      "usedFor": "35-achievement count, PC features, 12 supported languages, mature-content notice, and current Windows/macOS/Linux requirements.",
+      "note": "Steam's December 14, 2016 date is the Steam launch; the Press Kit's August 16 date is the original Episode One release."
+    },
+    {
+      "name": "Steam global achievements",
+      "authority": "Official platform data",
+      "url": "https://steamcommunity.com/stats/541570/achievements/?l=english",
+      "usedFor": "Achievement names and total count.",
+      "note": "Unlock routes are checked separately because the stats page does not explain every condition."
+    },
+    {
+      "name": "Complete Guide in English",
+      "authority": "Established Steam Community walkthrough",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1944968431",
+      "usedFor": "Cross-checks all 35 unlock routes, Episode Three codes, Episode Four runes and tapes, and Episode Five color/puzzle routes.",
+      "note": "Community-authored; only reproducible gameplay instructions are used."
+    },
+    {
+      "name": "Episode One achievement walkthrough",
+      "authority": "Steam Community walkthrough",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2448599919",
+      "usedFor": "Confirms the 5364 clue order, batteries, Gear Boy, and hidden-sighting route.",
+      "note": "Cross-checked against the complete guide."
+    },
+    {
+      "name": "Episode Two achievement walkthrough",
+      "authority": "Steam Community walkthrough",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1617415693",
+      "usedFor": "Confirms four seal locations, puzzle box flow, room 403, and all Larry conversations.",
+      "note": "Cross-checked against a second Episode Two walkthrough."
+    },
+    {
+      "name": "Brothers achievement troubleshooting",
+      "authority": "Steam Community discussion",
+      "url": "https://steamcommunity.com/app/541570/discussions/0/1640927348826565836/",
+      "usedFor": "Confirms the easily missed second room-504 mattress interaction in Episode Four.",
+      "note": "Used as a focused cross-check alongside the complete achievement guide."
+    },
+    {
+      "name": "HowLongToBeat data mirror",
+      "authority": "Community playtime data",
+      "url": "https://isthereanydeal.com/game/sally-face-episode-one-strange-neighbors/info/",
+      "usedFor": "Approximately 9 hours main story, 11 hours main plus extras, and 16 hours completionist.",
+      "note": "Playtime is explicitly labeled as a community estimate, not a developer promise."
+    },
+    {
+      "name": "Sally Face Wiki character pages",
+      "authority": "Community-maintained canon reference",
+      "url": "https://sally-face.fandom.com/wiki/Category:Characters",
+      "usedFor": "Character appearance, episode-presence checks, and canonical in-game sprite files.",
+      "note": "Infobox claims were compared with the displayed game sprites; fan theories and unsupported interpretations were not imported."
+    }
+  ],
+  "imageSources": [
+    {
+      "group": "Home, Episodes, and Characters hub heroes",
+      "status": "Editorial fan-site artwork used for atmosphere; not presented as an official screenshot or canonical appearance reference",
+      "url": "/images/home/sally-face-detective-board-editorial.webp"
+    },
+    {
+      "group": "Episodes 1–4, walkthrough scenes, Sal close-up",
+      "status": "Official press-kit artwork and screenshots",
+      "url": "https://portablemoose.com/sally-face-press-kit"
+    },
+    {
+      "group": "Chapter walkthrough scene cards",
+      "status": "Distinct official in-game screenshots from the original game's Steam store gallery; each chapter step uses a different scene rather than reusing its cover image",
+      "url": "https://store.steampowered.com/app/541570/Sally_Face__Episode_One/"
+    },
+    {
+      "group": "Episode Five card and hero",
+      "status": "Official episode promotional image mirrored by the community wiki",
+      "url": "https://sally-face.fandom.com/wiki/Episode_5:_Memories_and_Dreams"
+    },
+    {
+      "group": "Character cards",
+      "status": "Canonical in-game sprites; generated likenesses removed",
+      "url": "https://sally-face.fandom.com/wiki/Category:Characters"
+    },
+    {
+      "group": "Achievement icons",
+      "status": "The 35 original Steam achievement images, stored locally with their official Steam CDN source hashes",
+      "url": "https://steamcommunity.com/stats/541570/achievements"
+    },
+    {
+      "group": "Sally Face 2 gallery",
+      "status": "Official sequel press-kit screenshots",
+      "url": "https://portablemoose.com/sally-face-2-press-kit"
+    }
+  ]
+}

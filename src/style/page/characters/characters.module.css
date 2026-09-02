@@ -1,0 +1,240 @@
+.hero {
+  position: relative;
+  min-height: 340px;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+}
+
+.heroImage {
+  object-fit: cover;
+  object-position: 72% 33%;
+  filter: saturate(0.72) brightness(0.6);
+}
+
+.hero::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(5, 8, 7, 0.98) 0 45%, rgba(5, 8, 7, 0.28) 76%), linear-gradient(0deg, var(--bg), transparent 48%);
+  content: "";
+}
+
+.heroInner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  min-height: 340px;
+  max-width: 640px;
+  align-items: center;
+}
+
+.hero h1 span {
+  color: var(--green-bright);
+}
+
+.hero p {
+  font-size: 1.1rem;
+}
+
+.content {
+  padding-top: 30px;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  margin-bottom: 28px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 8px 16px;
+  border: 1px solid var(--border-strong);
+  background: rgba(10, 14, 12, 0.78);
+  cursor: pointer;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.filter[aria-current="page"],
+.filter:hover {
+  border-color: var(--green);
+  color: var(--green-bright);
+}
+
+.search {
+  width: 300px;
+  min-height: 42px;
+  padding: 8px 14px;
+  border: 1px solid var(--border-strong);
+  border-radius: 0;
+  background: rgba(5, 8, 7, 0.78);
+}
+
+.characterGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 26px;
+}
+
+.empty {
+  grid-column: 1 / -1;
+  padding: 48px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  text-align: center;
+}
+
+.linksStrip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.linkCard {
+  padding: 20px;
+  border: 1px solid var(--border);
+  background: rgba(10, 14, 12, 0.68);
+}
+
+.linkCard h3 {
+  color: var(--green-bright);
+}
+
+/* Character profiles use the same evidence-board card, with room for the cast. */
+.hero {
+  min-height: 410px;
+}
+
+.heroInner {
+  display: grid;
+  grid-template-columns: minmax(0, 780px) minmax(220px, 1fr);
+  gap: 42px;
+  min-height: 410px;
+  max-width: none;
+  align-items: center;
+}
+
+.heroInner > div {
+  position: relative;
+  width: min(780px, 100%);
+  max-width: 780px;
+  padding: 28px 32px 27px;
+  border: 1px solid rgba(137, 159, 121, 0.34);
+  border-left: 4px solid var(--green);
+  background: linear-gradient(118deg, rgba(7, 11, 9, 0.96), rgba(10, 15, 12, 0.78));
+  box-shadow: 18px 18px 0 rgba(0, 0, 0, 0.18);
+}
+
+.heroInner > div::before {
+  position: absolute;
+  top: -9px;
+  left: 27px;
+  width: 88px;
+  height: 17px;
+  transform: rotate(-2deg);
+  background: rgba(170, 174, 144, 0.38);
+  content: "";
+}
+
+.hero h1 {
+  margin-bottom: 14px;
+  font-size: clamp(2.5rem, 4.25vw, 4.4rem);
+  line-height: 0.95;
+}
+
+.heroMeta {
+  display: grid;
+  width: min(100%, 270px);
+  gap: 10px;
+  justify-self: end;
+}
+
+.heroMeta div {
+  display: grid;
+  grid-template-columns: 62px 1fr;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 14px;
+  border: 1px solid rgba(137, 159, 121, 0.34);
+  background: rgba(5, 9, 7, 0.7);
+}
+
+.heroMeta strong {
+  color: var(--green-bright);
+  font-family: "Amatic SC", sans-serif;
+  font-size: 2.3rem;
+  font-weight: 400;
+  line-height: 0.8;
+  text-align: center;
+}
+
+.heroMeta span {
+  color: var(--text-soft);
+  font-size: 0.9rem;
+  line-height: 1.1;
+}
+
+@media (max-width: 1024px) {
+  .characterGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .hero,
+  .heroInner {
+    min-height: 390px;
+  }
+
+  .heroInner > div {
+    padding: 24px 22px 23px;
+  }
+
+  .heroInner {
+    display: flex;
+    gap: 22px;
+    padding-block: 42px;
+  }
+
+  .heroMeta {
+    width: 100%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .heroMeta div {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    text-align: center;
+  }
+
+  .toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  .characterGrid,
+  .linksStrip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .characterGrid,
+  .linksStrip {
+    grid-template-columns: 1fr;
+  }
+}

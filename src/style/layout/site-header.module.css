@@ -1,0 +1,141 @@
+.header {
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  height: var(--header-height);
+  border-bottom: 1px solid var(--border);
+  background: rgba(5, 8, 7, 0.93);
+  backdrop-filter: blur(14px);
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: minmax(160px, 1fr) auto minmax(140px, 1fr);
+  align-items: center;
+  height: 100%;
+  gap: 28px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  justify-self: start;
+  color: #efeee8;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 2.65rem;
+  font-weight: 700;
+  line-height: 1;
+  text-shadow: 2px 1px 0 rgba(150, 112, 181, 0.22);
+  transform: rotate(-1deg);
+}
+
+.nav {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+  gap: 18px;
+}
+
+.navLink {
+  position: relative;
+  display: grid;
+  place-items: center;
+  color: var(--text-soft);
+  font-size: 0.96rem;
+  white-space: nowrap;
+}
+
+.navLink::after {
+  position: absolute;
+  right: 0;
+  bottom: 14px;
+  left: 0;
+  height: 1px;
+  transform: scaleX(0);
+  background: var(--green-bright);
+  content: "";
+  transition: transform 180ms ease;
+}
+
+.navLink:hover,
+.navLink[aria-current="page"] {
+  color: var(--green-bright);
+}
+
+.navLink:hover::after,
+.navLink[aria-current="page"]::after {
+  transform: scaleX(1);
+}
+
+.sequel {
+  justify-self: end;
+  padding: 8px 17px;
+  border: 1px solid rgba(112, 170, 126, 0.55);
+  color: var(--green-bright);
+  transition: border-color 180ms ease, background 180ms ease;
+}
+
+.sequel:hover {
+  border-color: var(--green-bright);
+  background: rgba(112, 170, 126, 0.09);
+}
+
+.menuButton {
+  display: none;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--border);
+  background: transparent;
+  cursor: pointer;
+}
+
+.menuButton span {
+  display: block;
+  width: 20px;
+  height: 1px;
+  margin: 5px auto;
+  background: var(--text);
+}
+
+@media (max-width: 1024px) {
+  .inner {
+    grid-template-columns: 1fr auto;
+  }
+
+  .menuButton {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    display: none;
+    height: auto;
+    padding: 18px 20px 24px;
+    flex-direction: column;
+    gap: 0;
+    border-bottom: 1px solid var(--border-strong);
+    background: rgba(5, 8, 7, 0.98);
+  }
+
+  .navOpen {
+    display: flex;
+  }
+
+  .navLink {
+    display: block;
+    padding: 12px 4px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .navLink::after {
+    display: none;
+  }
+
+  .sequel {
+    display: none;
+  }
+}

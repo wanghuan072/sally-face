@@ -1,0 +1,20 @@
+export const siteConfig = {
+  name: "Sally Face Guide",
+  shortName: "Sally Face",
+  description: "An independent Sally Face guide for Chapter routes, puzzle codes, characters, achievements and official store links.",
+  url: "https://sallyface.org",
+  email: "wyong@sallyface.org",
+  ogImage: "/images/og-image.png",
+  official: {
+    developer: "https://portablemoose.com/",
+    pressKit: "https://portablemoose.com/sally-face-press-kit",
+    sequelPressKit: "https://portablemoose.com/sally-face-2-press-kit",
+    steam: "https://store.steampowered.com/app/541570/Sally_Face__Episode_One/",
+    steamSequel: "https://store.steampowered.com/app/3937470/Sally_Face_2/",
+    android: "https://play.google.com/store/apps/details?id=com.portablemoose.sallyface",
+    ios: "https://apps.apple.com/us/app/sally-face/id675754129",
+    xbox: "https://www.xbox.com/en-us/games/store/sally-face/9n1c74g2jxhm",
+    playstation: "https://store.playstation.com/en-us/product/UP7083-CUSA28680_00-9473825684854058",
+    switch: "https://www.nintendo.com/us/store/products/sally-face-switch/",
+  },
+} as const;

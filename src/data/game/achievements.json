@@ -1,0 +1,41 @@
+[
+  { "name": "Charley's Pony", "episode": 1, "type": "Story", "hidden": false, "missable": false, "description": "Complete Chapter One.", "unlock": "Finish Strange Neighbors." },
+  { "name": "Go to Sleep", "episode": 1, "type": "Puzzle", "hidden": false, "missable": true, "description": "Use the quiet tea solution.", "unlock": "Mix Addison tea with the sleeping aid and give it to Charley." },
+  { "name": "Irritable Bowels", "episode": 1, "type": "Puzzle", "hidden": false, "missable": true, "description": "Use the alternative tea solution.", "unlock": "Mix Addison tea with the old laxative and give it to Charley." },
+  { "name": "Metalhead", "episode": 1, "type": "Exploration", "hidden": false, "missable": true, "description": "Listen to Sanity's Fall.", "unlock": "Ask Larry to play the song twice during the Chapter." },
+  { "name": "The Unknown", "episode": 1, "type": "Exploration", "hidden": true, "missable": true, "description": "Find three hidden supernatural sights.", "unlock": "Inspect the hidden body, boarded eye and demon in Larry's kitchen." },
+  { "name": "A Dark Secret", "episode": 1, "type": "Exploration", "hidden": true, "missable": true, "description": "Learn about Larry's curse.", "unlock": "Complete the optional conversations that lead Lisa to discuss the curse." },
+  { "name": "House of the Wretched", "episode": 1, "type": "Collectible", "hidden": false, "missable": true, "description": "Finish the Gear Boy game.", "unlock": "Use 5364 in the prologue, collect the Gear Boy, batteries and cartridge, then complete every chapter." },
+
+  { "name": "Conjure", "episode": 2, "type": "Story", "hidden": false, "missable": false, "description": "Complete Chapter Two.", "unlock": "Finish The Wretched." },
+  { "name": "Devour", "episode": 2, "type": "Collectible", "hidden": false, "missable": true, "description": "Find the four seals.", "unlock": "Locate all four seals hidden around Addison Apartments." },
+  { "name": "The Addison Family", "episode": 2, "type": "Exploration", "hidden": true, "missable": true, "description": "Learn the building's family history.", "unlock": "Complete the optional Addison and Terrence dream discoveries." },
+  { "name": "Unseen", "episode": 2, "type": "Exploration", "hidden": true, "missable": true, "description": "Speak with Mrs. Sanderson's ghost.", "unlock": "Use the crowbar to enter room 403 and complete the ghost encounter." },
+  { "name": "The Box", "episode": 2, "type": "Puzzle", "hidden": false, "missable": true, "description": "Open the metal puzzle box.", "unlock": "Find the missing piece, solve the symbol clue and recover the chip." },
+  { "name": "Best Buds", "episode": 2, "type": "Exploration", "hidden": false, "missable": true, "description": "Hear every Larry conversation.", "unlock": "Return to Larry after discoveries and use all available dialogue options." },
+  { "name": "In Seeking Providence", "episode": 2, "type": "Collectible", "hidden": false, "missable": true, "description": "Complete the Super Gear Boy story.", "unlock": "Find and finish every Super Gear Boy chapter." },
+
+  { "name": "Full of Bologna", "episode": 3, "type": "Story", "hidden": false, "missable": false, "description": "Complete Chapter Three.", "unlock": "Finish The Bologna Incident." },
+  { "name": "Dead Potato", "episode": 3, "type": "Exploration", "hidden": true, "missable": true, "description": "Find the blank canvas interaction.", "unlock": "Inspect the blank canvas in Larry's room." },
+  { "name": "Atonement", "episode": 3, "type": "Exploration", "hidden": false, "missable": true, "description": "Reach Travis with empathy.", "unlock": "Find Travis in the bathroom and choose dialogue 3, 2, 3, 2." },
+  { "name": "Messenger", "episode": 3, "type": "Exploration", "hidden": true, "missable": true, "description": "Find the hidden cultist ghost.", "unlock": "Enter the concealed temple room while collecting journal pages." },
+  { "name": "Clumpy!", "episode": 3, "type": "Skill", "hidden": false, "missable": true, "description": "Score 1,000 points in Clumpy.", "unlock": "Recover the game from Chug and play it on Larry's television." },
+  { "name": "Premonition", "episode": 3, "type": "Puzzle", "hidden": false, "missable": true, "description": "Complete both timed prologue puzzles.", "unlock": "Solve the symbol controls and white-room code to receive the journal." },
+  { "name": "Missing Pages", "episode": 3, "type": "Collectible", "hidden": false, "missable": true, "description": "Restore Jim's journal.", "unlock": "Collect all eleven journal pages before the final exit." },
+
+  { "name": "Suffer", "episode": 4, "type": "Story", "hidden": false, "missable": false, "description": "Complete Chapter Four.", "unlock": "Finish The Trial." },
+  { "name": "Catching Up", "episode": 4, "type": "Exploration", "hidden": false, "missable": true, "description": "Talk to everyone in the building.", "unlock": "Exhaust the available resident conversations during the apartment search." },
+  { "name": "Brothers", "episode": 4, "type": "Exploration", "hidden": false, "missable": true, "description": "Hear every Larry conversation.", "unlock": "Use every optional Larry interaction; in room 504, leave after checking the mattress, return, and inspect it again." },
+  { "name": "Teeth", "episode": 4, "type": "Collectible", "hidden": false, "missable": true, "description": "Find the full tooth set.", "unlock": "Collect five teeth and use them in the room 502 bird cage puzzle." },
+  { "name": "Dark Melodies", "episode": 4, "type": "Skill", "hidden": true, "missable": true, "description": "Play every pillar pattern perfectly.", "unlock": "Do not miss a guitar note while destroying the pillars." },
+  { "name": "Destroyer", "episode": 4, "type": "Skill", "hidden": true, "missable": true, "description": "Play the final patterns perfectly.", "unlock": "Do not miss a note during the Endless One confrontation." },
+  { "name": "Her Fate", "episode": 4, "type": "Collectible", "hidden": true, "missable": true, "description": "Recover the complete tape archive.", "unlock": "Find all nine VHS tapes before entering room 103." },
+
+  { "name": "The End?", "episode": 5, "type": "Story", "hidden": false, "missable": false, "description": "Complete Chapter Five.", "unlock": "Finish Memories and Dreams." },
+  { "name": "Memorized", "episode": 5, "type": "Puzzle", "hidden": false, "missable": true, "description": "Remember the shed combination.", "unlock": "Enter 4035364 on the shed keypad." },
+  { "name": "Seeker of Knowledge", "episode": 5, "type": "Collectible", "hidden": false, "missable": true, "description": "Read every note.", "unlock": "Inspect all notes and research pages across the Chapter." },
+  { "name": "Vestige", "episode": 5, "type": "Exploration", "hidden": true, "missable": true, "description": "Hear the complete spiritual dialogue.", "unlock": "Use every dialogue option with Jim and the Voices from the Dark and Light." },
+  { "name": "DOG", "episode": 5, "type": "Collectible", "hidden": true, "missable": true, "description": "Reveal the truth about Diane and Sal.", "unlock": "Collect all color pieces and open room five in the void." },
+  { "name": "Escaping Death", "episode": 5, "type": "Skill", "hidden": true, "missable": true, "description": "Finish without a game over.", "unlock": "Avoid capture and every fatal hazard throughout the entire Chapter." },
+  { "name": "Epilogue", "episode": 5, "type": "Collectible", "hidden": true, "missable": true, "description": "Reach the completion epilogue.", "unlock": "Earn 100% in Chapters One through Four, then complete Chapter Five." }
+]

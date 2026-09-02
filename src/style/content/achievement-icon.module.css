@@ -1,0 +1,51 @@
+.frame {
+  position: relative;
+  display: inline-grid;
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  place-items: center;
+  border: 1px solid currentColor;
+  background: rgba(9, 13, 11, 0.82);
+  box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.018), 0 2px 7px rgba(0, 0, 0, 0.24);
+  color: var(--green-bright);
+  transform: rotate(-3deg);
+}
+
+.frame::after {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  content: "";
+  opacity: 0.32;
+  transform: translate(12px, -12px);
+}
+
+.svg {
+  width: 25px;
+  height: 25px;
+}
+
+.small {
+  width: 25px;
+  height: 25px;
+  flex-basis: 25px;
+}
+
+.small::after {
+  display: none;
+}
+
+.small .svg {
+  width: 17px;
+  height: 17px;
+}
+
+.frame[data-kind="Puzzle"] { color: #c29bda; transform: rotate(3deg); }
+.frame[data-kind="Exploration"] { color: #83bb9b; transform: rotate(-5deg); }
+.frame[data-kind="Collectible"] { color: #d5ba76; transform: rotate(2deg); }
+.frame[data-kind="Skill"] { color: #c67b7a; transform: rotate(-2deg); }
+.frame[data-kind="Story"],
+.frame[data-kind="trophy"] { color: var(--green-bright); }

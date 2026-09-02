@@ -1,0 +1,80 @@
+.footer {
+  margin-top: 72px;
+  border-top: 1px solid var(--border-strong);
+  background: rgba(3, 5, 5, 0.72);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr 1fr 1.25fr 1fr;
+  gap: 48px;
+  padding-block: 52px 36px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 3.3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.blurb {
+  max-width: 290px;
+  color: var(--muted);
+}
+
+.heading {
+  margin: 0 0 12px;
+  color: var(--text);
+  font-family: "Patrick Hand", cursive;
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+.links {
+  display: grid;
+  gap: 7px;
+}
+
+.links a {
+  width: fit-content;
+  color: var(--text-soft);
+}
+
+.links a:hover {
+  color: var(--green-bright);
+}
+
+.aboutLink {
+  display: inline-block;
+  margin-top: 14px;
+  color: var(--green-bright);
+}
+
+.legal {
+  padding: 18px 0 22px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.88rem;
+  text-align: center;
+}
+
+.legal p { margin: 0; }
+.legal p + p { margin-top: 4px; }
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}

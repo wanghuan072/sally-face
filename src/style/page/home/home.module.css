@@ -1,0 +1,317 @@
+.hero {
+  position: relative;
+  min-height: 560px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-deep);
+}
+
+.heroImage {
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.78) saturate(0.78);
+}
+
+.heroShade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(4, 7, 6, 0.98) 0%, rgba(4, 7, 6, 0.86) 33%, rgba(4, 7, 6, 0.18) 65%, rgba(4, 7, 6, 0.38) 100%),
+    linear-gradient(0deg, var(--bg) 0%, transparent 28%);
+}
+
+.heroInner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  min-height: 560px;
+  align-items: center;
+  padding-block: 70px;
+}
+
+.heroCopy {
+  max-width: 860px;
+}
+
+.kicker {
+  margin-bottom: 12px;
+  color: var(--green);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin-bottom: 22px;
+  font-size: clamp(2.45rem, 4.15vw, 4.55rem);
+  line-height: 0.94;
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.45);
+}
+
+.titleMain {
+  display: block;
+}
+
+.titleAccent {
+  display: block;
+  color: var(--green-bright);
+}
+
+.heroText {
+  max-width: 620px;
+  font-size: 1.13rem;
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.main {
+  padding-bottom: 16px;
+}
+
+.guidesGrid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.featuredGuidesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.guideCard {
+  display: flex;
+  min-height: 150px;
+  flex-direction: column;
+  padding: 18px;
+  border: 1px solid var(--border-strong);
+  background: rgba(10, 14, 12, 0.8);
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.guideCard:hover {
+  transform: translateY(-3px);
+  border-color: var(--green);
+}
+
+.guideGlyph {
+  width: 42px;
+  height: 42px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(112, 170, 126, 0.5);
+  color: var(--green-bright);
+  font-family: "Amatic SC", sans-serif;
+  font-size: 1.6rem;
+  line-height: 40px;
+  text-align: center;
+  transform: rotate(-3deg);
+}
+
+.guideCard h3 {
+  margin-bottom: 6px;
+  color: var(--text);
+  font-size: 1.8rem;
+}
+
+.guideCard p {
+  margin-bottom: 14px;
+  font-size: 0.95rem;
+}
+
+.guideCard span {
+  margin-top: auto;
+  color: var(--green);
+}
+
+.achievementTotal {
+  color: var(--red);
+  font-size: 1.15rem;
+}
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.aboutGrid article {
+  padding: 22px;
+  border: 1px solid var(--border);
+  background: rgba(8, 12, 10, 0.72);
+}
+
+.aboutGrid h3 {
+  margin-bottom: 8px;
+  color: var(--green-bright);
+}
+
+.aboutGrid p {
+  margin-bottom: 16px;
+}
+
+.aboutGrid a {
+  color: var(--green);
+}
+
+.downloads {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.downloadCard {
+  display: flex;
+  min-height: 164px;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid var(--border-strong);
+  background: rgba(10, 14, 12, 0.75);
+}
+
+.downloadIcon {
+  color: var(--green-bright);
+  font-family: "Amatic SC", sans-serif;
+  font-size: 2.6rem;
+  line-height: 1;
+}
+
+.downloadCard h3 {
+  margin: 6px 0;
+  font-size: 1.65rem;
+}
+
+.downloadCard p {
+  margin-bottom: 14px;
+  font-size: 0.94rem;
+}
+
+.downloadCard a {
+  margin-top: auto;
+  color: var(--green);
+}
+
+.sequel {
+  position: relative;
+  display: grid;
+  min-height: 270px;
+  overflow: hidden;
+  grid-template-columns: 1.25fr 0.75fr;
+  border: 1px solid rgba(150, 112, 181, 0.62);
+  background: #0b0810;
+}
+
+.sequelImage {
+  object-fit: cover;
+  object-position: right center;
+  opacity: 0.42;
+  filter: saturate(0.75);
+}
+
+.sequel::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(9, 6, 12, 0.98) 0 43%, rgba(9, 6, 12, 0.5) 72%, transparent);
+  content: "";
+}
+
+.sequelCopy,
+.sequelFacts {
+  position: relative;
+  z-index: 2;
+  padding: 38px;
+}
+
+.sequelCopy h2 {
+  margin-bottom: 10px;
+  color: #c6a4dd;
+}
+
+.sequelActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.sequelFacts {
+  align-self: center;
+  border-left: 1px solid rgba(150, 112, 181, 0.3);
+}
+
+.fact {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 12px;
+  padding: 9px 0;
+  border-bottom: 1px solid rgba(150, 112, 181, 0.22);
+}
+
+.fact span:first-child {
+  color: #b993d0;
+}
+
+@media (max-width: 1024px) {
+  .guidesGrid,
+  .featuredGuidesGrid,
+  .downloads,
+  .aboutGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .hero,
+  .heroInner {
+    min-height: 600px;
+  }
+
+  .heroImage {
+    object-position: 65% center;
+  }
+
+  .heroShade {
+    background: linear-gradient(90deg, rgba(4, 7, 6, 0.94), rgba(4, 7, 6, 0.62)), linear-gradient(0deg, var(--bg) 0%, transparent 40%);
+  }
+
+  .heroCopy {
+    padding-top: 120px;
+  }
+
+  .guidesGrid,
+  .featuredGuidesGrid,
+  .downloads,
+  .aboutGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sequel {
+    grid-template-columns: 1fr;
+  }
+
+  .sequelFacts {
+    border-top: 1px solid rgba(150, 112, 181, 0.3);
+    border-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: clamp(2.15rem, 10vw, 2.8rem);
+  }
+
+  .guidesGrid,
+  .featuredGuidesGrid,
+  .downloads,
+  .aboutGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .sequelCopy,
+  .sequelFacts {
+    padding: 24px;
+  }
+}

@@ -1,0 +1,264 @@
+[
+  {
+    "slug": "sal-fisher",
+    "name": "Sal Fisher",
+    "alias": "Sally Face",
+    "role": "Protagonist",
+    "firstAppearance": "Episode One: Strange Neighbors",
+    "relationship": "The story's central investigator",
+    "image": "/images/characters/sal-fisher-canonical.webp",
+    "imageAlt": "Canonical in-game sprite of Sal Fisher wearing his prosthetic face",
+    "summary": "Sal Fisher is the blue-haired, prosthetic-mask-wearing protagonist known by the nickname Sally Face. He approaches the supernatural with empathy and stubborn curiosity.",
+    "appearance": "Sal is recognized by bright blue pigtails, a pale prosthetic face, and a dark, understated wardrobe. The mask covers injuries from a childhood attack and becomes both protection and the image other people remember.",
+    "personality": "Quiet, observant, and unusually accepting, Sal listens before he judges. He is willing to enter frightening places when someone needs help, but his calm manner also hides grief and a growing sense of responsibility for Nockfell.",
+    "storyRole": "Sal connects every major thread: the Sanderson murder, the Addison haunting, Jim Johnson's research, the Devourers of God, and the final attempt to stop the Endless One. The player experiences most investigations through his conversations, sketches, and Gear Boy discoveries.",
+    "episodes": ["episode-1-strange-neighbors", "episode-2-the-wretched", "episode-3-the-bologna-incident", "episode-4-the-trial", "episode-5-memories-and-dreams"],
+    "relationships": [
+      { "name": "Larry Johnson", "slug": "larry-johnson", "detail": "Best friend, investigation partner, and later stepbrother." },
+      { "name": "Ashley Campbell", "slug": "ashley-campbell", "detail": "Close friend who continues searching for the truth." },
+      { "name": "Todd Morrison", "slug": "todd-morrison", "detail": "Friend and technical expert behind many of the group's plans." },
+      { "name": "Henry Fisher", "slug": "henry-fisher", "detail": "Sal's father, whose grief and protection shape their move to Nockfell." }
+    ],
+    "trivia": ["Sal uses the Gear Boy to communicate with spirits.", "Portable Moose's official FAQ confirms that Sal is male.", "His nickname began as an insult and became a name he chose to own."],
+    "faqs": [
+      { "question": "Is Sally Face's real name Sal Fisher?", "answer": "Yes. Sally Face is Sal Fisher's nickname." },
+      { "question": "Why does Sal Fisher wear a mask?", "answer": "He wears a prosthetic face after severe childhood injuries." },
+      { "question": "Is Sal Fisher the playable character?", "answer": "Sal is the primary playable character, though later episodes also use other viewpoints." }
+    ],
+    "seo": { "title": "Sal Fisher – Sally Face Character and Mask Guide", "description": "Sal Fisher guide covering his prosthetic mask, personality, friendships, family history, Chapter appearances and central role throughout Sally Face's story." }
+  },
+  {
+    "slug": "larry-johnson",
+    "name": "Larry Johnson",
+    "alias": "Larry",
+    "role": "Best friend & paranormal investigator",
+    "firstAppearance": "Episode One: Strange Neighbors",
+    "relationship": "Sal's neighbor, best friend and stepbrother",
+    "image": "/images/characters/larry-johnson-canonical.webp",
+    "imageAlt": "Canonical in-game sprite of Larry Johnson with long brown hair and an SF shirt",
+    "summary": "Larry Johnson is Sal's first friend in Addison Apartments and the person who pulls him into the building's oldest mysteries.",
+    "appearance": "As a teenager, Larry has long dark hair, tired brown eyes, and a collection of worn heavy-metal shirts. Later designs make him taller and more weathered while keeping the relaxed posture and expressive eyebrows that define him.",
+    "personality": "Larry is laid-back in ordinary conversation but fiercely loyal when his friends are threatened. His humor and bluntness offset Sal's quiet style, while his fear of the Red-Eyed Demon gives the supernatural story a deeply personal edge.",
+    "storyRole": "Larry witnesses the darkness in Addison Apartments long before Sal arrives. He guides the Episode One investigation, shares the mystery of Jim Johnson, helps uncover the bologna operation, and becomes essential to the spiritual assault in the final chapters.",
+    "episodes": ["episode-1-strange-neighbors", "episode-2-the-wretched", "episode-3-the-bologna-incident", "episode-4-the-trial", "episode-5-memories-and-dreams"],
+    "relationships": [
+      { "name": "Sal Fisher", "slug": "sal-fisher", "detail": "His closest friend and later stepbrother." },
+      { "name": "Lisa Johnson", "slug": "lisa-johnson", "detail": "His mother and emotional anchor in Addison Apartments." },
+      { "name": "Ashley Campbell", "slug": "ashley-campbell", "detail": "A trusted friend in the Nockfell investigation group." },
+      { "name": "Todd Morrison", "slug": "todd-morrison", "detail": "The technical mind who helps test Larry's supernatural claims." }
+    ],
+    "trivia": ["Larry is a devoted fan of Sanity's Fall.", "His treehouse becomes an important meeting place.", "Several achievements require returning to Larry and exhausting new dialogue after discoveries."],
+    "faqs": [
+      { "question": "Who is Larry in Sally Face?", "answer": "Larry Johnson is Sal's best friend, neighbor, and fellow paranormal investigator." },
+      { "question": "Where does Larry live?", "answer": "Larry and Lisa live in apartment 1B in the Addison Apartments basement." },
+      { "question": "Is Larry in every episode?", "answer": "Larry is important across all five episodes, including later supernatural sequences." }
+    ],
+    "seo": { "title": "Larry Johnson – Sally Face Character Guide", "description": "Larry Johnson profile covering his appearance, personality, bond with Sal Fisher, family history, supernatural role and scenes across all five Chapters." }
+  },
+  {
+    "slug": "ashley-campbell",
+    "name": "Ashley Campbell",
+    "alias": "Ash",
+    "role": "Investigator & survivor",
+    "firstAppearance": "Episode Two: The Wretched",
+    "relationship": "Sal's close friend and ally",
+    "image": "/images/characters/ashley-campbell-canonical.webp",
+    "imageAlt": "Canonical in-game sprite of Ashley Campbell with long brown hair and a purple dress",
+    "summary": "Ashley Campbell is a practical, determined member of Sal's friend group whose choices become decisive after The Trial.",
+    "appearance": "As a teenager, Ash has very long brown hair, green eyes, a purple sweater dress, dark leggings, and a black choker. Her adult design has shorter hair, a leather jacket, and motorcycle-ready clothing that reflects the story's time jump.",
+    "personality": "Ash is direct, resourceful, and protective. She questions extraordinary claims until the evidence is unavoidable, then commits herself fully to uncovering the truth and protecting the remaining group.",
+    "storyRole": "Ash joins the apartment investigations, helps expose Mrs. Packerton, witnesses the catastrophe at Addison Apartments, and later fights to prove Sal's explanation. Episode Five uses her viewpoint to carry the resistance forward.",
+    "episodes": ["episode-2-the-wretched", "episode-3-the-bologna-incident", "episode-4-the-trial", "episode-5-memories-and-dreams"],
+    "relationships": [
+      { "name": "Sal Fisher", "slug": "sal-fisher", "detail": "Close friend and the person whose story she refuses to abandon." },
+      { "name": "Larry Johnson", "slug": "larry-johnson", "detail": "Friend and fellow investigator." },
+      { "name": "Todd Morrison", "slug": "todd-morrison", "detail": "Long-term ally in the fight against the cult." }
+    ],
+    "trivia": ["Ash's camera is used in the Episode Three school investigation.", "She becomes a major playable viewpoint in Episode Five.", "Her practical skepticism makes her later commitment especially important."],
+    "faqs": [
+      { "question": "When does Ashley first appear?", "answer": "Ashley first appears in Episode Two: The Wretched." },
+      { "question": "Is Ashley playable?", "answer": "Yes. Ashley is playable during major sections of Episode Five." },
+      { "question": "What is Ashley's role in The Trial?", "answer": "She helps investigate Addison Apartments and later searches for evidence supporting Sal's account." }
+    ],
+    "seo": { "title": "Ashley Campbell – Sally Face Character Guide", "description": "Ashley Campbell profile covering her role in Sal's group, relationships, Chapter appearances, skills and importance to Sally Face's final conflict." }
+  },
+  {
+    "slug": "travis-phelps",
+    "name": "Travis Phelps",
+    "alias": "Travis",
+    "role": "Classmate tied to the cult",
+    "firstAppearance": "Episode Three: The Bologna Incident",
+    "relationship": "A troubled classmate who reveals a hidden conflict",
+    "image": "/images/characters/travis-phelps-canonical.webp",
+    "imageAlt": "Canonical in-game sprite of Travis Phelps with blond hair, a bruised eye, and a purple shirt",
+    "summary": "Travis Phelps begins as an antagonistic classmate, but a private conversation reveals fear, pressure, and a complicated connection to the cult.",
+    "appearance": "Teenage Travis has olive-toned skin, short blond hair, and a visibly swollen eye. He wears a light-purple long-sleeved shirt, blue shorts, gray socks, and green shoes; his adult cult appearance has longer hair and red eyes from possession.",
+    "personality": "He performs hostility in public but becomes vulnerable when Sal finds him alone. His behavior reflects both personal conflict and the control exerted by his father and the religious community around him.",
+    "storyRole": "The Episode Three bathroom conversation turns Travis from a one-note bully into evidence that the cult harms its own families. Choosing the empathetic dialogue path awards Atonement and gives Sal another journal page.",
+    "episodes": ["episode-3-the-bologna-incident", "episode-4-the-trial", "episode-5-memories-and-dreams"],
+    "relationships": [
+      { "name": "Sal Fisher", "slug": "sal-fisher", "detail": "A classmate who responds to Travis with unexpected empathy." },
+      { "name": "Ashley Campbell", "slug": "ashley-campbell", "detail": "Part of the friend group Travis initially opposes." }
+    ],
+    "trivia": ["The recommended Episode Three dialogue order is 3, 2, 3, 2.", "His hidden conversation is required for Atonement.", "Travis is closely connected to the Phelps family's religious authority."],
+    "faqs": [
+      { "question": "How do you get Atonement with Travis?", "answer": "Find Travis in the school bathroom and choose dialogue options 3, 2, 3, 2." },
+      { "question": "Is Travis a main character?", "answer": "He is a significant supporting character whose family connects to the cult storyline." },
+      { "question": "When does Travis first appear?", "answer": "His first major appearance is Episode Three: The Bologna Incident." }
+    ],
+    "seo": { "title": "Travis Phelps – Sally Face Character Guide", "description": "Travis Phelps guide with Atonement dialogue answers, family pressure, story role, relationships, Chapter appearances and connection to the cult storyline." }
+  },
+  {
+    "slug": "todd-morrison",
+    "name": "Todd Morrison",
+    "alias": "Todd",
+    "role": "Scientist & technical expert",
+    "firstAppearance": "Episode Two: The Wretched",
+    "relationship": "The group's engineer and researcher",
+    "image": "/images/characters/todd-morrison-canonical.webp",
+    "imageAlt": "Canonical in-game sprite of Todd Morrison with curly orange hair and round glasses",
+    "summary": "Todd Morrison gives Sal's group the technical knowledge needed to analyze supernatural objects, build devices, and turn frightening clues into plans.",
+    "appearance": "Todd is easy to identify by his messy orange-red hair, large square glasses, and practical layered clothes. His designs keep a studious, slightly anxious energy across the time jumps.",
+    "personality": "Intelligent and enthusiastic, Todd treats strange evidence as a problem that can be tested. His confidence in systems contrasts with the spiritual forces that eventually target him.",
+    "storyRole": "Todd examines the puzzle-box chip, analyzes the school bologna, supports the Addison assault, and leaves research that guides the Episode Five resistance. The cost of that work makes him central to the cult's long-term threat.",
+    "episodes": ["episode-2-the-wretched", "episode-3-the-bologna-incident", "episode-4-the-trial", "episode-5-memories-and-dreams"],
+    "relationships": [
+      { "name": "Sal Fisher", "slug": "sal-fisher", "detail": "Friend and primary field investigator." },
+      { "name": "Larry Johnson", "slug": "larry-johnson", "detail": "Friend whose supernatural experiences Todd helps verify." },
+      { "name": "Ashley Campbell", "slug": "ashley-campbell", "detail": "Long-term collaborator and member of the resistance." }
+    ],
+    "trivia": ["Todd is the person to visit with unusual chips and samples.", "His research notes frame much of Episode Five's opening.", "He brings a scientific vocabulary to otherwise occult discoveries."],
+    "faqs": [
+      { "question": "What does Todd do in Sally Face?", "answer": "Todd analyzes evidence, builds devices, and plans investigations with Sal's group." },
+      { "question": "When does Todd first appear?", "answer": "Todd first appears in Episode Two: The Wretched." },
+      { "question": "Is Todd in Episode Five?", "answer": "Yes. Todd and his research are central to the final chapter." }
+    ],
+    "seo": { "title": "Todd Morrison – Sally Face Character Guide", "description": "Todd Morrison profile with inventions, scientific approach, friendships, Chapter appearances and essential role in the group's fight against the cult." }
+  },
+  {
+    "slug": "henry-fisher",
+    "name": "Henry Fisher",
+    "alias": "Henry",
+    "role": "Sal's father",
+    "firstAppearance": "Episode One: Strange Neighbors",
+    "relationship": "Father and guardian",
+    "image": "/images/characters/henry-fisher-canonical.webp",
+    "imageAlt": "Canonical in-game sprite of Henry Fisher with light-blue hair and a beard",
+    "summary": "Henry Fisher is Sal's father. Their move to Nockfell is an attempt to rebuild life after the death of Sal's mother and Sal's injuries.",
+    "appearance": "Henry has naturally light-blue hair, blue eyes, and a blue beard. By the later timeline his hairline has receded significantly; his subdued clothes and posture reinforce the grief he carries while trying to keep family life stable.",
+    "personality": "He is caring but emotionally withdrawn. Henry wants to protect Sal and is willing to give him independence, even when he does not understand the supernatural events surrounding the apartments.",
+    "storyRole": "Henry anchors Sal's family history and the trauma behind the prosthetic mask. His computer, memories of Diane, and later relationship with Lisa connect the Fisher and Johnson families.",
+    "episodes": ["episode-1-strange-neighbors", "episode-2-the-wretched", "episode-3-the-bologna-incident", "episode-4-the-trial", "episode-5-memories-and-dreams"],
+    "relationships": [
+      { "name": "Sal Fisher", "slug": "sal-fisher", "detail": "His son and the center of his effort to rebuild their lives." },
+      { "name": "Lisa Johnson", "slug": "lisa-johnson", "detail": "A supportive presence who later joins the Fisher family." }
+    ],
+    "trivia": ["Henry's Episode Three computer password is 491145.", "The password encodes DIANE using alphabet positions.", "He and Sal move into apartment 402."],
+    "faqs": [
+      { "question": "Who is Sal Fisher's father?", "answer": "Sal's father is Henry Fisher." },
+      { "question": "What is Henry's computer password?", "answer": "The Episode Three password is 491145." }
+    ],
+    "seo": { "title": "Henry Fisher – Sally Face Character Guide", "description": "Henry Fisher profile covering Sal's family, the 491145 computer password, relationship with Lisa and meaningful appearances across every Sally Face Chapter." }
+  },
+  {
+    "slug": "lisa-johnson",
+    "name": "Lisa Johnson",
+    "alias": "Lisa",
+    "role": "Larry's mother & building caretaker",
+    "firstAppearance": "Episode One: Strange Neighbors",
+    "relationship": "Larry's mother and Sal's trusted adult ally",
+    "image": "/images/characters/lisa-johnson-canonical.webp",
+    "imageAlt": "Canonical in-game sprite of Lisa Johnson-Fisher in her blue caretaker jumpsuit",
+    "summary": "Lisa Johnson is Larry's mother and the caretaker who knows more about Addison Apartments than most tenants realize.",
+    "appearance": "Lisa is a tall brunette with brown eyes. As Addison Apartments' caretaker, she wears a blue work jumpsuit with brown gloves and shoes; the patched gloves and tired eyes reflect the physical work she does around the building.",
+    "personality": "Kind, practical, and patient, Lisa gives both boys a sense of home. She is cautious about Larry's curse but will share important details when Sal asks the right questions.",
+    "storyRole": "Lisa provides basement access, family context, and information connected to A Dark Secret. Her relationship with Henry later joins the two families at the emotional center of the group.",
+    "episodes": ["episode-1-strange-neighbors", "episode-2-the-wretched", "episode-3-the-bologna-incident", "episode-4-the-trial"],
+    "relationships": [
+      { "name": "Larry Johnson", "slug": "larry-johnson", "detail": "Her son, whom she protects from the history surrounding the building." },
+      { "name": "Sal Fisher", "slug": "sal-fisher", "detail": "A trusted neighbor who becomes part of her family." },
+      { "name": "Henry Fisher", "slug": "henry-fisher", "detail": "Sal's father and her later partner." }
+    ],
+    "trivia": ["Lisa can give Sal the basement key card.", "Her dialogue is required for A Dark Secret.", "She lives with Larry in apartment 1B."],
+    "faqs": [
+      { "question": "Who is Larry's mother?", "answer": "Larry's mother is Lisa Johnson." },
+      { "question": "How do I get basement access?", "answer": "Ask Lisa whether there is anything to do for fun in the building." }
+    ],
+    "seo": { "title": "Lisa Johnson – Sally Face Character Guide", "description": "Lisa Johnson profile covering her relationship to Larry, Henry and Sal, Addison Apartments basement access, family history and major Chapter appearances." }
+  },
+  {
+    "slug": "megan-holmes",
+    "name": "Megan Holmes",
+    "alias": "Megan",
+    "role": "Ghost of Addison Apartments",
+    "firstAppearance": "Episode One: Strange Neighbors",
+    "relationship": "A child spirit who trusts Sal",
+    "image": "/images/characters/megan-holmes-canonical.webp",
+    "imageAlt": "Canonical in-game ghost sprite of Megan Holmes with purple hair and pale eyes",
+    "summary": "Megan Holmes is a child spirit whose appearances confirm that Sal's supernatural encounters are more than nightmares.",
+    "appearance": "Megan is a seven-year-old ghost with muted purple hair, milky-white eyes, and an oversized gray nightgown. In life she had purple eyes and wore a gold cross necklace passed down through her family.",
+    "personality": "Megan is cautious but gentle. She communicates in fragments and depends on Sal's willingness to keep listening when other residents dismiss the impossible.",
+    "storyRole": "Her encounters lead Sal through the bathroom and Gear Boy route, establish the history of the Holmes family, and connect early ghost stories to the wider evil beneath Addison Apartments.",
+    "episodes": ["episode-1-strange-neighbors", "episode-2-the-wretched", "episode-3-the-bologna-incident"],
+    "relationships": [
+      { "name": "Sal Fisher", "slug": "sal-fisher", "detail": "The living person able to hear and help her." },
+      { "name": "Larry Johnson", "slug": "larry-johnson", "detail": "Another tenant affected by the same supernatural presence." }
+    ],
+    "trivia": ["Megan is first encountered through a hidden bathroom route.", "The Gear Boy helps Sal perceive spirits connected to her story.", "Her family history expands in Episode Two."],
+    "faqs": [
+      { "question": "Who is Megan in Sally Face?", "answer": "Megan Holmes is a child ghost connected to Addison Apartments." },
+      { "question": "How does Sal talk to Megan?", "answer": "Sal reaches her through supernatural hotspots and the Gear Boy route." }
+    ],
+    "seo": { "title": "Megan Holmes – Sally Face Character Guide", "description": "Megan Holmes guide explaining her ghost appearances, connection to Sal, Gear Boy encounters, family history and role in the Addison Apartments mystery." }
+  },
+  {
+    "slug": "charley-mansfield",
+    "name": "Charley Mansfield",
+    "alias": "Charley",
+    "role": "Episode One suspect",
+    "firstAppearance": "Episode One: Strange Neighbors",
+    "relationship": "Neighbor in apartment 204",
+    "image": "/images/characters/charley-mansfield-canonical.webp",
+    "imageAlt": "Canonical in-game image of Charley Mansfield sitting in his apartment",
+    "summary": "Charley Mansfield is the obsessive Glitter Pony collector at the center of the first murder investigation.",
+    "appearance": "Charley is a balding, overweight middle-aged man with sparse black hair. He wears a heavily stained white tank top, blue sweatpants, and damaged socks; his apartment is crowded with the collectible figures he values above almost everything else.",
+    "personality": "Nervous, defensive, and possessive, Charley becomes volatile when Sal asks about Mrs. Sanderson or the missing Glitter Pony.",
+    "storyRole": "Sal and Larry use Addison tea to move Charley away from his collection, find the decisive evidence, and resolve the human layer of Episode One's mystery.",
+    "episodes": ["episode-1-strange-neighbors", "episode-2-the-wretched"],
+    "relationships": [
+      { "name": "Sal Fisher", "slug": "sal-fisher", "detail": "The new neighbor who investigates his collection." },
+      { "name": "Larry Johnson", "slug": "larry-johnson", "detail": "Sal's partner in gathering evidence against him." }
+    ],
+    "trivia": ["Charley lives in apartment 204.", "He collects My Glitter Pony figures.", "Two alternate tea outcomes produce different achievements."],
+    "faqs": [
+      { "question": "Where does Charley live?", "answer": "Charley lives in apartment 204 of Addison Apartments." },
+      { "question": "How do I search Charley's collection?", "answer": "Prepare Addison tea with the sleeping aid or laxative and give it to him." }
+    ],
+    "seo": { "title": "Charley Mansfield – Sally Face Character Guide", "description": "Charley Mansfield profile with apartment location, Glitter Pony evidence, Chapter One tea solutions, alternate achievements and role in the first investigation." }
+  },
+  {
+    "slug": "gizmo",
+    "name": "Gizmo",
+    "alias": "Gizmo",
+    "role": "Sal's cat",
+    "firstAppearance": "Episode One: Strange Neighbors",
+    "relationship": "Sal's companion",
+    "image": "/images/characters/gizmo-canonical.webp",
+    "imageAlt": "Canonical in-game image of Gizmo sitting on a sofa",
+    "summary": "Gizmo is Sal's cat and one of the few reliably comforting presences in the Fisher home.",
+    "appearance": "Gizmo is a reddish-orange and white bicolor cat with white facial patches, white paws, striped markings, and bright yellow eyes. Developer comments describe his breed as probably similar to a Maine Coon.",
+    "personality": "Calm, observant, and affectionate, Gizmo often reacts to the atmosphere around Sal without needing dialogue.",
+    "storyRole": "Gizmo grounds the opening apartment scenes and remains connected to Sal's idea of home while the human relationships around him change.",
+    "episodes": ["episode-1-strange-neighbors", "episode-2-the-wretched", "episode-3-the-bologna-incident", "episode-4-the-trial", "episode-5-memories-and-dreams"],
+    "relationships": [
+      { "name": "Sal Fisher", "slug": "sal-fisher", "detail": "His owner and closest human companion." },
+      { "name": "Henry Fisher", "slug": "henry-fisher", "detail": "The other member of the Fisher household." }
+    ],
+    "trivia": ["Gizmo lives with Sal and Henry in room 402.", "He appears during quiet domestic scenes between investigations."],
+    "faqs": [
+      { "question": "What is Sally Face's cat called?", "answer": "Sal Fisher's cat is named Gizmo." },
+      { "question": "Where does Gizmo live?", "answer": "Gizmo lives with Sal and Henry in apartment 402." }
+    ],
+    "seo": { "title": "Gizmo – Sally Face Cat Character Profile Guide", "description": "Gizmo character profile covering Sal Fisher's cat, home in apartment 402, personality, family connection and appearances across the complete Sally Face story." }
+  }
+]
