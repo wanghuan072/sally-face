@@ -14,5 +14,4 @@ export const footerNavigation = [
   { label: "Achievements", href: "/achievements" },
   { label: "Download", href: "/download" },
   { label: "Sally Face 2", href: "/sally-face-2" },
-  { label: "About this guide", href: "/sources" },
 ];

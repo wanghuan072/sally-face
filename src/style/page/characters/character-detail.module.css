@@ -101,6 +101,22 @@
   background: rgba(8, 12, 10, 0.68);
 }
 
+.storyStart {
+  border-color: rgba(112, 170, 126, 0.62);
+  background: linear-gradient(118deg, rgba(112, 170, 126, 0.1), rgba(8, 12, 10, 0.74));
+}
+
+.maskSection {
+  border-color: rgba(150, 112, 181, 0.58);
+  background: linear-gradient(118deg, rgba(43, 25, 56, 0.5), rgba(8, 12, 10, 0.74));
+}
+
+.maskSection h3 {
+  margin: 20px 0 6px;
+  color: #e0a8f0;
+  font-size: 1.45rem;
+}
+
 .section h2 {
   margin-bottom: 14px;
   color: var(--text);
@@ -109,6 +125,45 @@
 
 .section p:last-child {
   margin-bottom: 0;
+}
+
+.sectionLead {
+  margin: -4px 0 16px;
+  color: var(--text-soft);
+}
+
+.playerNotes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.playerNote {
+  padding: 15px;
+  border: 1px solid var(--border);
+  background: rgba(112, 170, 126, 0.06);
+}
+
+.playerNote:hover {
+  border-color: rgba(112, 170, 126, 0.7);
+}
+
+.playerNote > span {
+  color: var(--green);
+  font-size: 0.78rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.playerNote h3 {
+  margin: 5px 0;
+  color: var(--green-bright);
+  font-size: 1.45rem;
+}
+
+.playerNote p {
+  margin: 0;
+  color: var(--text-soft);
 }
 
 .relationshipGrid,
@@ -310,6 +365,7 @@
 
   .facts,
   .relationshipGrid,
+  .playerNotes,
   .trivia,
   .sidebar {
     grid-template-columns: 1fr;

@@ -15,7 +15,7 @@ export function collectionSchema(name: string, description: string, path: string
   return { "@context": "https://schema.org", "@type": "CollectionPage", name, description, url: new URL(path, siteConfig.url).toString(), mainEntity: { "@type": "ItemList", itemListElement: items.map((item, index) => ({ "@type": "ListItem", position: index + 1, name: item.name, url: new URL(item.path, siteConfig.url).toString() })) } };
 }
 
-export function articleSchema(input: { title: string; description: string; path: string; image: string; datePublished?: string }) {
+export function articleSchema(input: { title: string; description: string; path: string; image: string; datePublished?: string; dateModified?: string }) {
   return {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -23,7 +23,7 @@ export function articleSchema(input: { title: string; description: string; path:
     description: input.description,
     image: new URL(input.image, siteConfig.url).toString(),
     datePublished: input.datePublished,
-    dateModified: "2026-08-31",
+    dateModified: input.dateModified ?? siteConfig.contentUpdated,
     author: { "@type": "Organization", name: siteConfig.name },
     publisher: { "@type": "Organization", name: siteConfig.name },
     mainEntityOfPage: new URL(input.path, siteConfig.url).toString(),

@@ -1,6 +1,6 @@
 [
   {
-    "slug": "episode-1-strange-neighbors",
+    "slug": "chapter-1-strange-neighbors",
     "number": 1,
     "ordinal": "One",
     "title": "Strange Neighbors",
@@ -11,7 +11,14 @@
     "location": "Addison Apartments",
     "length": "≈1–1.5 hours",
     "achievementCount": 7,
-    "characters": ["sal-fisher", "larry-johnson", "henry-fisher", "lisa-johnson", "megan-holmes", "charley-mansfield"],
+    "characters": [
+      "sal-fisher",
+      "larry-johnson",
+      "henry-fisher",
+      "lisa-johnson",
+      "megan-holmes",
+      "charley-mansfield"
+    ],
     "overview": [
       "Episode One introduces Sal Fisher just after he and his father move into room 402 of Addison Apartments. The building looks ordinary from the street, but every floor holds a strange tenant, a locked door, or a story that does not quite add up. A police officer outside room 403 confirms that Sal has arrived in the middle of an active murder investigation.",
       "The chapter is compact, but it establishes the habits that matter throughout Sally Face: inspect backgrounds, revisit characters after every discovery, and use the Gear Boy when it begins to react. Optional conversations with Larry and Lisa also unlock achievements and explain why the apartments have such a disturbing reputation."
@@ -46,25 +53,114 @@
         "imageAlt": "Charley Mansfield during Sally Face Episode One"
       }
     ],
-    "walkthroughMistakes": ["Entering a dream code before locating every clue.", "Leaving the basement without checking Lost and Found for the Gear Boy cartridge.", "Treating one conversation as final when new dialogue can unlock after discoveries."],
-    "checkpoints": ["Choose one tea outcome; the alternate Chapter One achievement needs a separate replay.", "Pick up the Gear Boy, batteries, and basement cartridge before you close the case.", "For The Unknown, inspect the morgue body, fifth-floor wall eye, and Larry's kitchen demon."],
+    "walkthroughMistakes": [
+      "Entering a dream code before locating every clue.",
+      "Leaving the basement without checking Lost and Found for the Gear Boy cartridge.",
+      "Treating one conversation as final when new dialogue can unlock after discoveries."
+    ],
+    "routeChecks": [
+      {
+        "area": "Dream and morgue",
+        "goal": "Start the Gear Boy route",
+        "check": "Enter 5364 after finding the four clues, then inspect the morgue before you return to the apartments.",
+        "risk": "The morgue is one of three checks for The Unknown."
+      },
+      {
+        "area": "Rooms 402 and B",
+        "goal": "Make the device usable",
+        "check": "Take the Gear Boy, batteries and the Lost and Found cartridge before you settle the Mansfield case.",
+        "risk": "Without all three, House of the Wretched cannot be completed on this run."
+      },
+      {
+        "area": "Apartments 103, 204 and 504",
+        "goal": "Choose the tea route",
+        "check": "Pick only one ingredient, give the mixed tea to Charley, and finish the evidence follow-up before closing the Chapter.",
+        "risk": "The second tea achievement requires a replay."
+      }
+    ],
+    "achievementPointers": [
+      {
+        "name": "Go to Sleep / Irritable Bowels",
+        "when": "Choose the tea ingredient only after you have Addison's tea and are ready to return to Charley.",
+        "risk": "The two outcomes are mutually exclusive, so the alternate award needs a chapter replay."
+      },
+      {
+        "name": "The Unknown",
+        "when": "Check the morgue, the boarded fifth-floor wall and Larry's kitchen while the apartment route is open.",
+        "risk": "The three sightings are easy to leave behind while following the murder case."
+      },
+      {
+        "name": "House of the Wretched",
+        "when": "Finish the Gear Boy chapters before ending the case.",
+        "risk": "The device, batteries and cartridge are all needed on the same chapter run."
+      }
+    ],
+    "checkpoints": [
+      "Choose one tea outcome; the alternate Chapter One achievement needs a separate replay.",
+      "Pick up the Gear Boy, batteries, and basement cartridge before you close the case.",
+      "For The Unknown, inspect the morgue body, fifth-floor wall eye, and Larry's kitchen demon."
+    ],
     "puzzles": [
-      { "title": "Dream door code", "answer": "The complete keypad code is 5364.", "href": "/chapters/episode-1-strange-neighbors#walkthrough" },
-      { "title": "Gear Boy route", "answer": "Collect the device, batteries, basement cartridge, and finish every unlocked chapter.", "href": "/chapters/episode-1-strange-neighbors#walkthrough" },
-      { "title": "Charley's tea", "answer": "Combine Addison tea with the sleeping aid or laxative, then give it to Charley.", "href": "/chapters/episode-1-strange-neighbors" }
+      {
+        "title": "Dream door code",
+        "answer": "The complete keypad code is 5364.",
+        "href": "/chapters/chapter-1-strange-neighbors#walkthrough"
+      },
+      {
+        "title": "Gear Boy route",
+        "answer": "Collect the device, batteries, basement cartridge, and finish every unlocked chapter.",
+        "href": "/chapters/chapter-1-strange-neighbors#walkthrough"
+      },
+      {
+        "title": "Charley's tea",
+        "answer": "Combine Addison tea with the sleeping aid or laxative, then give it to Charley.",
+        "href": "/chapters/chapter-1-strange-neighbors"
+      }
     ],
     "items": [
-      { "name": "Gear Boy", "type": "Story device", "location": "Sal's bedroom, room 402", "use": "Detects supernatural activity and runs secret chapters" },
-      { "name": "Batteries", "type": "Key item", "location": "Kitchen grocery bags", "use": "Powers the Gear Boy" },
-      { "name": "Basement card", "type": "Access item", "location": "Given by Lisa", "use": "Opens the basement" },
-      { "name": "Glitter Pony evidence", "type": "Evidence", "location": "Charley's apartment", "use": "Resolves the murder investigation" }
+      {
+        "name": "Gear Boy",
+        "type": "Story device",
+        "location": "Sal's bedroom, room 402",
+        "use": "Detects supernatural activity and runs secret chapters"
+      },
+      {
+        "name": "Batteries",
+        "type": "Key item",
+        "location": "Kitchen grocery bags",
+        "use": "Powers the Gear Boy"
+      },
+      {
+        "name": "Basement card",
+        "type": "Access item",
+        "location": "Given by Lisa",
+        "use": "Opens the basement"
+      },
+      {
+        "name": "Glitter Pony evidence",
+        "type": "Evidence",
+        "location": "Charley's apartment",
+        "use": "Resolves the murder investigation"
+      }
     ],
     "ending": "Sal and Larry's improvised investigation exposes Charley's connection to Mrs. Sanderson's murder. The police remove Charley from Addison Apartments, but the supernatural sightings and the Gear Boy chapters make it clear that the case is only the surface of a much larger threat.",
     "faqs": [
-      { "question": "What is Sally Face Episode 1 called?", "answer": "Episode One is called Strange Neighbors." },
-      { "question": "What is the code in Sally Face Episode 1?", "answer": "The dream keypad code is 5364, assembled from four visual clues." },
-      { "question": "How long is Sally Face Episode 1?", "answer": "A first playthrough usually takes about 60–90 minutes; full achievement cleanup takes longer." },
-      { "question": "Can I earn every Episode 1 achievement in one run?", "answer": "No. Go to Sleep and Irritable Bowels use alternate tea outcomes, so chapter replay is required." }
+      {
+        "question": "What is Sally Face Episode 1 called?",
+        "answer": "Episode One is called Strange Neighbors."
+      },
+      {
+        "question": "What is the code in Sally Face Episode 1?",
+        "answer": "The dream keypad code is 5364, assembled from four visual clues."
+      },
+      {
+        "question": "How long is Sally Face Episode 1?",
+        "answer": "A first playthrough usually takes about 60–90 minutes; full achievement cleanup takes longer."
+      },
+      {
+        "question": "Can I earn every Episode 1 achievement in one run?",
+        "answer": "No. Go to Sleep and Irritable Bowels use alternate tea outcomes, so chapter replay is required."
+      }
     ],
     "seo": {
       "title": "Sally Face Chapter 1 Guide – Steps and Route",
@@ -72,7 +168,7 @@
     }
   },
   {
-    "slug": "episode-2-the-wretched",
+    "slug": "chapter-2-the-wretched",
     "number": 2,
     "ordinal": "Two",
     "title": "The Wretched",
@@ -83,41 +179,164 @@
     "location": "Addison Apartments",
     "length": "≈1.5–2.5 hours",
     "achievementCount": 7,
-    "characters": ["sal-fisher", "larry-johnson", "ashley-campbell", "todd-morrison", "lisa-johnson", "megan-holmes"],
+    "characters": [
+      "sal-fisher",
+      "larry-johnson",
+      "ashley-campbell",
+      "todd-morrison",
+      "lisa-johnson",
+      "megan-holmes"
+    ],
     "overview": [
       "Months after Charley's arrest, Sal's nightmares continue and Larry is convinced that something hostile lives inside Addison Apartments. The pair investigate disappearances, sealed rooms, and the history of the Addison family while the Super Gear Boy reveals fragments that normal sight cannot reach.",
       "Episode Two rewards methodical backtracking. New dialogue appears after major discoveries, and several secrets require the crowbar, the puzzle-box chip, or a completed Super Gear Boy chapter before they can be resolved."
     ],
     "walkthrough": [
-      { "title": "Catch up with Larry and inspect the building", "body": "Talk through every subject with Larry, revisit the apartments, and note locations that react to the Super Gear Boy. Search each floor before committing to the basement route.", "tip": "Best Buds requires every meaningful Larry dialogue option.", "image": "/images/scenes/steam-09.webp", "imageAlt": "Official Steam screenshot of Sal and Larry outside in the Episode Two winter route" },
-      { "title": "Find the four seals", "body": "Use the Super Gear Boy around Addison Apartments to reveal four occult seals. Clear the related spirit chapters as they appear so the Devour route remains complete.", "tip": "A strong Gear Boy reaction means a supernatural interaction is close, even if nothing is visible yet.", "image": "/images/scenes/steam-11.webp", "imageAlt": "Official Steam screenshot of Sal encountering a supernatural presence in the Addison Apartments" },
-      { "title": "Open the metal puzzle box", "body": "Get the missing puzzle-box piece from David's apartment, complete the required Gear Boy chapter, and transfer the recovered chip to Todd for analysis. Return to Larry after each step for the related dialogue.", "tip": "Do not ignore Chug's request; the reward connects to an optional game and later collectible path.", "image": "/images/scenes/steam-10.webp", "imageAlt": "Official Steam screenshot of a supernatural investigation scene in Episode Two" },
-      { "title": "Enter the hidden apartment route", "body": "Use the crowbar to access 403 and speak with Mrs. Sanderson's ghost, then follow the basement clues toward apartment 2B. Finish all Super Gear Boy chapters before the final investigation sequence.", "tip": "Room 403 is easy to skip and is required for Unseen.", "image": "/images/scenes/steam-13.webp", "imageAlt": "Official Steam screenshot of Sal in an underground investigation area" }
+      {
+        "title": "Catch up with Larry and inspect the building",
+        "body": "Talk through every subject with Larry, revisit the apartments, and note locations that react to the Super Gear Boy. Search each floor before committing to the basement route.",
+        "tip": "Best Buds requires every meaningful Larry dialogue option.",
+        "image": "/images/scenes/steam-09.webp",
+        "imageAlt": "Official Steam screenshot of Sal and Larry outside in the Episode Two winter route"
+      },
+      {
+        "title": "Find the four seals",
+        "body": "Use the Super Gear Boy around Addison Apartments to reveal four occult seals. Clear the related spirit chapters as they appear so the Devour route remains complete.",
+        "tip": "A strong Gear Boy reaction means a supernatural interaction is close, even if nothing is visible yet.",
+        "image": "/images/scenes/steam-11.webp",
+        "imageAlt": "Official Steam screenshot of Sal encountering a supernatural presence in the Addison Apartments"
+      },
+      {
+        "title": "Open the metal puzzle box",
+        "body": "Get the missing puzzle-box piece from David's apartment, complete the required Gear Boy chapter, and transfer the recovered chip to Todd for analysis. Return to Larry after each step for the related dialogue.",
+        "tip": "Do not ignore Chug's request; the reward connects to an optional game and later collectible path.",
+        "image": "/images/scenes/steam-10.webp",
+        "imageAlt": "Official Steam screenshot of a supernatural investigation scene in Episode Two"
+      },
+      {
+        "title": "Enter the hidden apartment route",
+        "body": "Use the crowbar to access 403 and speak with Mrs. Sanderson's ghost, then follow the basement clues toward apartment 2B. Finish all Super Gear Boy chapters before the final investigation sequence.",
+        "tip": "Room 403 is easy to skip and is required for Unseen.",
+        "image": "/images/scenes/steam-13.webp",
+        "imageAlt": "Official Steam screenshot of Sal in an underground investigation area"
+      }
     ],
-    "walkthroughMistakes": ["Skipping rooms that react to the Super Gear Boy.", "Ignoring the puzzle-box follow-up before advancing the investigation.", "Leaving room 403 unexplored after obtaining the crowbar."],
-    "checkpoints": ["Clear all four Super Gear Boy seals while Addison Apartments is still open.", "Return to room 403 with the crowbar and speak with Mrs. Sanderson.", "After the puzzle box, revisit Larry and bring the recovered chip to Todd."],
+    "walkthroughMistakes": [
+      "Skipping rooms that react to the Super Gear Boy.",
+      "Ignoring the puzzle-box follow-up before advancing the investigation.",
+      "Leaving room 403 unexplored after obtaining the crowbar."
+    ],
+    "routeChecks": [
+      {
+        "area": "Addison Apartments",
+        "goal": "Clear the spirit route",
+        "check": "Treat every Super Gear Boy reaction as a stop. Search the room, resolve the encounter, then move to the next floor.",
+        "risk": "Devour needs all four seals."
+      },
+      {
+        "area": "Room 403",
+        "goal": "Open the hidden follow-up",
+        "check": "Return with the crowbar and speak with Mrs. Sanderson's ghost before the late investigation.",
+        "risk": "This is the Unseen achievement route."
+      },
+      {
+        "area": "Larry and Todd",
+        "goal": "Finish the puzzle-box thread",
+        "check": "After the box opens, revisit Larry and bring the recovered chip to Todd.",
+        "risk": "The main story moves on, but the optional context does not wait for a random replay."
+      }
+    ],
+    "achievementPointers": [
+      {
+        "name": "Best Buds",
+        "when": "Return to Larry after each major discovery and exhaust the newly available conversation options.",
+        "risk": "The achievement is a sequence of small conversations, not one late-game interaction."
+      },
+      {
+        "name": "Devour",
+        "when": "Use the Super Gear Boy at every strong signal before taking the late 504 route.",
+        "risk": "All four seals must be cleared before the chapter closes."
+      },
+      {
+        "name": "Unseen / In Seeking Providence",
+        "when": "Bring the crowbar back to 403 and finish the Super Gear Boy chapters while the building remains open.",
+        "risk": "The 504 hole is the practical cut-off for unfinished apartment exploration."
+      }
+    ],
+    "checkpoints": [
+      "Clear all four Super Gear Boy seals while Addison Apartments is still open.",
+      "Return to room 403 with the crowbar and speak with Mrs. Sanderson.",
+      "After the puzzle box, revisit Larry and bring the recovered chip to Todd."
+    ],
     "puzzles": [
-      { "title": "Four seals", "answer": "Scan every floor with the Super Gear Boy and complete each revealed spirit encounter.", "href": "/chapters/episode-2-the-wretched" },
-      { "title": "Metal puzzle box", "answer": "Recover the missing piece in David's apartment, solve the Gear Boy clue, then bring the chip to Todd.", "href": "/chapters/episode-2-the-wretched#walkthrough" },
-      { "title": "Apartment 2B", "answer": "The concealed basement route opens after the supernatural chapters and related building clues are complete.", "href": "/chapters/episode-2-the-wretched" }
+      {
+        "title": "Four seals",
+        "answer": "Scan every floor with the Super Gear Boy and complete each revealed spirit encounter.",
+        "href": "/chapters/chapter-2-the-wretched"
+      },
+      {
+        "title": "Metal puzzle box",
+        "answer": "Recover the missing piece in David's apartment, solve the Gear Boy clue, then bring the chip to Todd.",
+        "href": "/chapters/chapter-2-the-wretched#walkthrough"
+      },
+      {
+        "title": "Apartment 2B",
+        "answer": "The concealed basement route opens after the supernatural chapters and related building clues are complete.",
+        "href": "/chapters/chapter-2-the-wretched"
+      }
     ],
     "items": [
-      { "name": "Super Gear Boy", "type": "Story device", "location": "Sal's inventory", "use": "Reveals spirit chapters and hidden pages" },
-      { "name": "Crowbar", "type": "Tool", "location": "Investigation route", "use": "Opens blocked rooms, including 403" },
-      { "name": "Puzzle-box piece", "type": "Puzzle item", "location": "David's apartment", "use": "Completes the metal box" },
-      { "name": "Computer chip", "type": "Evidence", "location": "Inside the puzzle box", "use": "Allows Todd to decode the mystery" }
+      {
+        "name": "Super Gear Boy",
+        "type": "Story device",
+        "location": "Sal's inventory",
+        "use": "Reveals spirit chapters and hidden pages"
+      },
+      {
+        "name": "Crowbar",
+        "type": "Tool",
+        "location": "Investigation route",
+        "use": "Opens blocked rooms, including 403"
+      },
+      {
+        "name": "Puzzle-box piece",
+        "type": "Puzzle item",
+        "location": "David's apartment",
+        "use": "Completes the metal box"
+      },
+      {
+        "name": "Computer chip",
+        "type": "Evidence",
+        "location": "Inside the puzzle box",
+        "use": "Allows Todd to decode the mystery"
+      }
     ],
     "ending": "The investigation confirms that the evil in Addison Apartments is organized rather than accidental. Sal and Larry uncover links between the building, the cult, and Larry's missing father, setting up the school investigation in Episode Three.",
     "faqs": [
-      { "question": "How many seals are in Episode 2?", "answer": "There are four seals to find for the Devour achievement." },
-      { "question": "How do I enter room 403?", "answer": "Obtain the crowbar and use it to break into the sealed apartment." },
-      { "question": "What should I do with the puzzle-box chip?", "answer": "Take the chip to Todd after opening the metal puzzle box." },
-      { "question": "Can I miss Super Gear Boy chapters?", "answer": "Yes. Search every floor before the final sequence and revisit rooms when the device reacts." }
+      {
+        "question": "How many seals are in Episode 2?",
+        "answer": "There are four seals to find for the Devour achievement."
+      },
+      {
+        "question": "How do I enter room 403?",
+        "answer": "Obtain the crowbar and use it to break into the sealed apartment."
+      },
+      {
+        "question": "What should I do with the puzzle-box chip?",
+        "answer": "Take the chip to Todd after opening the metal puzzle box."
+      },
+      {
+        "question": "Can I miss Super Gear Boy chapters?",
+        "answer": "Yes. Search every floor before the final sequence and revisit rooms when the device reacts."
+      }
     ],
-    "seo": { "title": "Sally Face Chapter 2 Guide – Steps and Route", "description": "Complete The Wretched with all four seals, Super Gear Boy chapters, the puzzle-box chip, room 403, hidden conversations and every Chapter 2 achievement." }
+    "seo": {
+      "title": "Sally Face Chapter 2 Guide – Steps and Route",
+      "description": "Complete The Wretched with all four seals, Super Gear Boy chapters, the puzzle-box chip, room 403, hidden conversations and every Chapter 2 achievement."
+    }
   },
   {
-    "slug": "episode-3-the-bologna-incident",
+    "slug": "chapter-3-the-bologna-incident",
     "number": 3,
     "ordinal": "Three",
     "title": "The Bologna Incident",
@@ -128,51 +347,210 @@
     "location": "Nockfell High School",
     "length": "≈2–2.5 hours",
     "achievementCount": 7,
-    "characters": ["sal-fisher", "larry-johnson", "ashley-campbell", "travis-phelps", "todd-morrison", "henry-fisher"],
+    "characters": [
+      "sal-fisher",
+      "larry-johnson",
+      "ashley-campbell",
+      "travis-phelps",
+      "todd-morrison",
+      "henry-fisher"
+    ],
     "overview": [
       "Episode Three expands the mystery beyond Addison Apartments. Suspicious cafeteria bologna, Mrs. Packerton's behavior, and fragments of Jim Johnson's journal push Sal, Larry, Ash, and Todd toward a hidden operation beneath Nockfell.",
       "This is the most collectible-heavy early chapter. The timed prologue, eleven journal pages, optional Clumpy game, school conversations, and apartment backtracking all need attention before the final basement sequence."
     ],
     "walkthrough": [
-      { "title": "Solve the timed journal prologue", "body": "Set the four symbol controls to top, bottom, top, and middle. In the white room, enter the six code groups while moving from right to left: 6269, 63, 663, 47, 96753, and 9687. Finishing both puzzles awards the journal route for Premonition.", "tip": "Pause between inputs if the countdown makes the two puzzles difficult to read.", "image": "/images/scenes/steam-23.webp", "imageAlt": "Official Steam screenshot of Sal in the Episode Three white-room sequence" },
-      { "title": "Investigate Nockfell High", "body": "Collect the paperclip, camera, sticky tack, and bologna sample. Photograph the bird for Kim, help Larry with the window distraction, and talk to Travis in the last bathroom stall using responses 3, 2, 3, 2.", "tip": "Keep the sticky tack instead of giving it away; it is needed for an optional collectible.", "image": "/images/scenes/steam-17.webp", "imageAlt": "Official Steam screenshot of the Nockfell High classroom investigation" },
-      { "title": "Open Packerton's desk and Henry's computer", "body": "The classroom desk code is 3141, the first four digits of pi. Back at room 402, inspect the family clue and enter 491145 on Henry's computer—the alphabet positions for DIANE.", "tip": "These two codes unlock different branches; 3141 is the school desk, 491145 is the computer.", "image": "/images/scenes/steam-19.webp", "imageAlt": "Official Steam screenshot of Sal, Larry, and Ashley investigating the school corridor" },
-      { "title": "Collect all journal pages before the basement", "body": "Scan apartments with the Super Gear Boy, check the mailboxes and hidden temple room, resolve the puzzle-box follow-up, and collect all eleven journal pages. Do not take the final exit until page eleven has been read.", "tip": "Meeting in Todd's room and the late basement sequence act as practical points of no return.", "image": "/images/scenes/steam-18.webp", "imageAlt": "Official Steam screenshot of Nockfell High before the late investigation route" }
+      {
+        "title": "Solve the timed journal prologue",
+        "body": "Set the four symbol controls to top, bottom, top, and middle. In the white room, enter the six code groups while moving from right to left: 6269, 63, 663, 47, 96753, and 9687. Finishing both puzzles awards the journal route for Premonition.",
+        "tip": "Pause between inputs if the countdown makes the two puzzles difficult to read.",
+        "image": "/images/scenes/steam-23.webp",
+        "imageAlt": "Official Steam screenshot of Sal in the Episode Three white-room sequence"
+      },
+      {
+        "title": "Investigate Nockfell High",
+        "body": "Collect the paperclip, camera, sticky tack, and bologna sample. Photograph the bird for Kim, help Larry with the window distraction, and talk to Travis in the last bathroom stall using responses 3, 2, 3, 2.",
+        "tip": "Keep the sticky tack instead of giving it away; it is needed for an optional collectible.",
+        "image": "/images/scenes/steam-17.webp",
+        "imageAlt": "Official Steam screenshot of the Nockfell High classroom investigation"
+      },
+      {
+        "title": "Open Packerton's desk and Henry's computer",
+        "body": "The classroom desk code is 3141, the first four digits of pi. Back at room 402, inspect the family clue and enter 491145 on Henry's computer—the alphabet positions for DIANE.",
+        "tip": "These two codes unlock different branches; 3141 is the school desk, 491145 is the computer.",
+        "image": "/images/scenes/steam-19.webp",
+        "imageAlt": "Official Steam screenshot of Sal, Larry, and Ashley investigating the school corridor"
+      },
+      {
+        "title": "Collect all journal pages before the basement",
+        "body": "Scan apartments with the Super Gear Boy, check the mailboxes and hidden temple room, resolve the puzzle-box follow-up, and collect all eleven journal pages. Do not take the final exit until page eleven has been read.",
+        "tip": "Meeting in Todd's room and the late basement sequence act as practical points of no return.",
+        "image": "/images/scenes/steam-18.webp",
+        "imageAlt": "Official Steam screenshot of Nockfell High before the late investigation route"
+      }
     ],
-    "walkthroughMistakes": ["Reading the timed white-room sequence in the wrong on-screen direction.", "Using 3141 on Henry's computer instead of Mrs. Packerton's desk.", "Reading 491145 as a date instead of the DIANE alphabet clue."],
-    "checkpoints": ["Finish the timed journal route before committing to the school investigation.", "Use 3 → 2 → 3 → 2 with Travis and count all eleven journal pages.", "Keep the two code locations straight: 3141 opens the desk; 491145 is for Henry's computer."],
+    "walkthroughMistakes": [
+      "Reading the timed white-room sequence in the wrong on-screen direction.",
+      "Using 3141 on Henry's computer instead of Mrs. Packerton's desk.",
+      "Reading 491145 as a date instead of the DIANE alphabet clue."
+    ],
+    "routeChecks": [
+      {
+        "area": "White room",
+        "goal": "Secure Premonition",
+        "check": "Set the controls first and enter the six groups from right to left before you begin the school route.",
+        "risk": "The sequence is timed, so it is safer to solve it before experimenting elsewhere."
+      },
+      {
+        "area": "Nockfell High",
+        "goal": "Keep optional dialogue open",
+        "check": "Speak with Travis in the final restroom stall and choose 3, 2, 3, 2.",
+        "risk": "The conversation provides Atonement and contributes to a complete journal route."
+      },
+      {
+        "area": "School, apartments and temple",
+        "goal": "Finish Missing Pages",
+        "check": "Count all eleven journal pages before the late basement sequence.",
+        "risk": "The chapter can progress even when a page has been missed."
+      }
+    ],
+    "achievementPointers": [
+      {
+        "name": "Premonition",
+        "when": "Complete both timed prologue puzzles before beginning the school investigation.",
+        "risk": "The white-room code must be entered in the correct on-screen order."
+      },
+      {
+        "name": "Atonement / Clumpy!",
+        "when": "Talk to Travis in the bathroom and keep the sticky tack for the optional Clumpy route.",
+        "risk": "Giving away the sticky tack removes a later Clumpy interaction."
+      },
+      {
+        "name": "Missing Pages",
+        "when": "Count the journal pages across school, apartments and temple before meeting Todd for the late route.",
+        "risk": "The final objectives do not warn you about an unfinished page collection."
+      }
+    ],
+    "checkpoints": [
+      "Finish the timed journal route before committing to the school investigation.",
+      "Use 3 → 2 → 3 → 2 with Travis and count all eleven journal pages.",
+      "Keep the two code locations straight: 3141 opens the desk; 491145 is for Henry's computer."
+    ],
     "puzzles": [
-      { "title": "Chapter 3 timed code", "answer": "The white-room sequence is 9687 96753 47 663 63 6269; enter it from the rightmost group while moving left.", "href": "/chapters/episode-3-the-bologna-incident#puzzles" },
-      { "title": "Mrs. Packerton's desk", "answer": "Enter 3141, the first four digits of pi.", "href": "/chapters/episode-3-the-bologna-incident#puzzles" },
-      { "title": "Henry's computer", "answer": "Enter 491145, spelling DIANE through alphabet positions.", "href": "/chapters/episode-3-the-bologna-incident#puzzles" },
-      { "title": "Packerton apartment radio", "answer": "Tune the radio to 104.7 to activate the clock clue.", "href": "/chapters/episode-3-the-bologna-incident#puzzles" },
-      { "title": "Packerton apartment clock", "answer": "Set the clock to 12:12, following the goat's clue.", "href": "/chapters/episode-3-the-bologna-incident#puzzles" },
-      { "title": "Packerton freezer", "answer": "Enter 1413 after comparing the blood marks with the board.", "href": "/chapters/episode-3-the-bologna-incident#puzzles" }
+      {
+        "title": "Chapter 3 timed code",
+        "answer": "The white-room sequence is 9687 96753 47 663 63 6269; enter it from the rightmost group while moving left.",
+        "href": "/chapters/chapter-3-the-bologna-incident#puzzles"
+      },
+      {
+        "title": "Mrs. Packerton's desk",
+        "answer": "Enter 3141, the first four digits of pi.",
+        "href": "/chapters/chapter-3-the-bologna-incident#puzzles"
+      },
+      {
+        "title": "Henry's computer",
+        "answer": "Enter 491145, spelling DIANE through alphabet positions.",
+        "href": "/chapters/chapter-3-the-bologna-incident#puzzles"
+      },
+      {
+        "title": "Packerton apartment radio",
+        "answer": "Tune the radio to 104.7 to activate the clock clue.",
+        "href": "/chapters/chapter-3-the-bologna-incident#puzzles"
+      },
+      {
+        "title": "Packerton apartment clock",
+        "answer": "Set the clock to 12:12, following the goat's clue.",
+        "href": "/chapters/chapter-3-the-bologna-incident#puzzles"
+      },
+      {
+        "title": "Packerton freezer",
+        "answer": "Enter 1413 after comparing the blood marks with the board.",
+        "href": "/chapters/chapter-3-the-bologna-incident#puzzles"
+      }
     ],
     "quickReferences": [
-      { "title": "White-room timed journal", "searchIntent": "Sally Face Chapter 3 white room code", "clue": "The six groups appear across the white room. Read from the rightmost group while moving left after setting the controls to top, bottom, top, middle.", "solution": "9687 · 96753 · 47 · 663 · 63 · 6269", "caution": "This route is timed and required for Premonition." },
-      { "title": "Travis bathroom dialogue", "searchIntent": "Sally Face Travis dialogue answers", "clue": "Talk to Travis in the last boys' restroom stall after the school investigation begins.", "solution": "Choose 3 → 2 → 3 → 2", "caution": "The empathetic route unlocks Atonement and contributes a journal page." },
-      { "title": "Jim's journal completion", "searchIntent": "Sally Face Chapter 3 journal pages", "clue": "Pages are split between the school, apartment routes and concealed temple area; the final exit ends the safe collection window.", "solution": "Collect all 11 pages before leaving the chapter", "caution": "Check the journal count before the late basement sequence." },
-      { "title": "Two easy-to-mix codes", "searchIntent": "Sally Face Packerton desk code Henry computer password", "clue": "The desk uses pi; Henry's computer translates DIANE into alphabet positions.", "solution": "Desk: 3141 · Henry's computer: 491145", "caution": "They unlock separate routes—do not swap them." }
+      {
+        "title": "White-room timed journal",
+        "searchIntent": "Sally Face Chapter 3 white room code",
+        "clue": "The six groups appear across the white room. Read from the rightmost group while moving left after setting the controls to top, bottom, top, middle.",
+        "solution": "9687 · 96753 · 47 · 663 · 63 · 6269",
+        "caution": "This route is timed and required for Premonition."
+      },
+      {
+        "title": "Travis bathroom dialogue",
+        "searchIntent": "Sally Face Travis dialogue answers",
+        "clue": "Talk to Travis in the last boys' restroom stall after the school investigation begins.",
+        "solution": "Choose 3 → 2 → 3 → 2",
+        "caution": "The empathetic route unlocks Atonement and contributes a journal page."
+      },
+      {
+        "title": "Jim's journal completion",
+        "searchIntent": "Sally Face Chapter 3 journal pages",
+        "clue": "Pages are split between the school, apartment routes and concealed temple area; the final exit ends the safe collection window.",
+        "solution": "Collect all 11 pages before leaving the chapter",
+        "caution": "Check the journal count before the late basement sequence."
+      },
+      {
+        "title": "Two easy-to-mix codes",
+        "searchIntent": "Sally Face Packerton desk code Henry computer password",
+        "clue": "The desk uses pi; Henry's computer translates DIANE into alphabet positions.",
+        "solution": "Desk: 3141 · Henry's computer: 491145",
+        "caution": "They unlock separate routes—do not swap them."
+      }
     ],
     "quickAnswersTitle": "Chapter 3 Journal Pages, Codes & Travis Choices",
     "items": [
-      { "name": "Jim's journal", "type": "Collectible set", "location": "Eleven pages across school, apartments and temple", "use": "Explains the cult and unlocks Missing Pages" },
-      { "name": "Bologna sample", "type": "Evidence", "location": "School cafeteria", "use": "Gives Todd material to test" },
-      { "name": "Camera", "type": "Tool", "location": "Ash's locker", "use": "Photographs the courtyard bird" },
-      { "name": "Metal object", "type": "Puzzle item", "location": "Mrs. Packerton's desk", "use": "Opens the late basement mechanism" }
+      {
+        "name": "Jim's journal",
+        "type": "Collectible set",
+        "location": "Eleven pages across school, apartments and temple",
+        "use": "Explains the cult and unlocks Missing Pages"
+      },
+      {
+        "name": "Bologna sample",
+        "type": "Evidence",
+        "location": "School cafeteria",
+        "use": "Gives Todd material to test"
+      },
+      {
+        "name": "Camera",
+        "type": "Tool",
+        "location": "Ash's locker",
+        "use": "Photographs the courtyard bird"
+      },
+      {
+        "name": "Metal object",
+        "type": "Puzzle item",
+        "location": "Mrs. Packerton's desk",
+        "use": "Opens the late basement mechanism"
+      }
     ],
     "ending": "The group discovers the horrific source of the school bologna and confronts the cult operation beneath Nockfell. Their evidence proves that the conspiracy reaches further than the apartments, but the victory leaves the group facing consequences that reshape the following years.",
     "faqs": [
-      { "question": "What is the Episode 3 desk code?", "answer": "Mrs. Packerton's desk uses 3141." },
-      { "question": "What is Henry Fisher's computer password?", "answer": "The password is 491145." },
-      { "question": "How many journal pages are in Episode 3?", "answer": "There are eleven pages required for Missing Pages." },
-      { "question": "What answers should I give Travis?", "answer": "Choose dialogue options 3, 2, 3, 2 in that order." }
+      {
+        "question": "What is the Episode 3 desk code?",
+        "answer": "Mrs. Packerton's desk uses 3141."
+      },
+      {
+        "question": "What is Henry Fisher's computer password?",
+        "answer": "The password is 491145."
+      },
+      {
+        "question": "How many journal pages are in Episode 3?",
+        "answer": "There are eleven pages required for Missing Pages."
+      },
+      {
+        "question": "What answers should I give Travis?",
+        "answer": "Choose dialogue options 3, 2, 3, 2 in that order."
+      }
     ],
-    "seo": { "title": "Sally Face Chapter 3 Guide – Steps and Codes", "description": "Use this Bologna Incident guide for the timed white-room code, 3141 desk code, 491145 password, journal pages, school clues and all Chapter 3 achievements." }
+    "seo": {
+      "title": "Sally Face Chapter 3 Guide – Steps and Codes",
+      "description": "Use this Bologna Incident guide for the timed white-room code, 3141 desk code, 491145 password, journal pages, school clues and all Chapter 3 achievements."
+    }
   },
   {
-    "slug": "episode-4-the-trial",
+    "slug": "chapter-4-the-trial",
     "number": 4,
     "ordinal": "Four",
     "title": "The Trial",
@@ -183,49 +561,207 @@
     "location": "Nockfell & Addison Apartments",
     "length": "≈2–2.5 hours",
     "achievementCount": 7,
-    "characters": ["sal-fisher", "larry-johnson", "ashley-campbell", "travis-phelps", "todd-morrison", "lisa-johnson"],
+    "characters": [
+      "sal-fisher",
+      "larry-johnson",
+      "ashley-campbell",
+      "travis-phelps",
+      "todd-morrison",
+      "lisa-johnson"
+    ],
     "overview": [
       "Episode Four moves between testimony, memory, and the group's last investigation of Addison Apartments. Sal's account sounds impossible in court, but the playable flashback shows how carefully the friends prepared to destroy the corruption inside the building.",
       "The chapter contains several strict collectibles: five teeth, nine VHS tapes, every resident conversation, and skill-based guitar sequences. Make a manual save before entering the final assault if you are pursuing all achievements."
     ],
     "walkthrough": [
-      { "title": "Read Beelzebub's runes and enter 867", "body": "Visit gallery rooms one through three and count the lines in the paired symbols. The clue reads 7, 6, 8 in discovery order; reverse it at the keypad and enter 8, 6, 7. Record the six-symbol result found beyond the door for later.", "tip": "The rune value is the number of lines in the symbol, not its position on the wall: 768 is the clue, 867 is the usable door input.", "image": "/images/scenes/steam-20.webp", "imageAlt": "Official Steam screenshot of a distorted vision from the Episode Four investigation" },
-      { "title": "Search every apartment for tapes and teeth", "body": "Speak to every resident, collect the pocket knife, and inspect rooms before moving floors. In room 502, cut open the bird cage and place the five teeth according to the inverted compass clue, with the black tooth in the center. For Brothers, inspect the mattress in room 504, leave the room, return, inspect it again, and check the noose three times.", "tip": "The Made in China sticker is upside down, so invert north/south and east/west when placing the teeth.", "image": "/images/walkthrough/episode-four-vhs-archive.webp", "imageAlt": "Official Episode Four screenshot of the nine-tape VHS archive" },
-      { "title": "Open the floor panel with 435542", "body": "Use the knife on the suspicious panel in apartment 201. Convert the six runes from Beelzebub's fourth room by counting their lines; enter 435542 to recover the OTHERS VHS tape.", "tip": "The 435542 panel code is separate from the gallery door's usable 867 input.", "image": "/images/scenes/steam-22.webp", "imageAlt": "Official Steam screenshot of the numbered wall panel used during the investigation" },
-      { "title": "Complete the guitar and Endless One sequences", "body": "During the assault, switch characters deliberately and play each guitar pattern without a missed note. From the roof down, the barrier patterns are 2-6-11; 1-5-8-9; 3-7-1-9-10; 4-7-9-7-10-6-3; and 10-6-9-5-10-6-3-8-2. Collect all remaining tapes before entering 103 and beginning the final confrontation with Terrence Addison.", "tip": "Dark Melodies and Destroyer fail after a missed input; restart from a save instead of continuing.", "image": "/images/scenes/steam-29.webp", "imageAlt": "Official Steam screenshot of the dark final assault against the Endless One" }
+      {
+        "title": "Read Beelzebub's runes and enter 867",
+        "body": "Visit gallery rooms one through three and count the lines in the paired symbols. The clue reads 7, 6, 8 in discovery order; reverse it at the keypad and enter 8, 6, 7. Record the six-symbol result found beyond the door for later.",
+        "tip": "The rune value is the number of lines in the symbol, not its position on the wall: 768 is the clue, 867 is the usable door input.",
+        "image": "/images/scenes/steam-20.webp",
+        "imageAlt": "Official Steam screenshot of a distorted vision from the Episode Four investigation"
+      },
+      {
+        "title": "Search every apartment for tapes and teeth",
+        "body": "Speak to every resident, collect the pocket knife, and inspect rooms before moving floors. In room 502, cut open the bird cage and place the five teeth according to the inverted compass clue, with the black tooth in the center. For Brothers, inspect the mattress in room 504, leave the room, return, inspect it again, and check the noose three times.",
+        "tip": "The Made in China sticker is upside down, so invert north/south and east/west when placing the teeth.",
+        "image": "/images/walkthrough/episode-four-vhs-archive.webp",
+        "imageAlt": "Official Episode Four screenshot of the nine-tape VHS archive"
+      },
+      {
+        "title": "Open the floor panel with 435542",
+        "body": "Use the knife on the suspicious panel in apartment 201. Convert the six runes from Beelzebub's fourth room by counting their lines; enter 435542 to recover the OTHERS VHS tape.",
+        "tip": "The 435542 panel code is separate from the gallery door's usable 867 input.",
+        "image": "/images/scenes/steam-22.webp",
+        "imageAlt": "Official Steam screenshot of the numbered wall panel used during the investigation"
+      },
+      {
+        "title": "Complete the guitar and Endless One sequences",
+        "body": "During the assault, switch characters deliberately and play each guitar pattern without a missed note. From the roof down, the barrier patterns are 2-6-11; 1-5-8-9; 3-7-1-9-10; 4-7-9-7-10-6-3; and 10-6-9-5-10-6-3-8-2. Collect all remaining tapes before entering 103 and beginning the final confrontation with Terrence Addison.",
+        "tip": "Dark Melodies and Destroyer fail after a missed input; restart from a save instead of continuing.",
+        "image": "/images/scenes/steam-29.webp",
+        "imageAlt": "Official Steam screenshot of the dark final assault against the Endless One"
+      }
     ],
-    "walkthroughMistakes": ["Using a normal north-up compass for the bird cage.", "Entering the discovery-order 768 instead of the usable 867 gallery-door input.", "Forgetting to record the six-rune clue that becomes 435542."],
-    "checkpoints": ["Use 867 at the gallery door; 768 is the clue order, not the keypad input.", "Collect all nine VHS tapes and five teeth before entering room 103.", "A missed guitar note prevents Dark Melodies or Destroyer on that attempt."],
+    "walkthroughMistakes": [
+      "Using a normal north-up compass for the bird cage.",
+      "Entering the discovery-order 768 instead of the usable 867 gallery-door input.",
+      "Forgetting to record the six-rune clue that becomes 435542."
+    ],
+    "routeChecks": [
+      {
+        "area": "Gallery dream",
+        "goal": "Open the first tape route",
+        "check": "Read the three symbol clues, use 867 at the door, and record the number shown after the room opens.",
+        "risk": "The number's original digital shape matters later at apartment 201."
+      },
+      {
+        "area": "Addison Apartments",
+        "goal": "Collect the early archive",
+        "check": "Take the pocket knife before attempting the carpet, broken-tape and bird-cage interactions.",
+        "risk": "It supports several VHS and teeth routes, not just one puzzle."
+      },
+      {
+        "area": "Final apartment floors",
+        "goal": "Protect completion",
+        "check": "Confirm nine tapes, five teeth and the optional Larry actions before entering room 103.",
+        "risk": "Room 103 is the practical point of no return."
+      }
+    ],
+    "achievementPointers": [
+      {
+        "name": "Catching Up / Brothers",
+        "when": "Exhaust resident and Larry dialogue during the apartment search, including the room 504 return interaction.",
+        "risk": "These conversations change with story progress and are easy to skip when collecting tapes."
+      },
+      {
+        "name": "Teeth / Her Fate",
+        "when": "Finish the five-tooth puzzle and verify all nine VHS tapes before room 103.",
+        "risk": "Room 103 closes the collection window."
+      },
+      {
+        "name": "Dark Melodies / Destroyer",
+        "when": "Attempt the pillar and Endless One guitar sequences only when you are ready to keep a clean performance.",
+        "risk": "A missed note invalidates the relevant achievement on that attempt."
+      }
+    ],
+    "checkpoints": [
+      "Use 867 at the gallery door; 768 is the clue order, not the keypad input.",
+      "Collect all nine VHS tapes and five teeth before entering room 103.",
+      "A missed guitar note prevents Dark Melodies or Destroyer on that attempt."
+    ],
     "puzzles": [
-      { "title": "Bird cage teeth puzzle", "answer": "Invert the compass because the label is upside down; place the black tooth in the center.", "href": "/chapters/episode-4-the-trial#puzzles" },
-      { "title": "Beelzebub gallery code", "answer": "Count the symbol lines for 768, then enter the reversed keypad input 867.", "href": "/chapters/episode-4-the-trial#puzzles" },
-      { "title": "Apartment floor panel", "answer": "Enter 435542 to recover the OTHERS tape.", "href": "/chapters/episode-4-the-trial#puzzles" },
-      { "title": "Barrier guitar patterns", "answer": "Roof to first floor: 2-6-11; 1-5-8-9; 3-7-1-9-10; 4-7-9-7-10-6-3; 10-6-9-5-10-6-3-8-2.", "href": "/chapters/episode-4-the-trial" }
+      {
+        "title": "Bird cage teeth puzzle",
+        "answer": "Invert the compass because the label is upside down; place the black tooth in the center.",
+        "href": "/chapters/chapter-4-the-trial#puzzles"
+      },
+      {
+        "title": "Beelzebub gallery code",
+        "answer": "Count the symbol lines for 768, then enter the reversed keypad input 867.",
+        "href": "/chapters/chapter-4-the-trial#puzzles"
+      },
+      {
+        "title": "Apartment floor panel",
+        "answer": "Enter 435542 to recover the OTHERS tape.",
+        "href": "/chapters/chapter-4-the-trial#puzzles"
+      },
+      {
+        "title": "Barrier guitar patterns",
+        "answer": "Roof to first floor: 2-6-11; 1-5-8-9; 3-7-1-9-10; 4-7-9-7-10-6-3; 10-6-9-5-10-6-3-8-2.",
+        "href": "/chapters/chapter-4-the-trial"
+      }
     ],
     "quickReferences": [
-      { "title": "Beelzebub gallery door", "searchIntent": "Sally Face Chapter 4 door 4 code", "clue": "Count lines in the paired symbols in gallery rooms one through three. The clue is 768 in discovery order; enter the result from the bottom of the keypad.", "solution": "Input: 8 → 6 → 7", "caution": "768 is the clue order; enter 867 at the door." },
-      { "title": "Apartment 201 floor panel", "searchIntent": "Sally Face Packerton floor panel code", "clue": "After the gallery route, count the six rune lines and use the pocket knife on the suspicious panel in apartment 201.", "solution": "435542", "caution": "This opens the OTHERS tape route; it is not the gallery-door code." },
-      { "title": "Nine VHS tapes — Her Fate", "searchIntent": "Sally Face Chapter 4 tape locations", "clue": "Tapes are spread across gallery, apartment and character-switching sections. Several require the pocket knife or a Larry action before Sal can pick them up.", "solution": "Collect all 9 before entering room 103", "caution": "Room 103 is the point of no return for the archive.", "checklist": ["LOST — gallery door-four route", "PHANTOM — shed, using 4035364", "OTHERS — apartment 201 panel, 435542", "BRIDGE and HUNGER — apartment investigation", "SKIN, EVOLVE, RAGE and /// — character-switching routes"] },
-      { "title": "Bird cage teeth puzzle", "searchIntent": "Sally Face Episode 4 bird cage teeth solution", "clue": "The Made in China label is upside down, so the compass directions must be inverted.", "solution": "Invert north/south and east/west; black tooth in the center", "caution": "Use all five teeth before moving into the final assault." }
+      {
+        "title": "Beelzebub gallery door",
+        "searchIntent": "Sally Face Chapter 4 door 4 code",
+        "clue": "Count lines in the paired symbols in gallery rooms one through three. The clue is 768 in discovery order; enter the result from the bottom of the keypad.",
+        "solution": "Input: 8 → 6 → 7",
+        "caution": "768 is the clue order; enter 867 at the door."
+      },
+      {
+        "title": "Apartment 201 floor panel",
+        "searchIntent": "Sally Face Packerton floor panel code",
+        "clue": "After the gallery route, count the six rune lines and use the pocket knife on the suspicious panel in apartment 201.",
+        "solution": "435542",
+        "caution": "This opens the OTHERS tape route; it is not the gallery-door code."
+      },
+      {
+        "title": "Nine VHS tapes — Her Fate",
+        "searchIntent": "Sally Face Chapter 4 tape locations",
+        "clue": "Tapes are spread across gallery, apartment and character-switching sections. Several require the pocket knife or a Larry action before Sal can pick them up.",
+        "solution": "Collect all 9 before entering room 103",
+        "caution": "Room 103 is the point of no return for the archive.",
+        "checklist": [
+          "LOST — gallery door-four route",
+          "PHANTOM — shed, using 4035364",
+          "OTHERS — apartment 201 panel, 435542",
+          "BRIDGE and HUNGER — apartment investigation",
+          "SKIN, EVOLVE, RAGE and /// — character-switching routes"
+        ]
+      },
+      {
+        "title": "Bird cage teeth puzzle",
+        "searchIntent": "Sally Face Episode 4 bird cage teeth solution",
+        "clue": "The Made in China label is upside down, so the compass directions must be inverted.",
+        "solution": "Invert north/south and east/west; black tooth in the center",
+        "caution": "Use all five teeth before moving into the final assault."
+      }
     ],
     "quickAnswersTitle": "Chapter 4 VHS Tapes, Codes & Her Fate",
     "items": [
-      { "name": "Five teeth", "type": "Puzzle set", "location": "Across Addison Apartments", "use": "Unlocks the bird cage key" },
-      { "name": "Pocket knife", "type": "Tool", "location": "Apartment investigation", "use": "Cuts the cage, tapes and hidden panels" },
-      { "name": "Nine VHS tapes", "type": "Collectible set", "location": "Throughout the building", "use": "Unlocks Her Fate and documents the residents" },
-      { "name": "Deadstone", "type": "Supernatural item", "location": "Final assault", "use": "Allows Larry to affect the corrupted building" }
+      {
+        "name": "Five teeth",
+        "type": "Puzzle set",
+        "location": "Across Addison Apartments",
+        "use": "Unlocks the bird cage key"
+      },
+      {
+        "name": "Pocket knife",
+        "type": "Tool",
+        "location": "Apartment investigation",
+        "use": "Cuts the cage, tapes and hidden panels"
+      },
+      {
+        "name": "Nine VHS tapes",
+        "type": "Collectible set",
+        "location": "Throughout the building",
+        "use": "Unlocks Her Fate and documents the residents"
+      },
+      {
+        "name": "Deadstone",
+        "type": "Supernatural item",
+        "location": "Final assault",
+        "use": "Allows Larry to affect the corrupted building"
+      }
     ],
     "ending": "Sal destroys the corrupted residents to prevent the Endless One from spreading, but the evidence appears to show only a massacre. The court rejects the supernatural explanation and sentences Sal, while Ash continues searching for proof that can expose what really happened.",
     "faqs": [
-      { "question": "What is the Episode 4 bird cage solution?", "answer": "Use the inverted compass orientation and put the black tooth in the center." },
-      { "question": "What is the floor panel code?", "answer": "The six-digit floor panel code is 435542." },
-      { "question": "How many VHS tapes are in Episode 4?", "answer": "There are nine tapes for the Her Fate achievement." },
-      { "question": "How do I earn Dark Melodies?", "answer": "Complete every required guitar pattern during the pillar sequence without missing a note." }
+      {
+        "question": "What is the Episode 4 bird cage solution?",
+        "answer": "Use the inverted compass orientation and put the black tooth in the center."
+      },
+      {
+        "question": "What is the floor panel code?",
+        "answer": "The six-digit floor panel code is 435542."
+      },
+      {
+        "question": "How many VHS tapes are in Episode 4?",
+        "answer": "There are nine tapes for the Her Fate achievement."
+      },
+      {
+        "question": "How do I earn Dark Melodies?",
+        "answer": "Complete every required guitar pattern during the pillar sequence without missing a note."
+      }
     ],
-    "seo": { "title": "Sally Face Chapter 4 Guide – Steps and Route", "description": "Follow The Trial route for the bird-cage teeth solution, 867 gallery-door input, 435542 panel code, all VHS tapes, character routes and Chapter 4 achievements." }
+    "seo": {
+      "title": "Sally Face Chapter 4 Guide – Steps and Route",
+      "description": "Follow The Trial route for the bird-cage teeth solution, 867 gallery-door input, 435542 panel code, all VHS tapes, character routes and Chapter 4 achievements."
+    }
   },
   {
-    "slug": "episode-5-memories-and-dreams",
+    "slug": "chapter-5-memories-and-dreams",
     "number": 5,
     "ordinal": "Five",
     "title": "Memories and Dreams",
@@ -236,51 +772,225 @@
     "location": "Nockfell & the Void",
     "length": "≈2–3 hours",
     "achievementCount": 7,
-    "characters": ["sal-fisher", "larry-johnson", "ashley-campbell", "travis-phelps", "todd-morrison", "henry-fisher", "gizmo"],
+    "characters": [
+      "sal-fisher",
+      "larry-johnson",
+      "ashley-campbell",
+      "travis-phelps",
+      "todd-morrison",
+      "henry-fisher",
+      "gizmo"
+    ],
     "overview": [
       "The final episode follows the surviving friends across years, dimensions, and memories as they attempt to undo the cult's victory. Character switching, different visual forms, and combat-like sequences replace the apartment investigation rhythm of earlier chapters.",
       "Completion depends on preparation. Read every note, exhaust the dialogue of the three voices, recover all color pieces, and avoid every game over if you want the full achievement set. The Epilogue also checks completion from Episodes One through Four."
     ],
     "walkthrough": [
-      { "title": "Search Ash's home before leaving", "body": "Read Todd's notes, exhaust Neil's dialogue, search the bathroom for the white color piece, and inspect every highlighted object before approaching Sal's grave.", "tip": "Escaping Death spans the whole Chapter. If a game-over screen appears, start a fresh clean Chapter run.", "image": "/images/scenes/steam-32.webp", "imageAlt": "Official Steam screenshot of the Episode Five cemetery approach" },
-      { "title": "Open the shed with 4035364", "body": "Use the remembered code 4035364 on the shed. It combines the murder-scene room number with the Episode One dream code and unlocks the route needed for Memorized.", "tip": "403 + 5364 is the logic behind the seven-digit combination.", "image": "/images/scenes/steam-31.webp", "imageAlt": "Official Steam screenshot of the Episode Five shed route" },
-      { "title": "Collect the color pieces and unlock room five", "body": "Explore every playable perspective and recover all six color pieces. In the smooth-cartoon house, use 1-1-1-1-1-2-2-3 on the hexagons, then add 5023, 7842, and 145 to enter 13010. Activate the pyramids with 132123, 313221311, and 231332123213; use 1-1-2-2-3-3 for the polygon arrows and 1-2-3-3 for the painting. In claymation, open the safe with 1983, then enter the colors white, black, blue, red, green, and purple at door five.", "tip": "The DOG route is lore-critical, not just a collectible detour.", "image": "/images/scenes/steam-33.webp", "imageAlt": "Official Steam screenshot of an Episode Five puzzle interface" },
-      { "title": "Survive the final multi-form battle", "body": "Follow each character's objective: evade detection as Ash, destroy the marked enemies as Larry, and clear the orb and tentacle phases in Sal's changing forms. Preserve health and avoid hazards to keep Escaping Death valid.", "tip": "Read all notes and finish optional dialogue before entering the central chamber.", "image": "/images/scenes/steam-26.webp", "imageAlt": "Official Steam screenshot of Sal during the Episode Five final battle" }
+      {
+        "title": "Search Ash's home before leaving",
+        "body": "Read Todd's notes, exhaust Neil's dialogue, search the bathroom for the white color piece, and inspect every highlighted object before approaching Sal's grave.",
+        "tip": "Escaping Death spans the whole Chapter. If a game-over screen appears, start a fresh clean Chapter run.",
+        "image": "/images/scenes/steam-32.webp",
+        "imageAlt": "Official Steam screenshot of the Episode Five cemetery approach"
+      },
+      {
+        "title": "Open the shed with 4035364",
+        "body": "Use the remembered code 4035364 on the shed. It combines the murder-scene room number with the Episode One dream code and unlocks the route needed for Memorized.",
+        "tip": "403 + 5364 is the logic behind the seven-digit combination.",
+        "image": "/images/scenes/steam-31.webp",
+        "imageAlt": "Official Steam screenshot of the Episode Five shed route"
+      },
+      {
+        "title": "Collect the color pieces and unlock room five",
+        "body": "Explore every playable perspective and recover all six color pieces. In the smooth-cartoon house, use 1-1-1-1-1-2-2-3 on the hexagons, then add 5023, 7842, and 145 to enter 13010. Activate the pyramids with 132123, 313221311, and 231332123213; use 1-1-2-2-3-3 for the polygon arrows and 1-2-3-3 for the painting. In claymation, open the safe with 1983, then enter the colors white, black, blue, red, green, and purple at door five.",
+        "tip": "The DOG route is lore-critical, not just a collectible detour.",
+        "image": "/images/scenes/steam-33.webp",
+        "imageAlt": "Official Steam screenshot of an Episode Five puzzle interface"
+      },
+      {
+        "title": "Survive the final multi-form battle",
+        "body": "Follow each character's objective: evade detection as Ash, destroy the marked enemies as Larry, and clear the orb and tentacle phases in Sal's changing forms. Preserve health and avoid hazards to keep Escaping Death valid.",
+        "tip": "Read all notes and finish optional dialogue before entering the central chamber.",
+        "image": "/images/scenes/steam-26.webp",
+        "imageAlt": "Official Steam screenshot of Sal during the Episode Five final battle"
+      }
     ],
-    "walkthroughMistakes": ["Adding a separator between 403 and 5364 at the shed keypad.", "Leaving the shed before the Memorized route registers.", "Entering the final sequence before reading notes and finishing optional conversations."],
-    "checkpoints": ["Read every note and collect all six color pieces before door five.", "Enter 4035364 as one number at the shed.", "For Escaping Death, begin a fresh clean Chapter run after any game over; Epilogue also needs Chapters One through Four complete."],
+    "walkthroughMistakes": [
+      "Adding a separator between 403 and 5364 at the shed keypad.",
+      "Leaving the shed before the Memorized route registers.",
+      "Entering the final sequence before reading notes and finishing optional conversations."
+    ],
+    "routeChecks": [
+      {
+        "area": "Ash's home and shed",
+        "goal": "Keep the opening complete",
+        "check": "Read the notes, speak with Neil, collect the early color piece, then enter 4035364 at the shed as one number.",
+        "risk": "The notes and color pieces are easy to leave behind when heading straight for the objective."
+      },
+      {
+        "area": "Smooth-cartoon house",
+        "goal": "Reach Todd's room",
+        "check": "Turn on the power, add 145 + 5023 + 7842 for 13010, then finish the available puzzle route before leaving.",
+        "risk": "This section feeds later color-piece and achievement progress."
+      },
+      {
+        "area": "Void and final battle",
+        "goal": "Protect the clean run",
+        "check": "Read optional dialogue before the central chamber and avoid every Game Over across Ash, Larry and Sal.",
+        "risk": "A Game Over ends an Escaping Death attempt and requires a fresh Chapter run."
+      }
+    ],
+    "achievementPointers": [
+      {
+        "name": "Seeker of Knowledge / Vestige",
+        "when": "Read the notes and use the available dialogue options before committing to the central chamber.",
+        "risk": "Optional text is easy to miss when moving directly between objectives."
+      },
+      {
+        "name": "DOG",
+        "when": "Collect every color piece before returning to door five in the Void.",
+        "risk": "The color order alone is not enough if a piece was never picked up."
+      },
+      {
+        "name": "Escaping Death / Epilogue",
+        "when": "Start a fresh Chapter Five run for the deathless route; confirm Chapters One through Four are complete before the final finish.",
+        "risk": "Any Game Over breaks Escaping Death, while Epilogue checks earlier chapter completion."
+      }
+    ],
+    "checkpoints": [
+      "Read every note and collect all six color pieces before door five.",
+      "Enter 4035364 as one number at the shed.",
+      "For Escaping Death, begin a fresh clean Chapter run after any game over; Epilogue also needs Chapters One through Four complete."
+    ],
     "puzzles": [
-      { "title": "Shed code", "answer": "Enter 4035364.", "href": "/chapters/episode-5-memories-and-dreams#puzzles" },
-      { "title": "Smooth-cartoon locked room", "answer": "Add 5023 + 7842 + 145 and enter 13010.", "href": "/chapters/episode-5-memories-and-dreams" },
-      { "title": "Smooth-cartoon hexagons", "answer": "Press 1, 1, 1, 1, 1, 2, 2, 3.", "href": "/chapters/episode-5-memories-and-dreams" },
-      { "title": "Three pyramid codes", "answer": "Enter 132123, then 313221311, then 231332123213.", "href": "/chapters/episode-5-memories-and-dreams" },
-      { "title": "Polygon arrows and painting", "answer": "Use 1-1-2-2-3-3 for the arrows and 1-2-3-3 for the painting.", "href": "/chapters/episode-5-memories-and-dreams" },
-      { "title": "Claymation safe", "answer": "Enter 1983, the initiation year found in the nearby notes.", "href": "/chapters/episode-5-memories-and-dreams" },
-      { "title": "DOG color pieces", "answer": "At door five, enter white, black, blue, red, green, then purple.", "href": "/chapters/episode-5-memories-and-dreams" },
-      { "title": "Clay console", "answer": "Set the sliders to 3, 1, 2 and the switches to down, up, down.", "href": "/chapters/episode-5-memories-and-dreams" }
+      {
+        "title": "Shed code",
+        "answer": "Enter 4035364.",
+        "href": "/chapters/chapter-5-memories-and-dreams#puzzles"
+      },
+      {
+        "title": "Smooth-cartoon locked room",
+        "answer": "Add 5023 + 7842 + 145 and enter 13010.",
+        "href": "/chapters/chapter-5-memories-and-dreams"
+      },
+      {
+        "title": "Smooth-cartoon hexagons",
+        "answer": "Press 1, 1, 1, 1, 1, 2, 2, 3.",
+        "href": "/chapters/chapter-5-memories-and-dreams"
+      },
+      {
+        "title": "Three pyramid codes",
+        "answer": "Enter 132123, then 313221311, then 231332123213.",
+        "href": "/chapters/chapter-5-memories-and-dreams"
+      },
+      {
+        "title": "Polygon arrows and painting",
+        "answer": "Use 1-1-2-2-3-3 for the arrows and 1-2-3-3 for the painting.",
+        "href": "/chapters/chapter-5-memories-and-dreams"
+      },
+      {
+        "title": "Claymation safe",
+        "answer": "Enter 1983, the initiation year found in the nearby notes.",
+        "href": "/chapters/chapter-5-memories-and-dreams"
+      },
+      {
+        "title": "DOG color pieces",
+        "answer": "At door five, enter white, black, blue, red, green, then purple.",
+        "href": "/chapters/chapter-5-memories-and-dreams"
+      },
+      {
+        "title": "Clay console",
+        "answer": "Set the sliders to 3, 1, 2 and the switches to down, up, down.",
+        "href": "/chapters/chapter-5-memories-and-dreams"
+      }
     ],
     "quickReferences": [
-      { "title": "Todd's smooth-cartoon room", "searchIntent": "Sally Face Todd room code 13010", "clue": "Add the three visible values: 145, 5023 and 7842.", "solution": "145 + 5023 + 7842 = 13010", "caution": "Enter the sum as one five-digit code." },
-      { "title": "Three pyramid inputs", "searchIntent": "Sally Face Episode 5 pyramid puzzle", "clue": "Each pyramid follows the directional note for its area; use the complete sequence before placing the piece.", "solution": "132123 · 313221311 · 231332123213", "caution": "Finish every pyramid before leaving the smooth-cartoon route." },
-      { "title": "DOG color-door route", "searchIntent": "Sally Face Episode 5 color code", "clue": "Recover every color piece across the episode, then use them at door five in the Void.", "solution": "White → black → blue → red → green → purple", "caution": "The color pieces are also required for the DOG achievement." },
-      { "title": "Deathless completion", "searchIntent": "Sally Face Escaping Death achievement", "clue": "This achievement checks the entire chapter, across Ash, Larry and Sal's danger sequences.", "solution": "Finish Chapter Five without a game-over screen", "caution": "A game over ends the clean attempt; begin a fresh Chapter run before trying again." }
+      {
+        "title": "Todd's smooth-cartoon room",
+        "searchIntent": "Sally Face Todd room code 13010",
+        "clue": "Add the three visible values: 145, 5023 and 7842.",
+        "solution": "145 + 5023 + 7842 = 13010",
+        "caution": "Enter the sum as one five-digit code."
+      },
+      {
+        "title": "Three pyramid inputs",
+        "searchIntent": "Sally Face Episode 5 pyramid puzzle",
+        "clue": "Each pyramid follows the directional note for its area; use the complete sequence before placing the piece.",
+        "solution": "132123 · 313221311 · 231332123213",
+        "caution": "Finish every pyramid before leaving the smooth-cartoon route."
+      },
+      {
+        "title": "DOG color-door route",
+        "searchIntent": "Sally Face Episode 5 color code",
+        "clue": "Recover every color piece across the episode, then use them at door five in the Void.",
+        "solution": "White → black → blue → red → green → purple",
+        "caution": "The color pieces are also required for the DOG achievement."
+      },
+      {
+        "title": "Deathless completion",
+        "searchIntent": "Sally Face Escaping Death achievement",
+        "clue": "This achievement checks the entire chapter, across Ash, Larry and Sal's danger sequences.",
+        "solution": "Finish Chapter Five without a game-over screen",
+        "caution": "A game over ends the clean attempt; begin a fresh Chapter run before trying again."
+      }
     ],
     "quickAnswersTitle": "Chapter 5 Codes, DOG Route & Escaping Death",
     "items": [
-      { "name": "Todd's notes", "type": "Collectible", "location": "Ash's home and later areas", "use": "Explains the plan and counts toward Seeker of Knowledge" },
-      { "name": "Color pieces", "type": "Puzzle set", "location": "Across memories and the void", "use": "Unlocks the DOG revelation" },
-      { "name": "Shed code", "type": "Memory clue", "location": "Episode Four / remembered sequence", "use": "Opens the shed for Memorized" },
-      { "name": "Supernatural weapons", "type": "Combat tools", "location": "Final sequence", "use": "Damage cult forces and void creatures" }
+      {
+        "name": "Todd's notes",
+        "type": "Collectible",
+        "location": "Ash's home and later areas",
+        "use": "Explains the plan and counts toward Seeker of Knowledge"
+      },
+      {
+        "name": "Color pieces",
+        "type": "Puzzle set",
+        "location": "Across memories and the void",
+        "use": "Unlocks the DOG revelation"
+      },
+      {
+        "name": "Shed code",
+        "type": "Memory clue",
+        "location": "Episode Four / remembered sequence",
+        "use": "Opens the shed for Memorized"
+      },
+      {
+        "name": "Supernatural weapons",
+        "type": "Combat tools",
+        "location": "Final sequence",
+        "use": "Damage cult forces and void creatures"
+      }
     ],
     "ending": "Ash and the others strike back against the cult across physical and spiritual spaces. The final scenes resolve central mysteries while deliberately leaving scars, unanswered consequences, and a world that can continue into Sally Face 2.",
     "faqs": [
-      { "question": "What is the shed code in Episode 5?", "answer": "The shed code is 4035364." },
-      { "question": "What is the smooth-cartoon room code?", "answer": "Enter 13010, the sum of 5023, 7842, and 145." },
-      { "question": "What is the claymation safe code?", "answer": "The safe code is 1983." },
-      { "question": "How do I earn Escaping Death?", "answer": "Finish the entire episode without a game over, including every Ash, Larry, and Sal danger sequence." },
-      { "question": "What unlocks the Epilogue achievement?", "answer": "Reach 100% completion in Episodes One through Four, then complete Episode Five." },
-      { "question": "Is Episode 5 the last Sally Face chapter?", "answer": "It is the fifth and final episode of the original game; Sally Face 2 is a separate sequel." }
+      {
+        "question": "What is the shed code in Episode 5?",
+        "answer": "The shed code is 4035364."
+      },
+      {
+        "question": "What is the smooth-cartoon room code?",
+        "answer": "Enter 13010, the sum of 5023, 7842, and 145."
+      },
+      {
+        "question": "What is the claymation safe code?",
+        "answer": "The safe code is 1983."
+      },
+      {
+        "question": "How do I earn Escaping Death?",
+        "answer": "Finish the entire episode without a game over, including every Ash, Larry, and Sal danger sequence."
+      },
+      {
+        "question": "What unlocks the Epilogue achievement?",
+        "answer": "Reach 100% completion in Episodes One through Four, then complete Episode Five."
+      },
+      {
+        "question": "Is Episode 5 the last Sally Face chapter?",
+        "answer": "It is the fifth and final episode of the original game; Sally Face 2 is a separate sequel."
+      }
     ],
-    "seo": { "title": "Sally Face Chapter 5 Guide – Steps and Route", "description": "Finish Memories and Dreams with the 4035364 shed code, DOG color pieces, deathless sequences, secret routes, ending context and Chapter 5 achievements." }
+    "seo": {
+      "title": "Sally Face Chapter 5 Guide – Steps and Route",
+      "description": "Finish Memories and Dreams with the 4035364 shed code, DOG color pieces, deathless sequences, secret routes, ending context and Chapter 5 achievements."
+    }
   }
 ]

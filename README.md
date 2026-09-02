@@ -11,7 +11,7 @@
 - Chapter routes with puzzle clues, codes, key choices and missable moments.
 - Character profiles that connect relationships and story appearances.
 - All 35 Steam achievements, including hidden and mutually exclusive objectives.
-- Focused completion guides for VHS tapes, secrets and replay planning.
+- Chapter walkthrough guides that fold VHS tapes, secrets and replay checks into the matching save.
 - Links to official PC, Android, iOS and console store pages.
 - A spoiler-aware page for Sally Face 2's currently confirmed status.
 
@@ -21,12 +21,11 @@
 | --- | --- |
 | [Home](https://sallyface.org/) | A quick way to choose the right route, checklist or profile. |
 | [Chapters](https://sallyface.org/chapters) | The five story Chapters, routes, codes and missables. |
-| [Guides](https://sallyface.org/guides) | Focused 100%, collectible and achievement help. |
+| [Guides](https://sallyface.org/guides) | One walkthrough per Chapter for missables, codes and replay timing. |
 | [Characters](https://sallyface.org/characters) | The cast, their relationships and Chapter timelines. |
 | [Achievements](https://sallyface.org/achievements) | Every Steam achievement and its unlock condition. |
 | [Download](https://sallyface.org/download) | Official storefront links and Android APK search guidance. |
 | [Sally Face 2](https://sallyface.org/sally-face-2) | Confirmed sequel status, teaser and platform information. |
-| [About this guide](https://sallyface.org/sources) | How corrections, updates and credited materials are handled. |
 
 ## Frequently asked questions
 
@@ -45,6 +44,15 @@ No. Some achievements require alternate choices or a Chapter replay. The achieve
 ### Where can I get Sally Face on Android?
 
 Use the official Google Play listing linked on the [Download page](https://sallyface.org/download). This site does not host game files, altered packages or standalone APK downloads.
+
+## Local development
+
+```bash
+npm install
+npm run dev
+```
+
+Images already live in `public/images`. To regenerate official, character, achievement or Steam screenshot assets, run the matching `npm run assets:*` script. `npm run check:content` verifies chapter slugs, cross-links and referenced image files; `npm run build` runs that check first.
 
 ## Fan-site notice
 

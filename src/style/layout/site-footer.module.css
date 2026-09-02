@@ -6,7 +6,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 1.35fr 1fr 1fr 1.25fr 1fr;
+  grid-template-columns: 1.35fr 1fr 1fr 1fr;
   gap: 48px;
   padding-block: 52px 36px;
 }
@@ -46,12 +46,6 @@
 }
 
 .links a:hover {
-  color: var(--green-bright);
-}
-
-.aboutLink {
-  display: inline-block;
-  margin-top: 14px;
   color: var(--green-bright);
 }
 

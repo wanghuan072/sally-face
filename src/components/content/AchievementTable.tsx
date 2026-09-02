@@ -20,14 +20,14 @@ export function AchievementTable({ achievements, compact = false, anchorRows = f
         </thead>
         <tbody>
           {achievements.map((achievement) => (
-            <tr id={anchorRows ? getAchievementId(achievement) : undefined} key={`${achievement.episode}-${achievement.name}`}>
+            <tr id={anchorRows ? getAchievementId(achievement) : undefined} key={`${achievement.chapter}-${achievement.name}`}>
               <td>
                 <div className={styles.achievementNameCell}>
                   <span className={styles.achievementArt}><Image src={getAchievementIcon(achievement)} alt={`Steam achievement icon for ${achievement.name}`} width={56} height={56} sizes="56px" /></span>
-                  <span><Link className={styles.achievementName} href={`/achievements#${getAchievementId(achievement)}`}>{achievement.name}</Link><span className={styles.achievementMeta}>{achievement.hidden ? "Hidden achievement" : "Visible achievement"}</span>{compact ? <Link className={styles.achievementEpisodeLink} href={getAchievementEpisodeHref(achievement)}>Chapter {achievement.episode} route →</Link> : null}</span>
+                  <span><Link className={styles.achievementName} href={`/achievements#${getAchievementId(achievement)}`}>{achievement.name}</Link><span className={styles.achievementMeta}>{achievement.hidden ? "Hidden achievement" : "Visible achievement"}</span>{compact ? <Link className={styles.achievementEpisodeLink} href={getAchievementEpisodeHref(achievement)}>Chapter {achievement.chapter} route →</Link> : null}</span>
                 </div>
               </td>
-              {!compact ? <td><Link className={styles.episodeTableLink} href={getAchievementEpisodeHref(achievement)}>Chapter {achievement.episode} →</Link></td> : null}
+              {!compact ? <td><Link className={styles.episodeTableLink} href={getAchievementEpisodeHref(achievement)}>Chapter {achievement.chapter} →</Link></td> : null}
               <td>{achievement.description}</td>
               <td><span className={styles.typeBadge}>{achievement.type}</span></td>
               {!compact ? <td>{achievement.missable ? "Yes" : "No"}</td> : null}

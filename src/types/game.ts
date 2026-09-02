@@ -38,6 +38,19 @@ export type ChapterReference = {
   checklist?: string[];
 };
 
+export type RouteCheck = {
+  area: string;
+  goal: string;
+  check: string;
+  risk?: string;
+};
+
+export type AchievementPointer = {
+  name: string;
+  when: string;
+  risk: string;
+};
+
 export type Episode = {
   slug: string;
   number: number;
@@ -54,6 +67,8 @@ export type Episode = {
   overview: string[];
   walkthrough: WalkthroughStep[];
   walkthroughMistakes?: string[];
+  routeChecks: RouteCheck[];
+  achievementPointers: AchievementPointer[];
   checkpoints: string[];
   puzzles: EpisodePuzzle[];
   quickReferences?: ChapterReference[];
@@ -63,6 +78,10 @@ export type Episode = {
   faqs: Faq[];
   seo: SeoRecord;
 };
+
+export type Chapter = Episode;
+
+export type CharacterGroup = "core-cast" | "family" | "supernatural";
 
 export type Character = {
   slug: string;
@@ -77,7 +96,8 @@ export type Character = {
   appearance: string;
   personality: string;
   storyRole: string;
-  episodes: string[];
+  chapters: string[];
+  groups: CharacterGroup[];
   relationships: { name: string; slug: string; detail: string }[];
   trivia: string[];
   faqs: Faq[];
@@ -86,7 +106,7 @@ export type Character = {
 
 export type Achievement = {
   name: string;
-  episode: number;
+  chapter: number;
   type: "Story" | "Exploration" | "Collectible" | "Puzzle" | "Skill";
   hidden: boolean;
   missable: boolean;
@@ -102,9 +122,9 @@ export type Guide = {
   quickAnswer: string;
   image: string;
   imageAlt: string;
-  episodeSlug: string;
-  kind: "chapter" | "completion";
-  category: "Chapter Walkthroughs" | "100% Completion";
+  chapterSlug: string;
+  kind: string;
+  category: string;
   steps: { title: string; body: string }[];
   mistakes: string[];
   faqs: Faq[];

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { episodes } from "@/lib/data/episodes";
+import { episodes, getChapterSlug } from "@/lib/data/episodes";
 import { characters } from "@/lib/data/characters";
 import { EpisodeExplorer } from "@/page/episodes/components/EpisodeExplorer";
 import { FaqList } from "@/components/common/FaqList";
@@ -18,7 +18,7 @@ const faqs = [
 export default function EpisodesPage() {
   return (
     <main id="main-content">
-      <JsonLd data={[collectionSchema("Sally Face Chapters", "Five Sally Face Chapter routes with codes, choices and missables.", "/chapters", episodes.map((episode) => ({ name: episode.title, path: `/chapters/${episode.slug}` }))), faqSchema(faqs)]} />
+      <JsonLd data={[collectionSchema("Sally Face Chapters", "Five Sally Face Chapter routes with choices, collectibles and achievements.", "/chapters", episodes.map((episode) => ({ name: episode.title, path: `/chapters/${getChapterSlug(episode)}` }))), faqSchema(faqs)]} />
       <section className={styles.hero}>
         <Image className={styles.heroImage} src="/images/episodes/episode-4-the-trial.webp" alt="Sally Face story scene introducing the five Chapter routes" fill loading="eager" sizes="100vw" />
         <div className={`container ${styles.heroInner}`}>

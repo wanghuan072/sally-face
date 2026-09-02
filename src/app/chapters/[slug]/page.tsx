@@ -1,11 +1,13 @@
 import { notFound } from "next/navigation";
 import EpisodeDetailPage from "@/page/episodes/EpisodeDetailPage";
-import { episodes, getEpisodeBySlug } from "@/lib/data/episodes";
+import { episodes, getChapterSlug, getEpisodeBySlug } from "@/lib/data/episodes";
 import { createMetadata } from "@/seo/metadata";
 
 export function generateStaticParams() {
-  return episodes.map((episode) => ({ slug: episode.slug }));
+  return episodes.map((episode) => ({ slug: getChapterSlug(episode) }));
 }
+
+export const dynamicParams = false;
 
 export function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   return params.then(({ slug }) => {

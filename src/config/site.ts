@@ -1,9 +1,10 @@
 export const siteConfig = {
   name: "Sally Face Guide",
   shortName: "Sally Face",
-  description: "An independent Sally Face guide for Chapter routes, puzzle codes, characters, achievements and official store links.",
+  description: "An independent Sally Face guide for Chapter routes, characters, achievements and official store links.",
   url: "https://sallyface.org",
   email: "wyong@sallyface.org",
+  contentUpdated: "2026-09-02",
   ogImage: "/images/og-image.png",
   official: {
     developer: "https://portablemoose.com/",

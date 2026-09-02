@@ -9,7 +9,7 @@ import primitives from "@/style/common/primitives.module.css";
 import styles from "@/style/page/hubs/hubs.module.css";
 
 const platforms = [
-  { label: "PC / Steam", note: "Windows, macOS and Linux", detail: "The complete five-episode game with Steam achievements and controller support.", href: siteConfig.official.steam },
+  { label: "PC / Steam", note: "Windows, macOS and Linux", detail: "The complete five-chapter game with Steam achievements and controller support.", href: siteConfig.official.steam },
   { label: "Android / Google Play", note: "Official mobile release", detail: "Portable Moose's official Android edition launched August 16, 2026.", href: siteConfig.official.android },
   { label: "iPhone & iPad", note: "Official App Store release", detail: "The native iOS edition launched with the tenth-anniversary mobile release.", href: siteConfig.official.ios },
   { label: "PlayStation", note: "Official console edition", detail: "Buy from PlayStation Store; released alongside the Xbox edition in 2022.", href: siteConfig.official.playstation },

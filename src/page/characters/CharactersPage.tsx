@@ -25,7 +25,7 @@ export default function CharactersPage() {
         <section className={primitives.section}>
           <SectionTitle title="Character Guides & Chapter Connections" />
           <div className={styles.linksStrip}>
-            <Link className={styles.linkCard} href="/characters/sal-fisher/without-mask"><h3>Sally Face Without His Mask</h3><p>What happened to Sal's face, why he wears a prosthetic, and when the story reveals it.</p><span>Open spoiler-aware guide →</span></Link>
+            <Link className={styles.linkCard} href="/characters/sal-fisher#mask"><h3>Sal Fisher's Mask Explained</h3><p>See what happened to Sal's face, why he wears a prosthetic, and when the story explains it.</p><span>Open Sal's profile →</span></Link>
             <Link className={styles.linkCard} href="/chapters"><h3>Chapter Appearances</h3><p>Follow each character through all five chapters in story order.</p><span>View chapters →</span></Link>
             <Link className={styles.linkCard} href="/chapters"><h3>Chapter Puzzles & Choices</h3><p>Find conversations, codes and optional choices in their story context.</p><span>Open chapters →</span></Link>
           </div>

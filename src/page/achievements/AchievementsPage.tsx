@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { achievements, getAchievementsByEpisode } from "@/lib/data/achievements";
-import { getEpisodeBySlug } from "@/lib/data/episodes";
+import { chapterSlugFor } from "@/lib/data/chapter-slugs";
+import { getChapterSlug, getEpisodeBySlug } from "@/lib/data/episodes";
 import { AchievementTable } from "@/components/content/AchievementTable";
 import { FaqList } from "@/components/common/FaqList";
 import { SectionTitle } from "@/components/common/SectionTitle";
@@ -18,11 +19,11 @@ const faqs = [
 ];
 
 const chapterNotes = {
-  1: "Choose one tea outcome per save; the other achievement needs its own replay.",
-  2: "Clear the Super Gear Boy seals and return to room 403 before the investigation closes.",
-  3: "Keep the timed journal route, Travis dialogue, and all eleven pages in the same run.",
-  4: "Finish the tape, teeth, and guitar checks before entering room 103.",
-  5: "A game over ends an Escaping Death attempt, so start a fresh clean Chapter run before trying again.",
+  1: ["Choose one tea outcome per save; the other achievement needs its own replay.", "Before closing the case, check the morgue, fifth-floor wall and Larry's kitchen for The Unknown.", "Keep the Gear Boy, batteries and basement cartridge together for House of the Wretched."],
+  2: ["Treat each Super Gear Boy signal as a stop: Devour needs all four seals.", "Best Buds is a chain of conversations—return to Larry after every major discovery.", "Use the crowbar on room 403 and finish its ghost encounter before the late 504 route."],
+  3: ["Complete the timed prologue before the school route, then keep 3141 and 491145 tied to their correct locations.", "Speak to Travis in the bathroom and keep the sticky tack for the Clumpy route.", "Count all eleven journal pages before meeting Todd for the late objective."],
+  4: ["Exhaust resident and Larry dialogue during the apartment search; it changes as the story advances.", "Verify five teeth and nine VHS tapes before room 103, which closes the main collection window.", "Handle the pillar and Endless One sequences only when you are ready for a clean guitar run."],
+  5: ["Read optional notes and dialogue before the central chamber; both Seeker of Knowledge and Vestige depend on them.", "Collect all six color pieces before door five for DOG.", "A Game Over breaks Escaping Death; Epilogue also requires the first four Chapters to be complete before you finish."],
 } as const;
 
 export default function AchievementsPage() {
@@ -41,8 +42,8 @@ export default function AchievementsPage() {
           <SectionTitle title="Missable Achievement Notes by Chapter" />
           <div className={styles.chapterNotes}>
           {[1, 2, 3, 4, 5].map((number) => {
-          const episode = getEpisodeBySlug(`episode-${number}-${["strange-neighbors", "the-wretched", "the-bologna-incident", "the-trial", "memories-and-dreams"][number - 1]}`);
-          return <article className={styles.chapterNote} id={`episode-${number}-achievements`} key={number}><h3>{episode ? <Link href={`/chapters/${episode.slug}#achievements`}>Chapter {number}: {episode.title}</Link> : `Chapter ${number}`}</h3><p><strong>{getAchievementsByEpisode(number).length} achievements.</strong> {chapterNotes[number as keyof typeof chapterNotes]}</p></article>;
+          const episode = getEpisodeBySlug(chapterSlugFor(number));
+          return <article className={styles.chapterNote} id={`chapter-${number}-achievements`} key={number}><span id={`episode-${number}-achievements`} hidden /><h3>{episode ? <Link href={`/chapters/${getChapterSlug(episode)}#achievements`}>Chapter {number}: {episode.title}</Link> : `Chapter ${number}`}</h3><p><strong>{getAchievementsByEpisode(number).length} achievements.</strong> Plan these checks before moving on:</p><ul>{chapterNotes[number as keyof typeof chapterNotes].map((note) => <li key={note}>{note}</li>)}</ul></article>;
           })}
           </div>
         </section>

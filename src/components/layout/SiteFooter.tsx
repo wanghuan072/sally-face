@@ -10,7 +10,7 @@ export function SiteFooter() {
       <div className={`container ${styles.grid}`}>
         <div>
           <Link className={styles.logo} href="/"><Image src="/images/site-mark-v2.png" alt="" width={42} height={42} /><span>Sally Face</span></Link>
-          <p className={styles.blurb}>Independent Sally Face guides for Chapters, characters, codes, achievements and official store links.</p>
+          <p className={styles.blurb}>Independent Sally Face guides for Chapters, characters, achievements and official store links.</p>
         </div>
         <div>
           <p className={styles.heading}>Quick links</p>
@@ -24,11 +24,6 @@ export function SiteFooter() {
             {footerNavigation.slice(4).map((item) => <Link key={item.href} href={item.href}>{item.label}</Link>)}
             <a href={siteConfig.official.developer} target="_blank" rel="noreferrer">Portable Moose ↗</a>
           </nav>
-        </div>
-        <div>
-          <p className={styles.heading}>About this guide</p>
-          <p>Independent fan guide with clear links to the official game and store pages.</p>
-          <Link className={styles.aboutLink} href="/sources">How updates and corrections work →</Link>
         </div>
         <div>
           <p className={styles.heading}>Legal</p>

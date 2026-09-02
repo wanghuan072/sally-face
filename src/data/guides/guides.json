@@ -1,234 +1,496 @@
 [
   {
-    "slug": "sally-face-100-percent-completion",
-    "title": "Sally Face 100% Completion Guide",
-    "eyebrow": "Completion route",
-    "summary": "A chapter-by-chapter route for collecting every Steam achievement while avoiding the most expensive replays.",
-    "quickAnswer": "Complete the first four Chapters to 100% before finishing Chapter Five. Chapter One requires two tea outcomes on separate replays; Chapter Four must be cleared before Room 103; Chapter Five must be completed without a game over for Escaping Death.",
-    "image": "/images/scenes/steam-29.webp",
-    "imageAlt": "Official Steam screenshot from the Sally Face Chapter Four final sequence",
-    "episodeSlug": "episode-5-memories-and-dreams",
-    "kind": "completion",
-    "category": "100% Completion",
-    "steps": [
-      { "title": "Use Chapter One as the completion baseline", "body": "Enter 5364 in the prologue, collect the Gear Boy route items, exhaust Larry and Lisa dialogue, and choose one tea outcome. Replay Chapter One later for the alternate tea achievement rather than trying to force both outcomes into one run." },
-      { "title": "Clear every optional route before Chapter Three ends", "body": "In Chapter Two, revisit Gear Boy reactions and speak to Larry after discoveries. In Chapter Three, complete the timed journal route, choose 3-2-3-2 with Travis, and verify all eleven journal pages before the late basement route." },
-      { "title": "Treat Chapter Four as the strict checkpoint", "body": "Before Room 103, finish every resident conversation, collect five teeth, archive all nine VHS tapes, complete Larry's optional interactions, and protect the clean guitar streak for Dark Melodies and Destroyer." },
-      { "title": "Finish Chapter Five on a clean run", "body": "Read all notes, use every key dialogue option, collect all color pieces, and solve the DOG route. A game-over screen ends the clean attempt, so begin a fresh Chapter run before trying for Escaping Death. Complete it only after Chapters One through Four show their full recap completion." }
-    ],
-    "mistakes": ["Expecting mutually exclusive Chapter One tea achievements to unlock in one attempt.", "Entering Chapter Four room 103 before checking tapes and optional routes.", "Finishing Chapter Five after a game over while pursuing Escaping Death or Epilogue."],
-    "faqs": [
-      { "question": "How many achievements are in Sally Face?", "answer": "The Steam version contains 35 achievements: seven associated with each of the five Chapters." },
-      { "question": "Can Sally Face be completed 100% in one playthrough?", "answer": "No. Chapter One has two alternate tea outcomes, so at least one chapter replay is required for all achievements." },
-      { "question": "What should I do before room 103 in Chapter Four?", "answer": "Finish the VHS, teeth, resident dialogue and Larry-route checks before entering room 103." }
-    ],
-    "facts": [
-      { "label": "Steam achievements", "value": "35" },
-      { "label": "Chapters", "value": "5" },
-      { "label": "Chapter One tea routes", "value": "2" },
-      { "label": "Chapter Four VHS tapes", "value": "9" }
-    ],
-    "relatedChapters": [
-      { "label": "Chapter One missables", "href": "/guides/chapter-1-missables-achievements" },
-      { "label": "Chapter Four VHS route", "href": "/guides/chapter-4-vhs-tape-locations" },
-      { "label": "Chapter Five secrets", "href": "/guides/chapter-5-achievements-secrets" }
-    ],
-    "gallery": [
-      { "image": "/images/scenes/steam-02.webp", "alt": "Official Chapter One screenshot", "caption": "Start with the Gear Boy route in room 402." },
-      { "image": "/images/scenes/steam-20.webp", "alt": "Official Chapter Four screenshot", "caption": "Chapter Four is the most important completion checkpoint." },
-      { "image": "/images/scenes/steam-33.webp", "alt": "Official Chapter Five puzzle screenshot", "caption": "Keep the final Chapter clean for Escaping Death." }
-    ],
-    "seo": { "title": "Sally Face 100% Completion Guide and Checklist", "description": "Complete Sally Face with all 35 Steam achievements, Chapter One tea routes, Chapter Four VHS checks, Chapter Five clean-run requirements and replay tips." }
-  },
-  {
-    "slug": "chapter-1-missables-achievements",
-    "title": "Sally Face Chapter 1 Missables & Achievements",
+    "slug": "chapter-1-walkthrough",
+    "title": "Sally Face Chapter 1 Walkthrough - Missables & Achievements",
     "eyebrow": "Chapter One route",
     "summary": "A no-miss route for Strange Neighbors, including 5364, the Gear Boy, supernatural sightings and Charley's two tea outcomes.",
     "quickAnswer": "The most important early choice is the tea: sleeping aid and old laxative unlock different achievements. Enter 5364 in the dream, then collect the Gear Boy, batteries and basement cartridge before ending the Chapter.",
     "image": "/images/scenes/steam-02.webp",
     "imageAlt": "Official Steam screenshot of Sal in room 402 during Chapter One",
-    "episodeSlug": "episode-1-strange-neighbors",
     "kind": "chapter",
     "category": "Chapter Walkthroughs",
     "steps": [
-      { "title": "Secure the 5364 route in the dream", "body": "Read the four visual clues and enter 5364 at the keypad. The correct code matters later for the Gear Boy achievement path, even though the door can be opened another way." },
-      { "title": "Build the Gear Boy route before the investigation ends", "body": "Pick up the Gear Boy in Sal's bedroom, batteries from the kitchen, the basement access route from Lisa, and the game cartridge from Lost and Found. Complete every available Gear Boy chapter before concluding." },
-      { "title": "Clear the three hidden sightings", "body": "For The Unknown, inspect the morgue body, the boarded wall-eye on the fifth floor, and the demon in Larry's kitchen. Do this while the building remains open for exploration." },
-      { "title": "Choose and record a tea outcome", "body": "Use sleeping aid with Addison tea for Go to Sleep, or the old laxative for Irritable Bowels. Finish one path, then replay the Chapter for the other." }
+      {
+        "title": "Secure the 5364 route in the dream",
+        "body": "Read the four visual clues and enter 5364 at the keypad. The correct code matters later for the Gear Boy achievement path, even though the door can be opened another way."
+      },
+      {
+        "title": "Build the Gear Boy route before the investigation ends",
+        "body": "Pick up the Gear Boy in Sal's bedroom, batteries from the kitchen, the basement access route from Lisa, and the game cartridge from Lost and Found. Complete every available Gear Boy chapter before concluding."
+      },
+      {
+        "title": "Clear the three hidden sightings",
+        "body": "For The Unknown, inspect the morgue body, the boarded wall-eye on the fifth floor, and the demon in Larry's kitchen. Do this while the building remains open for exploration."
+      },
+      {
+        "title": "Choose and record a tea outcome",
+        "body": "Use sleeping aid with Addison tea for Go to Sleep, or the old laxative for Irritable Bowels. Finish one path, then replay the Chapter for the other."
+      }
     ],
-    "mistakes": ["Entering a random dream code and losing the clean Gear Boy route.", "Leaving the basement without the cartridge.", "Assuming both tea achievements can be unlocked in one Chapter run."],
+    "mistakes": [
+      "Entering a random dream code and losing the clean Gear Boy route.",
+      "Leaving the basement without the cartridge.",
+      "Assuming both tea achievements can be unlocked in one Chapter run."
+    ],
     "faqs": [
-      { "question": "What is the Sally Face Chapter 1 code?", "answer": "The dream keypad code is 5364." },
-      { "question": "Can I get both tea achievements in Chapter One?", "answer": "Not in one run. Replay the Chapter and choose the alternate tea mixture." },
-      { "question": "How do I get The Unknown achievement?", "answer": "Find the hidden body, wall-eye and demon in Larry's kitchen during the Chapter One exploration route." }
+      {
+        "question": "What is the Sally Face Chapter 1 code?",
+        "answer": "The dream keypad code is 5364."
+      },
+      {
+        "question": "Can I get both tea achievements in Chapter One?",
+        "answer": "Not in one run. Replay the Chapter and choose the alternate tea mixture."
+      },
+      {
+        "question": "How do I get The Unknown achievement?",
+        "answer": "Find the hidden body, wall-eye and demon in Larry's kitchen during the Chapter One exploration route."
+      }
     ],
     "facts": [
-      { "label": "Chapter achievements", "value": "7" },
-      { "label": "Tea outcomes", "value": "2" },
-      { "label": "Hidden sightings", "value": "3" },
-      { "label": "Dream code", "value": "5364" }
+      {
+        "label": "Chapter achievements",
+        "value": "7"
+      },
+      {
+        "label": "Tea outcomes",
+        "value": "2"
+      },
+      {
+        "label": "Hidden sightings",
+        "value": "3"
+      },
+      {
+        "label": "Dream code",
+        "value": "5364"
+      }
     ],
     "relatedChapters": [
-      { "label": "Open Chapter One walkthrough", "href": "/chapters/episode-1-strange-neighbors" },
-      { "label": "Track all achievements", "href": "/achievements#episode-1-achievements" },
-      { "label": "Plan the 100% route", "href": "/guides/sally-face-100-percent-completion" }
+      {
+        "label": "Open Chapter One walkthrough",
+        "href": "/chapters/chapter-1-strange-neighbors"
+      },
+      {
+        "label": "Track all achievements",
+        "href": "/achievements#chapter-1-achievements"
+      }
     ],
     "gallery": [
-      { "image": "/images/scenes/steam-01.webp", "alt": "Official Chapter One dream screenshot", "caption": "The dream provides the 5364 route clue." },
-      { "image": "/images/scenes/steam-02.webp", "alt": "Official room 402 screenshot", "caption": "Collect the Gear Boy and batteries before moving on." },
-      { "image": "/images/scenes/steam-05.webp", "alt": "Official Larry apartment screenshot", "caption": "Larry's apartment contains a hidden sighting route." }
+      {
+        "image": "/images/scenes/steam-01.webp",
+        "alt": "Official Chapter One dream screenshot",
+        "caption": "The dream provides the 5364 route clue."
+      },
+      {
+        "image": "/images/scenes/steam-02.webp",
+        "alt": "Official room 402 screenshot",
+        "caption": "Collect the Gear Boy and batteries before moving on."
+      },
+      {
+        "image": "/images/scenes/steam-05.webp",
+        "alt": "Official Larry apartment screenshot",
+        "caption": "Larry's apartment contains a hidden sighting route."
+      }
     ],
-    "seo": { "title": "Sally Face Chapter 1 Missables and Achievements", "description": "Use this Sally Face Chapter 1 guide for 5364, Gear Boy, The Unknown sightings, Charley's tea choices, optional conversations and all seven achievements." }
+    "seo": {
+      "title": "Sally Face Chapter 1 Missables and Achievements",
+      "description": "Use this Sally Face Chapter 1 guide for 5364, Gear Boy, The Unknown sightings, Charley's tea choices, optional conversations and all seven achievements."
+    },
+    "chapterSlug": "chapter-1-strange-neighbors"
   },
   {
-    "slug": "chapter-2-walkthrough-missables",
-    "title": "Sally Face Chapter 2 Walkthrough Guide",
+    "slug": "chapter-2-walkthrough",
+    "title": "Sally Face Chapter 2 Walkthrough - Seals & Missables",
     "eyebrow": "Chapter Two problems & missables",
     "summary": "A player-first guide to The Wretched's four seals, room 403, Super Gear Boy routes and easy-to-miss achievement checks.",
     "quickAnswer": "Before the final investigation, scan every floor with the Super Gear Boy, revisit room 403 after getting the crowbar, finish the four seals and speak with Larry after each major discovery.",
     "image": "/images/walkthrough/episode-two-bathroom-surge.webp",
     "imageAlt": "Official Sally Face Chapter Two supernatural investigation scene",
-    "episodeSlug": "episode-2-the-wretched",
     "kind": "chapter",
     "category": "Chapter Walkthroughs",
     "steps": [
-      { "title": "Use the Super Gear Boy as a missed-content detector", "body": "A reaction is a reason to stop and inspect, not background noise. Revisit each Addison Apartments floor and clear the related spirit encounter before advancing the investigation." },
-      { "title": "Do not leave room 403 for later", "body": "After receiving the crowbar, return to the sealed apartment and talk to Mrs. Sanderson's ghost. This is an easy place to miss the Unseen path while following only the main objective." },
-      { "title": "Treat the four seals as a checkpoint", "body": "The Devour route depends on finding all four supernatural seals. Finish the associated Gear Boy sections while the building remains open, then check the achievement list before moving on." },
-      { "title": "Follow up with Larry and Todd", "body": "Return to Larry after the puzzle-box and building discoveries, then take the recovered chip to Todd. The main route continues, but these follow-ups carry optional context and achievement timing." }
+      {
+        "title": "Use the Super Gear Boy as a missed-content detector",
+        "body": "A reaction is a reason to stop and inspect, not background noise. Revisit each Addison Apartments floor and clear the related spirit encounter before advancing the investigation."
+      },
+      {
+        "title": "Do not leave room 403 for later",
+        "body": "After receiving the crowbar, return to the sealed apartment and talk to Mrs. Sanderson's ghost. This is an easy place to miss the Unseen path while following only the main objective."
+      },
+      {
+        "title": "Treat the four seals as a checkpoint",
+        "body": "The Devour route depends on finding all four supernatural seals. Finish the associated Gear Boy sections while the building remains open, then check the achievement list before moving on."
+      },
+      {
+        "title": "Follow up with Larry and Todd",
+        "body": "Return to Larry after the puzzle-box and building discoveries, then take the recovered chip to Todd. The main route continues, but these follow-ups carry optional context and achievement timing."
+      }
     ],
-    "mistakes": ["Ignoring a Super Gear Boy reaction because the main objective points elsewhere.", "Getting the crowbar but never returning to room 403.", "Advancing after the puzzle-box without speaking to Larry or taking the chip to Todd."],
+    "mistakes": [
+      "Ignoring a Super Gear Boy reaction because the main objective points elsewhere.",
+      "Getting the crowbar but never returning to room 403.",
+      "Advancing after the puzzle-box without speaking to Larry or taking the chip to Todd."
+    ],
     "faqs": [
-      { "question": "How many seals are in Sally Face Chapter 2?", "answer": "There are four seals associated with the Devour achievement route." },
-      { "question": "How do I get into room 403?", "answer": "Get the crowbar during the investigation, then return to the sealed room in Addison Apartments." },
-      { "question": "What should I do with the puzzle-box chip?", "answer": "Bring the recovered chip to Todd after opening the puzzle box." }
+      {
+        "question": "How many seals are in Sally Face Chapter 2?",
+        "answer": "There are four seals associated with the Devour achievement route."
+      },
+      {
+        "question": "How do I get into room 403?",
+        "answer": "Get the crowbar during the investigation, then return to the sealed room in Addison Apartments."
+      },
+      {
+        "question": "What should I do with the puzzle-box chip?",
+        "answer": "Bring the recovered chip to Todd after opening the puzzle box."
+      }
     ],
     "facts": [
-      { "label": "Seals", "value": "4" }, { "label": "Chapter achievements", "value": "7" }, { "label": "Missable room", "value": "403" }, { "label": "Key device", "value": "Super Gear Boy" }
+      {
+        "label": "Seals",
+        "value": "4"
+      },
+      {
+        "label": "Chapter achievements",
+        "value": "7"
+      },
+      {
+        "label": "Missable room",
+        "value": "403"
+      },
+      {
+        "label": "Key device",
+        "value": "Super Gear Boy"
+      }
     ],
     "relatedChapters": [
-      { "label": "Open Chapter Two steps", "href": "/chapters/episode-2-the-wretched#walkthrough" }, { "label": "Chapter Two achievements", "href": "/achievements#episode-2-achievements" }, { "label": "Plan the 100% route", "href": "/guides/sally-face-100-percent-completion" }
+      {
+        "label": "Open Chapter Two steps",
+        "href": "/chapters/chapter-2-the-wretched#walkthrough"
+      },
+      {
+        "label": "Chapter Two achievements",
+        "href": "/achievements#chapter-2-achievements"
+      }
     ],
     "gallery": [
-      { "image": "/images/scenes/steam-11.webp", "alt": "Official Chapter Two supernatural screenshot", "caption": "Super Gear Boy reactions mark places worth revisiting." }, { "image": "/images/scenes/steam-13.webp", "alt": "Official Chapter Two underground route screenshot", "caption": "Do not leave optional building routes unresolved." }, { "image": "/images/scenes/steam-10.webp", "alt": "Official Chapter Two investigation screenshot", "caption": "Follow the puzzle-box lead through to Todd." }
+      {
+        "image": "/images/scenes/steam-11.webp",
+        "alt": "Official Chapter Two supernatural screenshot",
+        "caption": "Super Gear Boy reactions mark places worth revisiting."
+      },
+      {
+        "image": "/images/scenes/steam-13.webp",
+        "alt": "Official Chapter Two underground route screenshot",
+        "caption": "Do not leave optional building routes unresolved."
+      },
+      {
+        "image": "/images/scenes/steam-10.webp",
+        "alt": "Official Chapter Two investigation screenshot",
+        "caption": "Follow the puzzle-box lead through to Todd."
+      }
     ],
-    "seo": { "title": "Sally Face Chapter 2 Walkthrough Guide & Missables", "description": "Use this Sally Face Chapter 2 walkthrough guide for four seals, room 403, Super Gear Boy reactions, the puzzle-box chip, optional dialogue and missable achievements." }
+    "seo": {
+      "title": "Sally Face Chapter 2 Walkthrough Guide & Missables",
+      "description": "Use this Sally Face Chapter 2 walkthrough guide for four seals, room 403, Super Gear Boy reactions, the puzzle-box chip, optional dialogue and missable achievements."
+    },
+    "chapterSlug": "chapter-2-the-wretched"
   },
   {
-    "slug": "chapter-3-walkthrough-missables",
-    "title": "Sally Face Chapter 3 Walkthrough Guide",
+    "slug": "chapter-3-walkthrough",
+    "title": "Sally Face Chapter 3 Walkthrough - Codes & Missables",
     "eyebrow": "Chapter Three problems & missables",
     "summary": "A focused guide to the timed journal route, school codes, Travis dialogue, journal pages and the Chapter Three completion checklist.",
     "quickAnswer": "Handle the timed prologue first, use 3141 for Mrs. Packerton's desk and 491145 for Henry's computer, then collect all eleven journal pages before the late basement route.",
     "image": "/images/scenes/steam-17.webp",
     "imageAlt": "Official Sally Face Chapter Three classroom investigation scene",
-    "episodeSlug": "episode-3-the-bologna-incident",
     "kind": "chapter",
     "category": "Chapter Walkthroughs",
     "steps": [
-      { "title": "Protect the timed journal route", "body": "The white-room sequence is easy to rush. Set the controls before inputting the groups from right to left, then verify the reward path before starting the school investigation." },
-      { "title": "Keep the two main codes separate", "body": "3141 opens Mrs. Packerton's desk; 491145 is Henry's computer password. Treat the clue source as the check, because using the right number in the wrong location is the common error." },
-      { "title": "Handle Travis before the final school sequence", "body": "Find Travis in the bathroom and use the empathetic 3-2-3-2 dialogue pattern for Atonement. The conversation is optional in the story but not for a complete Chapter clear." },
-      { "title": "Count journal pages before the basement", "body": "The Missing Pages route needs all eleven journal pages. Search the school, apartments and Gear Boy interactions before committing to late objectives that limit backtracking." }
+      {
+        "title": "Protect the timed journal route",
+        "body": "The white-room sequence is easy to rush. Set the controls before inputting the groups from right to left, then verify the reward path before starting the school investigation."
+      },
+      {
+        "title": "Keep the two main codes separate",
+        "body": "3141 opens Mrs. Packerton's desk; 491145 is Henry's computer password. Treat the clue source as the check, because using the right number in the wrong location is the common error."
+      },
+      {
+        "title": "Handle Travis before the final school sequence",
+        "body": "Find Travis in the bathroom and use the empathetic 3-2-3-2 dialogue pattern for Atonement. The conversation is optional in the story but not for a complete Chapter clear."
+      },
+      {
+        "title": "Count journal pages before the basement",
+        "body": "The Missing Pages route needs all eleven journal pages. Search the school, apartments and Gear Boy interactions before committing to late objectives that limit backtracking."
+      }
     ],
-    "mistakes": ["Reading the white-room code in the wrong direction.", "Using 3141 on Henry's computer instead of the desk.", "Entering the basement route before confirming all eleven journal pages and Travis dialogue."],
+    "mistakes": [
+      "Reading the white-room code in the wrong direction.",
+      "Using 3141 on Henry's computer instead of the desk.",
+      "Entering the basement route before confirming all eleven journal pages and Travis dialogue."
+    ],
     "faqs": [
-      { "question": "What is the Sally Face Chapter 3 timed code?", "answer": "Set the controls, then enter 9687, 96753, 47, 663, 63 and 6269 from right to left." },
-      { "question": "What are the Chapter 3 desk and computer codes?", "answer": "Mrs. Packerton's desk is 3141; Henry's computer password is 491145." },
-      { "question": "How do I get Atonement?", "answer": "Talk to Travis in the bathroom and choose dialogue options 3, 2, 3, 2." }
+      {
+        "question": "What is the Sally Face Chapter 3 timed code?",
+        "answer": "Set the controls, then enter 9687, 96753, 47, 663, 63 and 6269 from right to left."
+      },
+      {
+        "question": "What are the Chapter 3 desk and computer codes?",
+        "answer": "Mrs. Packerton's desk is 3141; Henry's computer password is 491145."
+      },
+      {
+        "question": "How do I get Atonement?",
+        "answer": "Talk to Travis in the bathroom and choose dialogue options 3, 2, 3, 2."
+      }
     ],
     "facts": [
-      { "label": "Journal pages", "value": "11" }, { "label": "Desk code", "value": "3141" }, { "label": "Computer code", "value": "491145" }, { "label": "Chapter achievements", "value": "7" }
+      {
+        "label": "Journal pages",
+        "value": "11"
+      },
+      {
+        "label": "Desk code",
+        "value": "3141"
+      },
+      {
+        "label": "Computer code",
+        "value": "491145"
+      },
+      {
+        "label": "Chapter achievements",
+        "value": "7"
+      }
     ],
     "relatedChapters": [
-      { "label": "Open Chapter Three steps", "href": "/chapters/episode-3-the-bologna-incident#walkthrough" }, { "label": "Chapter Three achievements", "href": "/achievements#episode-3-achievements" }, { "label": "Travis Phelps profile", "href": "/characters/travis-phelps" }
+      {
+        "label": "Open Chapter Three steps",
+        "href": "/chapters/chapter-3-the-bologna-incident#walkthrough"
+      },
+      {
+        "label": "Chapter Three achievements",
+        "href": "/achievements#chapter-3-achievements"
+      },
+      {
+        "label": "Travis Phelps profile",
+        "href": "/characters/travis-phelps"
+      }
     ],
     "gallery": [
-      { "image": "/images/scenes/steam-23.webp", "alt": "Official Chapter Three white-room screenshot", "caption": "The timed route needs the correct reading order." }, { "image": "/images/scenes/steam-19.webp", "alt": "Official Chapter Three school screenshot", "caption": "Keep desk and computer clues in their own context." }, { "image": "/images/scenes/steam-18.webp", "alt": "Official Chapter Three school route screenshot", "caption": "Check journal pages before the late route." }
+      {
+        "image": "/images/scenes/steam-23.webp",
+        "alt": "Official Chapter Three white-room screenshot",
+        "caption": "The timed route needs the correct reading order."
+      },
+      {
+        "image": "/images/scenes/steam-19.webp",
+        "alt": "Official Chapter Three school screenshot",
+        "caption": "Keep desk and computer clues in their own context."
+      },
+      {
+        "image": "/images/scenes/steam-18.webp",
+        "alt": "Official Chapter Three school route screenshot",
+        "caption": "Check journal pages before the late route."
+      }
     ],
-    "seo": { "title": "Sally Face Chapter 3 Walkthrough Guide & Codes", "description": "Use this Sally Face Chapter 3 walkthrough guide for the timed journal route, 3141 desk code, 491145 password, Travis dialogue and all eleven journal pages." }
+    "seo": {
+      "title": "Sally Face Chapter 3 Walkthrough Guide & Codes",
+      "description": "Use this Sally Face Chapter 3 walkthrough guide for the timed journal route, 3141 desk code, 491145 password, Travis dialogue and all eleven journal pages."
+    },
+    "chapterSlug": "chapter-3-the-bologna-incident"
   },
   {
-    "slug": "chapter-4-vhs-tape-locations",
-    "title": "Sally Face Chapter 4 VHS Tape Locations",
+    "slug": "chapter-4-walkthrough",
+    "title": "Sally Face Chapter 4 Walkthrough - VHS Tapes & Room 103",
     "eyebrow": "Her Fate checklist",
     "summary": "A focused route for the nine VHS tapes, five teeth, 435542 panel and room 103 point of no return in The Trial.",
     "quickAnswer": "There are nine VHS tapes. Finish the gallery and apartment routes, use the knife on the 201 panel with 435542, complete character-switching tape actions, then enter room 103 only after the checklist is clear.",
     "image": "/images/walkthrough/episode-four-vhs-archive.webp",
     "imageAlt": "Official Sally Face Chapter Four screenshot of the VHS tape archive",
-    "episodeSlug": "episode-4-the-trial",
     "kind": "chapter",
     "category": "Chapter Walkthroughs",
     "steps": [
-      { "title": "Open the gallery route and enter 867", "body": "Count the line values in the first three rooms. The clue reads 768 in discovery order; reverse it and enter 867 at Door 4. The route yields the later rune evidence needed for the apartment panel." },
-      { "title": "Clear physical apartment routes", "body": "Use 4035364 at the shed for PHANTOM, use the knife on the apartment 201 panel and enter 435542 for OTHERS, then inspect the building routes for BRIDGE and HUNGER." },
-      { "title": "Use character switching for the late tapes", "body": "SKIN, EVOLVE, RAGE and /// require the right Larry action before Sal can collect the result. Do not assume a tape is available to the same character who triggers it." },
-      { "title": "Make room 103 the final check", "body": "Verify all nine tapes, five teeth and optional dialogue before opening room 103. It closes the most important completion window in the Chapter." }
+      {
+        "title": "Open the gallery route and enter 867",
+        "body": "Count the line values in the first three rooms. The clue reads 768 in discovery order; reverse it and enter 867 at Door 4. The route yields the later rune evidence needed for the apartment panel."
+      },
+      {
+        "title": "Clear physical apartment routes",
+        "body": "Use 4035364 at the shed for PHANTOM, use the knife on the apartment 201 panel and enter 435542 for OTHERS, then inspect the building routes for BRIDGE and HUNGER."
+      },
+      {
+        "title": "Use character switching for the late tapes",
+        "body": "SKIN, EVOLVE, RAGE and /// require the right Larry action before Sal can collect the result. Do not assume a tape is available to the same character who triggers it."
+      },
+      {
+        "title": "Make room 103 the final check",
+        "body": "Verify all nine tapes, five teeth and optional dialogue before opening room 103. It closes the most important completion window in the Chapter."
+      }
     ],
-    "mistakes": ["Using the discovery-order 768 instead of the usable 867 gallery-door input.", "Entering room 103 before the character-switching routes are complete.", "Collecting a trigger item as Larry but not returning to collect its result as Sal."],
+    "mistakes": [
+      "Using the discovery-order 768 instead of the usable 867 gallery-door input.",
+      "Entering room 103 before the character-switching routes are complete.",
+      "Collecting a trigger item as Larry but not returning to collect its result as Sal."
+    ],
     "faqs": [
-      { "question": "How many VHS tapes are in Sally Face Chapter 4?", "answer": "There are nine VHS tapes needed for Her Fate." },
-      { "question": "What is the Chapter 4 floor-panel code?", "answer": "The apartment 201 panel code is 435542." },
-      { "question": "When is the Chapter 4 point of no return?", "answer": "Treat entering room 103 as the final completion checkpoint." }
+      {
+        "question": "How many VHS tapes are in Sally Face Chapter 4?",
+        "answer": "There are nine VHS tapes needed for Her Fate."
+      },
+      {
+        "question": "What is the Chapter 4 floor-panel code?",
+        "answer": "The apartment 201 panel code is 435542."
+      },
+      {
+        "question": "When is the Chapter 4 point of no return?",
+        "answer": "Treat entering room 103 as the final completion checkpoint."
+      }
     ],
     "facts": [
-      { "label": "VHS tapes", "value": "9" },
-      { "label": "Teeth", "value": "5" },
-      { "label": "Panel code", "value": "435542" },
-      { "label": "Chapter achievements", "value": "7" }
+      {
+        "label": "VHS tapes",
+        "value": "9"
+      },
+      {
+        "label": "Teeth",
+        "value": "5"
+      },
+      {
+        "label": "Panel code",
+        "value": "435542"
+      },
+      {
+        "label": "Chapter achievements",
+        "value": "7"
+      }
     ],
     "relatedChapters": [
-      { "label": "Open Chapter Four walkthrough", "href": "/chapters/episode-4-the-trial#quick-answers" },
-      { "label": "Chapter Four achievements", "href": "/achievements#episode-4-achievements" },
-      { "label": "Continue the 100% route", "href": "/guides/sally-face-100-percent-completion" }
+      {
+        "label": "Open Chapter Four walkthrough",
+        "href": "/chapters/chapter-4-the-trial#quick-answers"
+      },
+      {
+        "label": "Chapter Four achievements",
+        "href": "/achievements#chapter-4-achievements"
+      }
     ],
     "gallery": [
-      { "image": "/images/scenes/steam-20.webp", "alt": "Official Chapter Four gallery screenshot", "caption": "The gallery route establishes the symbol clue." },
-      { "image": "/images/walkthrough/episode-four-vhs-archive.webp", "alt": "Official VHS archive screenshot", "caption": "Nine tapes are required for Her Fate." },
-      { "image": "/images/scenes/steam-22.webp", "alt": "Official Chapter Four panel screenshot", "caption": "The apartment panel uses 435542." }
+      {
+        "image": "/images/scenes/steam-20.webp",
+        "alt": "Official Chapter Four gallery screenshot",
+        "caption": "The gallery route establishes the symbol clue."
+      },
+      {
+        "image": "/images/walkthrough/episode-four-vhs-archive.webp",
+        "alt": "Official VHS archive screenshot",
+        "caption": "Nine tapes are required for Her Fate."
+      },
+      {
+        "image": "/images/scenes/steam-22.webp",
+        "alt": "Official Chapter Four panel screenshot",
+        "caption": "The apartment panel uses 435542."
+      }
     ],
-    "seo": { "title": "Sally Face Chapter 4 VHS Tape Locations Guide", "description": "Find all nine Sally Face Chapter 4 VHS tapes with the 435542 panel code, character-switching routes, room 103 warning and a safe collection order." }
+    "seo": {
+      "title": "Sally Face Chapter 4 VHS Tape Locations Guide",
+      "description": "Find all nine Sally Face Chapter 4 VHS tapes with the 435542 panel code, character-switching routes, room 103 warning and a safe collection order."
+    },
+    "chapterSlug": "chapter-4-the-trial"
   },
   {
-    "slug": "chapter-5-achievements-secrets",
-    "title": "Sally Face Chapter 5 Achievements & Secrets",
+    "slug": "chapter-5-walkthrough",
+    "title": "Sally Face Chapter 5 Walkthrough - Achievements & Secrets",
     "eyebrow": "Final Chapter route",
     "summary": "A focused completion route for 4035364, Todd's 13010 room, DOG colors, Escaping Death and Epilogue in Memories and Dreams.",
     "quickAnswer": "Chapter Five has seven achievements. Read every note, collect every color piece, use 4035364 at the shed, enter 13010 for Todd's room, and complete the whole Chapter without a game over for Escaping Death.",
     "image": "/images/scenes/steam-33.webp",
     "imageAlt": "Official Steam screenshot of a Sally Face Chapter Five puzzle scene",
-    "episodeSlug": "episode-5-memories-and-dreams",
     "kind": "chapter",
     "category": "Chapter Walkthroughs",
     "steps": [
-      { "title": "Clear Ash's home and the shed first", "body": "Read Todd's notes, exhaust Neil's dialogue, collect the early color piece, then use 4035364 at the shed. The seven-digit code combines 403 with the Chapter One dream code 5364." },
-      { "title": "Solve the smooth-cartoon route with the math intact", "body": "Add 145, 5023 and 7842 for Todd's room: 13010. Complete the hexagons and all three pyramid inputs before leaving the route, because they feed the color-piece path." },
-      { "title": "Finish the DOG color sequence", "body": "At door five, enter white, black, blue, red, green, then purple. The sequence matters only after every color piece has been recovered." },
-      { "title": "Protect the clean final run", "body": "Escaping Death requires no game-over screen across every playable character. A Game Over ends the clean attempt, so start a fresh Chapter run before trying again; reserve final completion until Chapters One through Four are fully cleared for Epilogue." }
+      {
+        "title": "Clear Ash's home and the shed first",
+        "body": "Read Todd's notes, exhaust Neil's dialogue, collect the early color piece, then use 4035364 at the shed. The seven-digit code combines 403 with the Chapter One dream code 5364."
+      },
+      {
+        "title": "Solve the smooth-cartoon route with the math intact",
+        "body": "Add 145, 5023 and 7842 for Todd's room: 13010. Complete the hexagons and all three pyramid inputs before leaving the route, because they feed the color-piece path."
+      },
+      {
+        "title": "Finish the DOG color sequence",
+        "body": "At door five, enter white, black, blue, red, green, then purple. The sequence matters only after every color piece has been recovered."
+      },
+      {
+        "title": "Protect the clean final run",
+        "body": "Escaping Death requires no game-over screen across every playable character. A Game Over ends the clean attempt, so start a fresh Chapter run before trying again; reserve final completion until Chapters One through Four are fully cleared for Epilogue."
+      }
     ],
-    "mistakes": ["Typing a separator between 403 and 5364.", "Entering a displayed number instead of calculating 13010.", "Completing the final route after a game-over screen while pursuing Escaping Death."],
+    "mistakes": [
+      "Typing a separator between 403 and 5364.",
+      "Entering a displayed number instead of calculating 13010.",
+      "Completing the final route after a game-over screen while pursuing Escaping Death."
+    ],
     "faqs": [
-      { "question": "What is the shed code in Sally Face Chapter 5?", "answer": "The shed code is 4035364." },
-      { "question": "What is Todd's room code?", "answer": "145 + 5023 + 7842 equals 13010." },
-      { "question": "How do I get Escaping Death?", "answer": "Complete the entire Chapter Five route without a game-over screen." }
+      {
+        "question": "What is the shed code in Sally Face Chapter 5?",
+        "answer": "The shed code is 4035364."
+      },
+      {
+        "question": "What is Todd's room code?",
+        "answer": "145 + 5023 + 7842 equals 13010."
+      },
+      {
+        "question": "How do I get Escaping Death?",
+        "answer": "Complete the entire Chapter Five route without a game-over screen."
+      }
     ],
     "facts": [
-      { "label": "Chapter achievements", "value": "7" },
-      { "label": "Shed code", "value": "4035364" },
-      { "label": "Todd room code", "value": "13010" },
-      { "label": "DOG colors", "value": "6" }
+      {
+        "label": "Chapter achievements",
+        "value": "7"
+      },
+      {
+        "label": "Shed code",
+        "value": "4035364"
+      },
+      {
+        "label": "Todd room code",
+        "value": "13010"
+      },
+      {
+        "label": "DOG colors",
+        "value": "6"
+      }
     ],
     "relatedChapters": [
-      { "label": "Open Chapter Five walkthrough", "href": "/chapters/episode-5-memories-and-dreams#quick-answers" },
-      { "label": "Chapter Five achievements", "href": "/achievements#episode-5-achievements" },
-      { "label": "Review 100% completion", "href": "/guides/sally-face-100-percent-completion" }
+      {
+        "label": "Open Chapter Five walkthrough",
+        "href": "/chapters/chapter-5-memories-and-dreams#quick-answers"
+      },
+      {
+        "label": "Chapter Five achievements",
+        "href": "/achievements#chapter-5-achievements"
+      }
     ],
     "gallery": [
-      { "image": "/images/scenes/steam-31.webp", "alt": "Official Chapter Five shed screenshot", "caption": "Use 4035364 at the shed." },
-      { "image": "/images/scenes/steam-33.webp", "alt": "Official Chapter Five puzzle screenshot", "caption": "Complete every color-piece route before door five." },
-      { "image": "/images/scenes/steam-26.webp", "alt": "Official Chapter Five final sequence screenshot", "caption": "Avoid every game over on the final run." }
+      {
+        "image": "/images/scenes/steam-31.webp",
+        "alt": "Official Chapter Five shed screenshot",
+        "caption": "Use 4035364 at the shed."
+      },
+      {
+        "image": "/images/scenes/steam-33.webp",
+        "alt": "Official Chapter Five puzzle screenshot",
+        "caption": "Complete every color-piece route before door five."
+      },
+      {
+        "image": "/images/scenes/steam-26.webp",
+        "alt": "Official Chapter Five final sequence screenshot",
+        "caption": "Avoid every game over on the final run."
+      }
     ],
-    "seo": { "title": "Sally Face Chapter 5 Achievements and Secrets", "description": "Use this Sally Face Chapter 5 guide for 4035364, 13010, DOG colors, Escaping Death, difficult secret routes and the final achievement cleanup path." }
+    "seo": {
+      "title": "Sally Face Chapter 5 Achievements and Secrets",
+      "description": "Use this Sally Face Chapter 5 guide for 4035364, 13010, DOG colors, Escaping Death, difficult secret routes and the final achievement cleanup path."
+    },
+    "chapterSlug": "chapter-5-memories-and-dreams"
   }
 ]
