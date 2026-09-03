@@ -10,7 +10,7 @@ export function SiteFooter() {
       <div className={`container ${styles.grid}`}>
         <div>
           <Link className={styles.logo} href="/"><Image src="/images/site-mark-v2.png" alt="" width={42} height={42} /><span>Sally Face</span></Link>
-          <p className={styles.blurb}>Independent Sally Face guides for Chapters, characters, achievements and official store links.</p>
+          <p className={styles.blurb}>Independent Sally Face guides for Chapters, characters, achievements and official store links. Edited by <Link href={siteConfig.author.path}>{siteConfig.author.name}</Link>.</p>
         </div>
         <div>
           <p className={styles.heading}>Quick links</p>
@@ -37,7 +37,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className={styles.legal}>
-        <div className="container"><p>Copyright © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</p><p>This is an independent fan site and is not affiliated with, endorsed by, or sponsored by Portable Moose.</p></div>
+        <div className="container"><p>Copyright © {new Date().getFullYear()} {siteConfig.name}. Edited by {siteConfig.author.name}.</p><p>This is an independent fan site and is not affiliated with, endorsed by, or sponsored by Portable Moose.</p></div>
       </div>
     </footer>
   );

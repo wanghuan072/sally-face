@@ -57,6 +57,7 @@ export type Episode = {
   ordinal: string;
   title: string;
   summary: string;
+  playerNote: string;
   image: string;
   imageAlt: string;
   releaseDate: string;
@@ -93,6 +94,7 @@ export type Character = {
   image: string;
   imageAlt: string;
   summary: string;
+  playerNote: string;
   appearance: string;
   personality: string;
   storyRole: string;

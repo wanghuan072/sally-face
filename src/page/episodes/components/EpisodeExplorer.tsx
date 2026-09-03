@@ -5,7 +5,7 @@ import styles from "@/style/page/episodes/episodes.module.css";
 export function EpisodeExplorer({ episodes }: { episodes: Episode[] }) {
   return (
     <div className={styles.episodeList}>
-      {episodes.map((episode) => <EpisodeCard key={episode.slug} episode={episode} showMeta variant="row" />)}
+      {episodes.map((episode) => <EpisodeCard key={episode.slug} episode={episode} variant="row" />)}
     </div>
   );
 }

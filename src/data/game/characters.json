@@ -8,7 +8,7 @@
     "relationship": "The story's central investigator",
     "image": "/images/characters/sal-fisher-canonical.webp",
     "imageAlt": "Canonical in-game sprite of Sal Fisher wearing his prosthetic face",
-    "summary": "Sal Fisher is the blue-haired, prosthetic-mask-wearing protagonist known by the nickname Sally Face. He approaches the supernatural with empathy and stubborn curiosity.",
+    "summary": "You play as Sal in every Chapter. His prosthetic, the Gear Boy, and the 5364 dream code are the tools the rest of the story keeps using.",
     "appearance": "Sal is recognized by bright blue pigtails, a pale prosthetic face, and a dark, understated wardrobe. The mask covers injuries from a childhood attack and becomes both protection and the image other people remember.",
     "personality": "Quiet, observant, and unusually accepting, Sal listens before he judges. He is willing to enter frightening places when someone needs help, but his calm manner also hides grief and a growing sense of responsibility for Nockfell.",
     "storyRole": "Sal connects every major thread: the Sanderson murder, the Addison haunting, Jim Johnson's research, the Devourers of God, and the final attempt to stop the Endless One. The player experiences most investigations through his conversations, sketches, and Gear Boy discoveries.",
@@ -66,7 +66,8 @@
     ],
     "groups": [
       "core-cast"
-    ]
+    ],
+    "playerNote": "The Chapter 1 dream code 5364 is reused in Chapter 5."
   },
   {
     "slug": "larry-johnson",
@@ -77,7 +78,7 @@
     "relationship": "Sal's neighbor, best friend and stepbrother",
     "image": "/images/characters/larry-johnson-canonical.webp",
     "imageAlt": "Canonical in-game sprite of Larry Johnson with long brown hair and an SF shirt",
-    "summary": "Larry Johnson is Sal's first friend in Addison Apartments and the person who pulls him into the building's oldest mysteries.",
+    "summary": "Sal’s first friend in Addison Apartments. Extra conversations with him unlock clues, Best Buds, and the Chapter 2 family investigation.",
     "appearance": "As a teenager, Larry has long dark hair, tired brown eyes, and a collection of worn heavy-metal shirts. Later designs make him taller and more weathered while keeping the relaxed posture and expressive eyebrows that define him.",
     "personality": "Larry is laid-back in ordinary conversation but fiercely loyal when his friends are threatened. His humor and bluntness offset Sal's quiet style, while his fear of the Red-Eyed Demon gives the supernatural story a deeply personal edge.",
     "storyRole": "Larry witnesses the darkness in Addison Apartments long before Sal arrives. He guides the Chapter One investigation, shares the mystery of Jim Johnson, helps uncover the bologna operation, and becomes essential to the spiritual assault in the final chapters.",
@@ -135,7 +136,8 @@
     ],
     "groups": [
       "core-cast"
-    ]
+    ],
+    "playerNote": "Talk to him more than once in Chapter 2 or you miss Best Buds."
   },
   {
     "slug": "ashley-campbell",
@@ -146,7 +148,7 @@
     "relationship": "Sal's close friend and ally",
     "image": "/images/characters/ashley-campbell-canonical.webp",
     "imageAlt": "Canonical in-game sprite of Ashley Campbell with long brown hair and a purple dress",
-    "summary": "Ashley Campbell is a practical, determined member of Sal's friend group whose choices become decisive after The Trial.",
+    "summary": "A practical friend who joins in Chapter 2 and later carries playable sections of Chapter 5.",
     "appearance": "As a teenager, Ash has very long brown hair, green eyes, a purple sweater dress, dark leggings, and a black choker. Her adult design has shorter hair, a leather jacket, and motorcycle-ready clothing that reflects the story's time jump.",
     "personality": "Ash is direct, resourceful, and protective. She questions extraordinary claims until the evidence is unavoidable, then commits herself fully to uncovering the truth and protecting the remaining group.",
     "storyRole": "Ash joins the apartment investigations, helps expose Mrs. Packerton, witnesses the catastrophe at Addison Apartments, and later fights to prove Sal's explanation. Chapter Five uses her viewpoint to carry the resistance forward.",
@@ -198,7 +200,8 @@
     ],
     "groups": [
       "core-cast"
-    ]
+    ],
+    "playerNote": "She joins in Chapter 2 and becomes playable in Chapter 5."
   },
   {
     "slug": "travis-phelps",
@@ -209,7 +212,7 @@
     "relationship": "A troubled classmate who reveals a hidden conflict",
     "image": "/images/characters/travis-phelps-canonical.webp",
     "imageAlt": "Canonical in-game sprite of Travis Phelps with blond hair, a bruised eye, and a purple shirt",
-    "summary": "Travis Phelps begins as an antagonistic classmate, but a private conversation reveals fear, pressure, and a complicated connection to the cult.",
+    "summary": "Hostile classmate whose optional Chapter 3 bathroom talk is the missable route most players walk past.",
     "appearance": "Teenage Travis has olive-toned skin, short blond hair, and a visibly swollen eye. He wears a light-purple long-sleeved shirt, blue shorts, gray socks, and green shoes; his adult cult appearance has longer hair and red eyes from possession.",
     "personality": "He performs hostility in public but becomes vulnerable when Sal finds him alone. His behavior reflects both personal conflict and the control exerted by his father and the religious community around him.",
     "storyRole": "The Chapter Three bathroom conversation turns Travis from a one-note bully into evidence that the cult harms its own families. Choosing the empathetic dialogue path awards Atonement and gives Sal another journal page.",
@@ -255,7 +258,8 @@
     ],
     "groups": [
       "core-cast"
-    ]
+    ],
+    "playerNote": "His Chapter 3 bathroom conversation is optional and easy to walk past."
   },
   {
     "slug": "todd-morrison",
@@ -266,7 +270,7 @@
     "relationship": "The group's engineer and researcher",
     "image": "/images/characters/todd-morrison-canonical.webp",
     "imageAlt": "Canonical in-game sprite of Todd Morrison with curly orange hair and round glasses",
-    "summary": "Todd Morrison gives Sal's group the technical knowledge needed to analyze supernatural objects, build devices, and turn frightening clues into plans.",
+    "summary": "The group’s technician. His Chapter 2 Super Gear Boy work is easy to rush, and later Chapters assume you finished it.",
     "appearance": "Todd is easy to identify by his messy orange-red hair, large square glasses, and practical layered clothes. His designs keep a studious, slightly anxious energy across the time jumps.",
     "personality": "Intelligent and enthusiastic, Todd treats strange evidence as a problem that can be tested. His confidence in systems contrasts with the spiritual forces that eventually target him.",
     "storyRole": "Todd examines the puzzle-box chip, analyzes the school bologna, supports the Addison assault, and leaves research that guides the Chapter Five resistance. The cost of that work makes him central to the cult's long-term threat.",
@@ -318,7 +322,8 @@
     ],
     "groups": [
       "core-cast"
-    ]
+    ],
+    "playerNote": "Finish the Super Gear Boy work in Chapter 2 before you rush ahead."
   },
   {
     "slug": "henry-fisher",
@@ -329,7 +334,7 @@
     "relationship": "Father and guardian",
     "image": "/images/characters/henry-fisher-canonical.webp",
     "imageAlt": "Canonical in-game sprite of Henry Fisher with light-blue hair and a beard",
-    "summary": "Henry Fisher is Sal's father. Their move to Nockfell is an attempt to rebuild life after the death of Sal's mother and Sal's injuries.",
+    "summary": "Sal’s father. Not a puzzle NPC — his computer in Chapter 3 holds the DIANE password 491145.",
     "appearance": "Henry has naturally light-blue hair, blue eyes, and a blue beard. By the later timeline his hairline has receded significantly; his subdued clothes and posture reinforce the grief he carries while trying to keep family life stable.",
     "personality": "He is caring but emotionally withdrawn. Henry wants to protect Sal and is willing to give him independence, even when he does not understand the supernatural events surrounding the apartments.",
     "storyRole": "Henry anchors Sal's family history and the trauma behind the prosthetic mask. His computer, memories of Diane, and later relationship with Lisa connect the Fisher and Johnson families.",
@@ -373,7 +378,8 @@
     ],
     "groups": [
       "family"
-    ]
+    ],
+    "playerNote": "His Chapter 3 computer password is 491145, not the school desk code."
   },
   {
     "slug": "lisa-johnson",
@@ -384,7 +390,7 @@
     "relationship": "Larry's mother and Sal's trusted adult ally",
     "image": "/images/characters/lisa-johnson-canonical.webp",
     "imageAlt": "Canonical in-game sprite of Lisa Johnson-Fisher in her blue caretaker jumpsuit",
-    "summary": "Lisa Johnson is Larry's mother and the caretaker who knows more about Addison Apartments than most tenants realize.",
+    "summary": "Larry’s mother and Addison’s caretaker. Talk to her in Chapter 1 if you want the basement / A Dark Secret route.",
     "appearance": "Lisa is a tall brunette with brown eyes. As Addison Apartments' caretaker, she wears a blue work jumpsuit with brown gloves and shoes; the patched gloves and tired eyes reflect the physical work she does around the building.",
     "personality": "Kind, practical, and patient, Lisa gives both boys a sense of home. She is cautious about Larry's curse but will share important details when Sal asks the right questions.",
     "storyRole": "Lisa provides basement access, family context, and information connected to A Dark Secret. Her relationship with Henry later joins the two families at the emotional center of the group.",
@@ -432,7 +438,8 @@
     ],
     "groups": [
       "family"
-    ]
+    ],
+    "playerNote": "Talk to her in Chapter 1 to open the basement route."
   },
   {
     "slug": "megan-holmes",
@@ -443,7 +450,7 @@
     "relationship": "A child spirit who trusts Sal",
     "image": "/images/characters/megan-holmes-canonical.webp",
     "imageAlt": "Canonical in-game ghost sprite of Megan Holmes with purple hair and pale eyes",
-    "summary": "Megan Holmes is a child spirit whose appearances confirm that Sal's supernatural encounters are more than nightmares.",
+    "summary": "Child spirit whose first appearance proves the hauntings are real, then returns through the Holmes family investigation.",
     "appearance": "Megan is a seven-year-old ghost with muted purple hair, milky-white eyes, and an oversized gray nightgown. In life she had purple eyes and wore a gold cross necklace passed down through her family.",
     "personality": "Megan is cautious but gentle. She communicates in fragments and depends on Sal's willingness to keep listening when other residents dismiss the impossible.",
     "storyRole": "Her encounters lead Sal through the bathroom and Gear Boy route, establish the history of the Holmes family, and connect early ghost stories to the wider evil beneath Addison Apartments.",
@@ -485,7 +492,8 @@
     ],
     "groups": [
       "supernatural"
-    ]
+    ],
+    "playerNote": "Her Chapter 1 appearance is the first proof the hauntings are real."
   },
   {
     "slug": "charley-mansfield",
@@ -496,7 +504,7 @@
     "relationship": "Neighbor in apartment 204",
     "image": "/images/characters/charley-mansfield-canonical.webp",
     "imageAlt": "Canonical in-game image of Charley Mansfield sitting in his apartment",
-    "summary": "Charley Mansfield is the obsessive Glitter Pony collector at the center of the first murder investigation.",
+    "summary": "The Chapter 1 murder suspect. The tea choice locks one of two achievements; the other needs a replay.",
     "appearance": "Charley is a balding, overweight middle-aged man with sparse black hair. He wears a heavily stained white tank top, blue sweatpants, and damaged socks; his apartment is crowded with the collectible figures he values above almost everything else.",
     "personality": "Nervous, defensive, and possessive, Charley becomes volatile when Sal asks about Mrs. Sanderson or the missing Glitter Pony.",
     "storyRole": "Sal and Larry use Addison tea to move Charley away from his collection, find the decisive evidence, and resolve the human layer of Chapter One's mystery.",
@@ -535,7 +543,8 @@
       "chapter-1-strange-neighbors",
       "chapter-2-the-wretched"
     ],
-    "groups": []
+    "groups": [],
+    "playerNote": "Charley tea has two outcomes. You need a replay for both achievements."
   },
   {
     "slug": "gizmo",
@@ -546,7 +555,7 @@
     "relationship": "Sal's companion",
     "image": "/images/characters/gizmo-canonical.webp",
     "imageAlt": "Canonical in-game image of Gizmo sitting on a sofa",
-    "summary": "Gizmo is Sal's cat and one of the few reliably comforting presences in the Fisher home.",
+    "summary": "Sal’s cat and a steady presence in the Fisher home. Household context, not a collectible hunt.",
     "appearance": "Gizmo is a reddish-orange and white bicolor cat with white facial patches, white paws, striped markings, and bright yellow eyes. Developer comments describe his breed as probably similar to a Maine Coon.",
     "personality": "Calm, observant, and affectionate, Gizmo often reacts to the atmosphere around Sal without needing dialogue.",
     "storyRole": "Gizmo grounds the opening apartment scenes and remains connected to Sal's idea of home while the human relationships around him change.",
@@ -589,6 +598,7 @@
     ],
     "groups": [
       "family"
-    ]
+    ],
+    "playerNote": "He is in the Fisher apartment from the start — household context, not a puzzle."
   }
 ]

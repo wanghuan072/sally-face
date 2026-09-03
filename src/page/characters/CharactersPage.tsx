@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Suspense } from "react";
 import { characters } from "@/lib/data/characters";
+import { CharacterCard } from "@/components/content/CharacterCard";
 import { CharacterExplorer } from "@/page/characters/components/CharacterExplorer";
 import { SectionTitle } from "@/components/common/SectionTitle";
 import primitives from "@/style/common/primitives.module.css";
@@ -16,12 +17,14 @@ export default function CharactersPage() {
       <section className={styles.hero}>
         <Image className={styles.heroImage} src="/images/scenes/steam-25.webp" alt="Sal Fisher and Larry Johnson in an official Sally Face story scene" fill loading="eager" sizes="100vw" />
         <div className={`container ${styles.heroInner}`}>
-          <div><h1>Sally Face Characters <span>Who They Are & Where They Matter</span></h1><p>Find out who someone is, how they connect to Sal, and which Chapters to revisit for their important scenes, choices and clues.</p></div>
+          <div><h1>Sally Face Characters <span>Who They Are & Where They Matter</span></h1><p>Find out who someone is, what you can miss around them, and which Chapter to open for their important scenes.</p></div>
           <aside className={styles.heroMeta} aria-label="Character guide highlights"><div><strong>10</strong><span>Character profiles</span></div><div><strong>5</strong><span>Story Chapters</span></div><div><strong>↗</strong><span>Linked timelines</span></div></aside>
         </div>
       </section>
       <div className={`container ${styles.content}`}>
-        <Suspense fallback={<div className={styles.characterGrid} aria-busy="true" />}><CharacterExplorer characters={characters} /></Suspense>
+        <Suspense fallback={<div className={styles.characterGrid}>{characters.map((character) => <CharacterCard character={character} variant="row" key={character.slug} />)}</div>}>
+          <CharacterExplorer characters={characters} />
+        </Suspense>
         <section className={primitives.section}>
           <SectionTitle title="Character Guides & Chapter Connections" />
           <div className={styles.linksStrip}>

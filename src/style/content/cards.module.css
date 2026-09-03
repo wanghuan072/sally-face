@@ -2,7 +2,7 @@
 .characterGrid {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 28px;
+  gap: 22px;
 }
 
 .episodeCard,
@@ -37,35 +37,33 @@
   border-color: rgba(112, 170, 126, 0.65);
 }
 
-.episodeCardRow {
+.episodeCardRow,
+.characterCardRow {
   display: grid;
-  grid-template-columns: minmax(248px, 39%) minmax(0, 1fr);
-  min-height: 258px;
+  grid-template-columns: minmax(220px, 34%) minmax(0, 1fr);
+  min-height: 0;
 }
 
-.episodeCardRow .imageWrap {
+.episodeCardRow {
+  min-height: 236px;
+}
+
+.characterCardRow {
+  min-height: 188px;
+}
+
+.episodeCardRow .imageWrap,
+.characterCardRow .imageWrap {
   height: auto;
-  min-height: 258px;
+  min-height: 100%;
   border-right: 1px solid var(--border);
   border-bottom: 0;
 }
 
-.episodeCardRow .imageWrap::after {
-  position: absolute;
-  inset: auto 0 0;
-  height: 46%;
-  background: linear-gradient(0deg, rgba(4, 8, 7, 0.65), transparent);
-  content: "";
-}
-
-.episodeCardRow .body {
-  min-height: 258px;
-  padding: 23px 26px 20px;
-}
-
-.episodeCardRow .summary {
-  max-width: 62ch;
-  -webkit-line-clamp: 2;
+.episodeCardRow .body,
+.characterCardRow .body {
+  min-height: 0;
+  padding: 22px 24px 20px;
 }
 
 .episodeCardRow .title {
@@ -80,7 +78,12 @@
 }
 
 .characterCard .imageWrap {
-  height: 278px;
+  height: 248px;
+}
+
+.characterCardRow .imageWrap {
+  height: auto;
+  min-height: 188px;
 }
 
 .image {
@@ -97,14 +100,10 @@
 
 .body {
   display: flex;
-  min-height: 190px;
+  min-height: 168px;
   flex: 1;
   flex-direction: column;
   padding: 16px;
-}
-
-.characterCard .body {
-  min-height: 172px;
 }
 
 .eyebrow {
@@ -121,11 +120,17 @@
   line-height: 1;
 }
 
-.summary {
+.note {
+  margin: 0 0 14px;
+  color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.episodeCard:not(.episodeCardRow) .note,
+.characterCard:not(.characterCardRow) .note {
   display: -webkit-box;
-  margin-bottom: 16px;
   overflow: hidden;
-  color: var(--text-soft);
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
 }
@@ -146,7 +151,6 @@
   width: fit-content;
   align-items: center;
   gap: 6px;
-  margin: auto 0 12px;
   color: var(--green);
   font-size: 0.87rem;
 }
@@ -158,14 +162,14 @@
 .cardActions {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 8px 14px;
   align-items: center;
   margin-top: auto;
 }
 
 .secondaryAction {
   color: var(--muted);
-  font-size: 0.82rem;
+  font-size: 0.86rem;
 }
 
 .secondaryAction:hover {
@@ -176,7 +180,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 7px 14px;
-  margin: auto 0 13px;
+  align-items: center;
+  margin: 0 0 14px;
   color: var(--muted);
   font-size: 0.87rem;
 }
@@ -191,34 +196,26 @@
 @media (max-width: 768px) {
   .episodeGrid,
   .characterGrid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr;
     gap: 18px;
   }
-}
 
-@media (max-width: 768px) {
-  .episodeCardRow {
+  .episodeCardRow,
+  .characterCardRow {
     display: flex;
-    min-height: 0;
     flex-direction: column;
   }
 
-  .episodeCardRow .imageWrap {
-    height: 205px;
+  .episodeCardRow .imageWrap,
+  .characterCardRow .imageWrap {
+    height: 196px;
     min-height: 0;
     border-right: 0;
     border-bottom: 1px solid var(--border);
   }
 
-  .episodeCardRow .body {
-    min-height: 0;
+  .episodeCardRow .body,
+  .characterCardRow .body {
     padding: 18px;
-  }
-}
-
-@media (max-width: 768px) {
-  .episodeGrid,
-  .characterGrid {
-    grid-template-columns: 1fr;
   }
 }

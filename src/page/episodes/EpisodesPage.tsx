@@ -24,7 +24,7 @@ export default function EpisodesPage() {
         <div className={`container ${styles.heroInner}`}>
           <div>
             <h1>Sally Face Chapters <span>Routes, Codes & Missables</span></h1>
-            <p>Play the five Chapters in order, then use the route you need: a code when you are stuck, a missables check before a cutoff, or a full path for a replay.</p>
+            <p>Play the five Chapters in order. Open a route for the next step, or the missables check before a cutoff.</p>
           </div>
           <aside className={styles.heroMeta} aria-label="Chapter guide highlights"><div><strong>5</strong><span>Chapters</span></div><div><strong>35</strong><span>Steam achievements</span></div><div><strong>1</strong><span>Continuous story</span></div></aside>
         </div>
@@ -45,7 +45,7 @@ export default function EpisodesPage() {
             </section>
             <Link className={styles.promo} href="/sally-face-2">
               <Image src="/images/sally-face-2/sally-face-2-screenshot-3.webp" alt="Official Sally Face 2 preview" fill sizes="340px" />
-              <span className={styles.promoCopy}><h2>Sally Face 2</h2><span>Release date, teaser & confirmed details →</span></span>
+              <span className={styles.promoCopy}><h2>Sally Face 2</h2><span>Announced 16 Aug 2026 · date TBD →</span></span>
             </Link>
           </aside>
         </div>

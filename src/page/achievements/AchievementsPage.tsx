@@ -43,7 +43,7 @@ export default function AchievementsPage() {
           <div className={styles.chapterNotes}>
           {[1, 2, 3, 4, 5].map((number) => {
           const episode = getEpisodeBySlug(chapterSlugFor(number));
-          return <article className={styles.chapterNote} id={`chapter-${number}-achievements`} key={number}><span id={`episode-${number}-achievements`} hidden /><h3>{episode ? <Link href={`/chapters/${getChapterSlug(episode)}#achievements`}>Chapter {number}: {episode.title}</Link> : `Chapter ${number}`}</h3><p><strong>{getAchievementsByEpisode(number).length} achievements.</strong> Plan these checks before moving on:</p><ul>{chapterNotes[number as keyof typeof chapterNotes].map((note) => <li key={note}>{note}</li>)}</ul></article>;
+          return <article className={styles.chapterNote} id={`chapter-${number}-achievements`} key={number}><span id={`episode-${number}-achievements`} hidden /><h3>Chapter {number}: {episode ? episode.title : number}</h3><p><strong>{getAchievementsByEpisode(number).length} achievements.</strong> Plan these checks before moving on:</p><ul>{chapterNotes[number as keyof typeof chapterNotes].map((note) => <li key={note}>{note}</li>)}</ul>{episode ? <Link className={styles.chapterNoteLink} href={`/chapters/${getChapterSlug(episode)}#achievements`}>Open Chapter {number} route →</Link> : null}</article>;
           })}
           </div>
         </section>

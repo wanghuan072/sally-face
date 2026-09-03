@@ -28,7 +28,7 @@ const faqs = [
   { question: "Do I need to play Sally Face in order?", answer: "Yes. Later Chapters assume you know earlier relationships, clues and supernatural events, so a first playthrough works best in order." },
   { question: "Can I play Sally Face on mobile?", answer: "Yes. Portable Moose released the official iOS and Android versions on August 16, 2026." },
   { question: "Is Sally Face multiplayer?", answer: "No. Sally Face is a single-player episodic adventure." },
-  { question: "Is Sally Face 2 released yet?", answer: "No. Sally Face 2 is in production with a TBD release date and is planned to launch first through Steam Early Access." },
+  { question: "Is Sally Face 2 released yet?", answer: "No. Sally Face 2 was announced on August 16, 2026. The release date is TBD. Steam Early Access comes first, starting with Episode Six." },
 ];
 
 export default function HomePage() {
@@ -65,7 +65,7 @@ export default function HomePage() {
 
         <section className={primitives.section}>
           <SectionTitle title="Sally Face Chapter Walkthroughs" href="/chapters" linkLabel="View all chapters" />
-          <div className={cards.episodeGrid}>{episodes.map((episode) => <EpisodeCard key={episode.slug} episode={episode} />)}</div>
+          <div className={styles.chapterList}>{episodes.map((episode) => <EpisodeCard key={episode.slug} episode={episode} variant="row" />)}</div>
         </section>
 
         <section className={primitives.section}>
@@ -105,17 +105,17 @@ export default function HomePage() {
             <Image className={styles.sequelImage} src="/images/sally-face-2/sally-face-2-screenshot-3.webp" alt="Official Sally Face 2 preview screenshot" fill sizes="(max-width: 768px) 100vw, 1400px" />
             <div className={styles.sequelCopy}>
               <h2>Sally Face 2 — Release Status</h2>
-              <p>The sequel is in production. Its release date is still TBD, with Steam Early Access planned before console and mobile versions.</p>
+              <p>Announced August 16, 2026. The release date is still TBD. Steam Early Access comes first, starting with Episode Six, before console and mobile versions.</p>
               <div className={styles.sequelActions}>
                 <a className={`${primitives.button} ${primitives.buttonPurple}`} href={siteConfig.official.steamSequel} target="_blank" rel="noreferrer">Wishlist on Steam ↗</a>
                 <Link className={primitives.button} href="/sally-face-2">See confirmed details →</Link>
               </div>
             </div>
             <div className={styles.sequelFacts}>
+              <div className={styles.fact}><span>Announced</span><strong>16 Aug 2026</strong></div>
               <div className={styles.fact}><span>Release date</span><strong>TBD</strong></div>
-              <div className={styles.fact}><span>Developer</span><strong>Portable Moose</strong></div>
+              <div className={styles.fact}><span>First drop</span><strong>Episode Six</strong></div>
               <div className={styles.fact}><span>First platform</span><strong>Steam Early Access</strong></div>
-              <div className={styles.fact}><span>Status</span><strong>In production</strong></div>
             </div>
           </div>
         </section>

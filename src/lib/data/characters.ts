@@ -31,7 +31,7 @@ export function isCharacterFilterId(value: string | null): value is CharacterFil
 export function filterCharacters(list: Character[], filter: CharacterFilterId, query: string) {
   const needle = query.trim().toLowerCase();
   return list.filter((character) => {
-    const haystack = `${character.name} ${character.alias} ${character.role}`.toLowerCase();
+    const haystack = `${character.name} ${character.alias} ${character.role} ${character.playerNote}`.toLowerCase();
     if (needle && !haystack.includes(needle)) return false;
     if (filter === "all") return true;
     if (filter === "chapter-1") return character.chapters.includes(chapterSlugFor(1));

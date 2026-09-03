@@ -1,0 +1,13 @@
+.byline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  max-width: 68ch;
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.byline span:first-child {
+  color: var(--green-bright);
+}

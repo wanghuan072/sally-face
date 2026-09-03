@@ -52,7 +52,7 @@ export function CharacterExplorer({ characters }: { characters: Character[] }) {
         <label aria-label="Search characters"><input className={styles.search} type="search" name="character-search" autoComplete="off" value={query} onChange={(event) => updateQuery(event.target.value)} placeholder="Search characters…" /></label>
       </div>
       <div className={styles.characterGrid}>
-        {results.length ? results.map((character) => <CharacterCard character={character} key={character.slug} />) : <p className={styles.empty}>No profiles match that search.</p>}
+        {results.length ? results.map((character) => <CharacterCard character={character} variant="row" key={character.slug} />) : <p className={styles.empty}>No profiles match that search.</p>}
       </div>
     </>
   );

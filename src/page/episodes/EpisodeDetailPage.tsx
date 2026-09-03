@@ -1,12 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Episode } from "@/types/game";
+import { AuthorByline } from "@/components/common/AuthorByline";
 import { Breadcrumbs } from "@/components/common/Breadcrumbs";
 import { FaqList } from "@/components/common/FaqList";
 import { getCharactersBySlugs } from "@/lib/data/characters";
-import { getChapterSlug, getNextEpisode } from "@/lib/data/episodes";
+import { getChapterSlug, getNextEpisode, getPreviousEpisode } from "@/lib/data/episodes";
 import { getChapterGuide } from "@/lib/data/guides";
-import { getAchievementIcon, getAchievementId, getAchievementsByEpisode } from "@/lib/data/achievements";
+import { isPitfallTip } from "@/lib/content/route-notes";
+import { getInfluenceForChapter } from "@/data/game/character-profile-details";
+import { getAchievementIcon, getAchievementsByEpisode } from "@/lib/data/achievements";
 import { JsonLd } from "@/seo/JsonLd";
 import { articleSchema, breadcrumbSchema, faqSchema } from "@/seo/schema";
 import styles from "@/style/page/episodes/episode-detail.module.css";
@@ -19,6 +22,7 @@ export default function EpisodeDetailPage({ episode }: { episode: Episode }) {
   const episodeCharacters = getCharactersBySlugs(episode.characters);
   const episodeAchievements = getAchievementsByEpisode(episode.number);
   const nextEpisode = getNextEpisode(episode.number);
+  const previousEpisode = getPreviousEpisode(episode.number);
   const chapterGuide = getChapterGuide(episode.slug);
   const path = `/chapters/${getChapterSlug(episode)}`;
   const breadcrumbItems = [
@@ -42,7 +46,9 @@ export default function EpisodeDetailPage({ episode }: { episode: Episode }) {
             <div>
               <p>Sally Face · Chapter {episode.ordinal}</p>
               <h1>Sally Face Chapter {episode.number}: {episode.title}</h1>
-              <p className={styles.lead}>{episode.summary} Use this route for required steps, codes, missable items, achievements and the spoiler-marked ending.</p>
+              <p className={styles.lead}>{episode.summary} Use this route for the story order, required steps, codes, the people you meet, and the spoiler-marked ending.</p>
+              <p className={styles.playerNote}>{episode.playerNote}</p>
+              <AuthorByline />
             </div>
             <div className={styles.heroVisual}>
               <Image src={episode.image} alt={episode.imageAlt} fill loading="eager" sizes="(max-width: 768px) 100vw, 420px" />
@@ -68,6 +74,7 @@ export default function EpisodeDetailPage({ episode }: { episode: Episode }) {
 
           <section className={styles.sectionPanel}>
             <NumberedHeading number={2} title={`Chapter ${episode.number} Walkthrough: Steps, Codes & Choices`} id="walkthrough" />
+            <p className={styles.sectionLead}>Follow this in story order to finish the Chapter. Cutoff mistakes, replay-only awards, and the full achievement hunt are in the {chapterGuide ? <Link href={`/guides/${chapterGuide.slug}#missables`}>Chapter {episode.number} Walkthrough Guide</Link> : <Link href="/guides">Walkthrough Guides</Link>}.</p>
             <div className={styles.steps}>
               {episode.walkthrough.map((step, index) => (
                 <section className={styles.step} key={step.title} id={`step-${index + 1}`}>
@@ -75,8 +82,8 @@ export default function EpisodeDetailPage({ episode }: { episode: Episode }) {
                   <div className={styles.stepBody}>
                     <h3>Step {index + 1} – {step.title}</h3>
                     <p>{step.body}</p>
-                    <p className={styles.tip}>◉ Tip: {step.tip}</p>
-                    {chapterGuide && index === episode.walkthrough.length - 1 ? <p className={styles.stepLink}>Before you finish this Chapter, <Link href={`/guides/${chapterGuide.slug}`}>check the missable conversations, optional triggers, and replay-only achievements in the Chapter {episode.number} Walkthrough Guide</Link>.</p> : null}
+                    {isPitfallTip(step.tip) ? null : <p className={styles.tip}>◉ Tip: {step.tip}</p>}
+                    {chapterGuide && index === episode.walkthrough.length - 1 ? <p className={styles.stepLink}>Need every award from this Chapter? Use the <Link href={`/guides/${chapterGuide.slug}#missables`}>Chapter {episode.number} Walkthrough Guide</Link> for missables and replay cuts.</p> : null}
                   </div>
                 </section>
               ))}
@@ -85,37 +92,39 @@ export default function EpisodeDetailPage({ episode }: { episode: Episode }) {
 
           <section className={styles.sectionPanel} id="route-checks">
             <NumberedHeading number={3} title={`Chapter ${episode.number} Route Checks`} id="route-checks-heading" />
-            <p className={styles.sectionLead}>Use this as you move between areas. It highlights the interactions worth finishing before the story points you somewhere new.</p>
+            <p className={styles.sectionLead}>Use this as you move between areas. It is the work that lets the Chapter continue.</p>
             <div className={styles.routeChecks}>
               {episode.routeChecks.map((routeCheck) => <article className={styles.routeCheck} key={routeCheck.area}>
                 <p className={styles.routeArea}>{routeCheck.area}</p>
                 <h3>{routeCheck.goal}</h3>
                 <p>{routeCheck.check}</p>
-                {routeCheck.risk ? <p className={styles.routeRisk}>◉ {routeCheck.risk}</p> : null}
               </article>)}
-            </div>
-            <div className={styles.achievementPointers}>
-              <h3>Plan Chapter {episode.number} Achievements Before You Continue</h3>
-              {episode.achievementPointers.map((pointer) => <article key={pointer.name}><h4>{pointer.name}</h4><p><strong>Best time:</strong> {pointer.when}</p><p><strong>Watch out:</strong> {pointer.risk}</p></article>)}
             </div>
           </section>
 
           <section className={styles.sectionPanel}>
             <NumberedHeading number={4} title={`Chapter ${episode.number} Characters & Key Interactions`} id="characters" />
-            <p className={styles.sectionLead}>Meet these characters as the route unfolds. Their profile pages add background and later-story context without interrupting the chapter steps; use the <Link href="/characters">full character roster</Link> when you want to follow a relationship beyond this Chapter.</p>
+            <p className={styles.sectionLead}>Who you meet in this Chapter, and what they do on this route. Profiles keep the full relationship map. If a conversation can lock an award, that warning is in the {chapterGuide ? <Link href={`/guides/${chapterGuide.slug}#cast`}>Chapter {episode.number} Walkthrough Guide</Link> : <Link href="/guides">Walkthrough Guides</Link>}.</p>
             <div className={styles.characterGrid}>
-              {episodeCharacters.map((character) => (
-                <Link className={styles.character} href={`/characters/${character.slug}`} key={character.slug}>
-                  <span className={styles.characterImage}><Image src={character.image} alt="" fill sizes="74px" /></span>
-                  <span><h3>{character.name}</h3><span>View profile →</span></span>
-                </Link>
-              ))}
+              {episodeCharacters.map((character) => {
+                const influence = getInfluenceForChapter(character.slug, episode.slug);
+                return (
+                  <Link className={styles.character} href={`/characters/${character.slug}`} key={character.slug}>
+                    <span className={styles.characterImage}><Image src={character.image} alt="" fill sizes="74px" /></span>
+                    <span className={styles.characterMeta}>
+                      <h3>{character.name}</h3>
+                      <p className={styles.characterRole}>{influence?.impact ?? character.playerNote}</p>
+                      <span className={styles.characterLink}>View profile →</span>
+                    </span>
+                  </Link>
+                );
+              })}
             </div>
           </section>
 
           <section className={styles.sectionPanel}>
             <NumberedHeading number={5} title={`Chapter ${episode.number} Achievements`} id="achievements" />
-            <p className={styles.sectionLead}>All {episodeAchievements.length} chapter achievements are here. The story award comes naturally; mark the missable ones before you move into a late sequence, then use the <Link href={`/achievements#episode-${episode.number}-achievements`}>full achievement checklist</Link> for an exact trigger{chapterGuide ? <> or the <Link href={`/guides/${chapterGuide.slug}`}>Chapter {episode.number} Walkthrough Guide</Link> when the timing is what matters.</> : "."}</p>
+            <p className={styles.sectionLead}>These {episodeAchievements.length} awards belong to this Chapter. Story ones follow the route above.</p>
             <div className={styles.achievementGrid}>
               {episodeAchievements.map((achievement) => (
                 <article className={styles.achievementCard} key={achievement.name}>
@@ -123,9 +132,8 @@ export default function EpisodeDetailPage({ episode }: { episode: Episode }) {
                     <Image src={getAchievementIcon(achievement)} alt="" fill sizes="56px" />
                   </span>
                   <div>
-                    <h3><Link href={`/achievements#${getAchievementId(achievement)}`}>{achievement.name}</Link></h3>
+                    <h3>{achievement.name}</h3>
                     <p>{achievement.description}</p>
-                    <p className={styles.unlock}>How to unlock: {achievement.unlock}</p>
                     <div className={styles.achievementMeta}>
                       <span>{achievement.type}</span>
                       <span className={achievement.missable ? styles.missable : styles.story}>{achievement.missable ? "Missable" : "Story"}</span>
@@ -134,6 +142,7 @@ export default function EpisodeDetailPage({ episode }: { episode: Episode }) {
                 </article>
               ))}
             </div>
+            {chapterGuide ? <p className={styles.sectionFollow}><Link href={`/guides/${chapterGuide.slug}#achievements`}>How to unlock every Chapter {episode.number} achievement →</Link></p> : <p className={styles.sectionFollow}><Link href={`/achievements#episode-${episode.number}-achievements`}>Full achievement checklist →</Link></p>}
           </section>
 
           <section className={styles.sectionPanel}>
@@ -151,7 +160,7 @@ export default function EpisodeDetailPage({ episode }: { episode: Episode }) {
 
           <section className={styles.sectionPanel}>
             <NumberedHeading number={7} title={`Chapter ${episode.number} Puzzle Solutions & Codes`} id="puzzles" />
-            {chapterGuide ? <p className={styles.sectionLead}>These are the direct answers. If a code is right but the route still will not move, the <Link href={`/guides/${chapterGuide.slug}`}>Chapter {episode.number} Walkthrough Guide</Link> explains the missing setup or interaction.</p> : null}
+            <p className={styles.sectionLead}>These are the answers that let the Chapter continue. If a number is right but the room will not move, the stuck-point notes are in the {chapterGuide ? <Link href={`/guides/${chapterGuide.slug}#stuck-points`}>Chapter {episode.number} Walkthrough Guide</Link> : <Link href="/guides">Walkthrough Guides</Link>}.</p>
             <div className={styles.puzzleGrid}>
               {episode.puzzles.map((puzzle) => (
                 <article className={styles.puzzle} key={puzzle.title}>
@@ -167,6 +176,7 @@ export default function EpisodeDetailPage({ episode }: { episode: Episode }) {
             <p className={styles.referenceLead}>Each card pairs the result with the clue that produces it, so you can solve a blocked route without losing the context behind it.</p>
             <div className={styles.referenceGrid}>
               {episode.quickReferences.map((reference) => <article className={styles.reference} key={reference.title}>
+                {reference.searchIntent ? <p className={styles.searchIntent}>{reference.searchIntent}</p> : null}
                 <h3>{reference.title}</h3>
                 <dl><dt>Clue</dt><dd>{reference.clue}</dd><dt>Answer</dt><dd className={styles.referenceAnswer}>{reference.solution}</dd></dl>
                 {reference.caution ? <p className={styles.referenceCaution}>◉ {reference.caution}</p> : null}
@@ -175,16 +185,8 @@ export default function EpisodeDetailPage({ episode }: { episode: Episode }) {
             </div>
           </section> : null}
 
-          <section className={styles.sectionPanel} id="checkpoints">
-            <NumberedHeading number={episode.quickReferences ? 9 : 8} title={`Chapter ${episode.number} Missables & Final Checks`} id="checkpoints-heading" />
-            <p className={styles.sectionLead}>Use these checkpoints before a late route, a chapter close, or a replay. They are the things most worth confirming while this save is still open.</p>
-            <ul className={styles.checkpointList}>
-              {episode.checkpoints.map((checkpoint) => <li key={checkpoint}>{checkpoint}</li>)}
-            </ul>
-          </section>
-
           <section className={styles.sectionPanel} id="ending">
-            <NumberedHeading number={episode.quickReferences ? 10 : 9} title={`Chapter ${episode.number} Ending Explained`} id="ending-heading" />
+            <NumberedHeading number={episode.quickReferences ? 9 : 8} title={`Chapter ${episode.number} Ending Explained`} id="ending-heading" />
             <details className={styles.spoiler}>
               <summary>Major spoilers — reveal the ending</summary>
               <p>{episode.ending}</p>
@@ -192,12 +194,12 @@ export default function EpisodeDetailPage({ episode }: { episode: Episode }) {
           </section>
 
           <section className={styles.sectionPanel}>
-            <NumberedHeading number={episode.quickReferences ? 11 : 10} title="Frequently Asked Questions" id="faq" />
+            <NumberedHeading number={episode.quickReferences ? 10 : 9} title="Frequently Asked Questions" id="faq" />
             <FaqList faqs={episode.faqs} />
           </section>
 
           <nav className={styles.related} aria-label="Related guides">
-            <Link href="/chapters">All chapter routes →</Link>
+            {previousEpisode ? <Link href={`/chapters/${getChapterSlug(previousEpisode)}`}>← Previous: {previousEpisode.title}</Link> : <Link href="/chapters">All chapter routes →</Link>}
             <Link href="/achievements">All 35 achievements →</Link>
             {nextEpisode ? <Link href={`/chapters/${getChapterSlug(nextEpisode)}`}>Next: {nextEpisode.title} →</Link> : <Link href="/sally-face-2">Continue to Sally Face 2 →</Link>}
           </nav>
@@ -216,7 +218,6 @@ export default function EpisodeDetailPage({ episode }: { episode: Episode }) {
               <li><a href="#items">Items & collectibles</a></li>
               <li><a href="#puzzles">Puzzle solutions</a></li>
               {episode.quickReferences?.length ? <li><a href="#quick-answers">Quick answers</a></li> : null}
-              <li><a href="#checkpoints">Before you continue</a></li>
               <li><a href="#ending">Ending explained</a></li>
               <li><a href="#faq">FAQ</a></li>
             </ol>
@@ -229,12 +230,12 @@ export default function EpisodeDetailPage({ episode }: { episode: Episode }) {
               <div><dt>Guide stages</dt><dd>{episode.walkthrough.length}</dd></div>
               <div><dt>Key solutions</dt><dd>{episode.puzzles.length}</dd></div>
               <div><dt>Achievements</dt><dd><Link href={`/achievements#episode-${episode.number}-achievements`}>{episode.achievementCount} total →</Link></dd></div>
-              <div><dt>Release date</dt><dd>{episode.releaseDate}</dd></div>
+              <div><dt>Playtime</dt><dd>{episode.length.replace("≈", "About ")}</dd></div>
             </dl>
           </section>
           <section className={styles.sidePanel}>
-            <h2>Helpful Tip</h2>
-            <p>Talk to characters again after every discovery. Sally Face often hides achievement dialogue behind a changed story state.</p>
+            <h2>Need every award?</h2>
+            <p>This page finishes the Chapter. {chapterGuide ? <Link href={`/guides/${chapterGuide.slug}#missables`}>The Walkthrough Guide</Link> : <Link href="/guides">The Walkthrough Guides</Link>} covers cutoff mistakes, mutually exclusive outcomes, and the full achievement checklist.</p>
           </section>
         </aside>
       </div>

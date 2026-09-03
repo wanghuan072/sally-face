@@ -25,6 +25,10 @@ export function getNextEpisode(number: number) {
   return episodes.find((episode) => episode.number === number + 1);
 }
 
+export function getPreviousEpisode(number: number) {
+  return episodes.find((episode) => episode.number === number - 1);
+}
+
 export function getNextChapter(number: number) {
   return getNextEpisode(number);
 }

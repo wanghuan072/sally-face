@@ -34,6 +34,7 @@ const characterSlugs = new Set(characters.map((character) => character.slug));
 
 for (const chapter of chapters) {
   if (!/^chapter-\d-/.test(chapter.slug)) errors.push(`Chapter slug should use chapter- prefix: ${chapter.slug}`);
+  if (!chapter.playerNote) errors.push(`Chapter ${chapter.slug} is missing playerNote`);
   for (const slug of chapter.characters ?? []) {
     if (!characterSlugs.has(slug)) errors.push(`Chapter ${chapter.slug} references missing character ${slug}`);
   }
@@ -42,6 +43,7 @@ for (const chapter of chapters) {
 for (const character of characters) {
   if (!Array.isArray(character.chapters) || character.chapters.length === 0) errors.push(`Character ${character.slug} is missing chapters`);
   if (!Array.isArray(character.groups)) errors.push(`Character ${character.slug} is missing groups`);
+  if (!character.playerNote) errors.push(`Character ${character.slug} is missing playerNote`);
   for (const slug of character.chapters ?? []) {
     if (!chapterSlugs.has(slug)) errors.push(`Character ${character.slug} references missing chapter ${slug}`);
   }

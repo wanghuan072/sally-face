@@ -241,7 +241,6 @@
   image-rendering: pixelated;
 }
 
-.achievementName,
 .episodeTableLink,
 .achievementEpisodeLink,
 .routeLink {
@@ -250,12 +249,12 @@
 
 .achievementName {
   display: block;
+  color: var(--text);
   font-family: "Amatic SC", sans-serif;
   font-size: 1.5rem;
   line-height: 1;
 }
 
-.achievementName:hover,
 .episodeTableLink:hover,
 .achievementEpisodeLink:hover,
 .routeLink:hover {

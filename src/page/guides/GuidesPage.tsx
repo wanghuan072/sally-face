@@ -35,7 +35,7 @@ export default function GuidesPage({ category }: { category?: string }) {
         const isActive = activeLabel === name;
         return <Link className={isActive ? styles.activeFilter : undefined} href={href} aria-current={isActive ? "page" : undefined} key={name}>{name}</Link>;
       })}</nav></section>
-      <section className={primitives.section}><SectionTitle title={activeLabel === "All Guides" ? "Sally Face Walkthrough Guides by Chapter" : activeLabel} /><p className={styles.categoryLead}>Five Chapter guides for routes, codes, missables, collectibles, and the points where it is safest to pause.</p><div className={styles.grid}>{visibleGuides.map((guide) => <GuideCard guide={guide} key={guide.slug} />)}</div></section>
+      <section className={primitives.section}><SectionTitle title={activeLabel === "All Guides" ? "Sally Face Walkthrough Guides by Chapter" : activeLabel} /><p className={styles.categoryLead}>Chapter guides keep missables, replay-only achievements, and codes in one place. Use the Chapter route when you want the story in order.</p><div className={styles.grid}>{visibleGuides.map((guide) => <GuideCard guide={guide} key={guide.slug} />)}</div></section>
       <section className={styles.routeStrip}><div><p className={styles.eyebrow}>Playing for the first time?</p><h2>Start With the Chapter You’re Playing</h2><p>These guides solve one job at a time. For the story in order, begin with the Chapter route that matches your save.</p></div><Link className={primitives.button} href="/chapters">Browse all Chapters →</Link></section>
     </div>
   </main>;

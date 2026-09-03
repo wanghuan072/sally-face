@@ -7,6 +7,8 @@ import "@/style/globals.css";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { siteConfig } from "@/config/site";
+import { JsonLd } from "@/seo/JsonLd";
+import { organizationSchema, personSchema } from "@/seo/schema";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -16,8 +18,8 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   applicationName: siteConfig.name,
-  authors: [{ name: siteConfig.name }],
-  creator: siteConfig.name,
+  authors: [{ name: siteConfig.author.name, url: siteConfig.author.path }],
+  creator: siteConfig.author.name,
   publisher: siteConfig.name,
   category: "games",
   robots: { index: true, follow: true },
@@ -35,6 +37,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en">
       <body>
         <a className="skip-link" href="#main-content">Skip to content</a>
+        <JsonLd data={[organizationSchema(), personSchema()]} />
         <SiteHeader />
         {children}
         <SiteFooter />

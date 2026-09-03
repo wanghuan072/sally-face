@@ -71,6 +71,11 @@
   padding-bottom: 16px;
 }
 
+.chapterList {
+  display: grid;
+  gap: 18px;
+}
+
 .guidesGrid {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));

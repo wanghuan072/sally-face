@@ -15,6 +15,9 @@ export function createMetadata({ title, description, path, image = siteConfig.og
   return {
     title,
     description,
+    authors: [{ name: siteConfig.author.name, url: new URL(siteConfig.author.path, siteConfig.url).toString() }],
+    creator: siteConfig.author.name,
+    publisher: siteConfig.name,
     alternates: { canonical },
     openGraph: {
       title,

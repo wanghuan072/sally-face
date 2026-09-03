@@ -295,11 +295,38 @@ export const legalPages: Record<string, LegalDocument> = {
     title: "About Sally Face Guide",
     intro: "This is an independent companion for people who are actually in a Chapter: stuck on a keypad, unsure whether a conversation is missable, trying to place a name, or looking for the official place to buy the game. It is not a wiki of every theory, and it is not Portable Moose.",
     facts: [
-      { label: "Chapters", value: "Five story routes" },
-      { label: "Achievements", value: "All 35 on Steam" },
+      { label: "Editor", value: siteConfig.author.name },
+      { label: "Started", value: "Early 2026" },
       { label: "Status", value: "Fan-made, unofficial" },
     ],
     sections: [
+      {
+        heading: siteConfig.author.name,
+        body: [
+          `${siteConfig.author.name} started in early 2026 after a familiar problem on a few hard-to-search indie games, Sally Face among them: the big general walkthroughs often skip the missable conversation, lock the wrong tea outcome, or copy a code without saying when it comes back later.`,
+          "This site is the Sally Face part of that work. It is an independent fan guide for people who are already in a Chapter — not a studio page, not a theory wiki, and not a restatement of another site’s outline. The byline on Chapter routes and Guides points here so a reader can see who maintains the text.",
+        ],
+        note: {
+          label: "How to reach the editor",
+          text: `Corrections, broken links and rights notices go to ${email}. Name the page URL and platform when a route does not match your game.`,
+        },
+      },
+      {
+        heading: "How Frontline Pathfinder works",
+        body: [
+          "A page earns its place if it helps someone finish a route without a second guess. That means replaying a Chapter when two outcomes cannot share one save, writing the step as something you can do again in the game, and checking store or developer facts when the question is a date, a platform or a listing.",
+          "The layout follows the same idea. A Chapter page keeps story order. A Guide isolates missables and replay-only achievements. Quick answers and route checks exist so a player can land on the stuck point without rereading the whole Chapter.",
+        ],
+        list: {
+          title: "What that looks like in practice",
+          items: [
+            "Codes and missables are written as in-game steps, then checked again on a later run",
+            "A one-playthrough limit — such as Charley’s two tea outcomes — is called out before the save closes",
+            "Story claims stay inside what the game shows; unverified sequel dates are left unpublished",
+            "Official art and store facts stay attributed; this site does not host the game or a modified download",
+          ],
+        },
+      },
       {
         heading: "Who the site is for",
         body: [
@@ -355,9 +382,10 @@ export const legalPages: Record<string, LegalDocument> = {
       },
     ],
     faqs: [
+      { question: `Who is ${siteConfig.author.name}?`, answer: `${siteConfig.author.name} started in early 2026 and edits this independent Sally Face Guide. The pages are written from replayed routes and missable checks, and corrections go to ${email}.` },
       { question: "Is this the official Sally Face website?", answer: "No. Portable Moose is the developer. This is an independent fan guide for players." },
       { question: "Why are there both Chapters and Guides?", answer: "Chapters follow the story. Guides isolate missables, codes and replay risks for the same Chapter so you can check them without rereading every beat." },
-      { question: "Do you cover Sally Face 2?", answer: "Only confirmed public details: it is in production, the date is TBA, and Steam Early Access is the stated first step. Unannounced dates are not invented here." },
+      { question: "Do you cover Sally Face 2?", answer: "Only confirmed public details: announced 16 August 2026, date TBD, Steam Early Access first with Episode Six. Unannounced dates are not invented here." },
     ],
     related: [related.contact, related.copyright, related.terms],
   },

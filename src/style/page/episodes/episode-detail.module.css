@@ -27,6 +27,13 @@
   font-size: 1.08rem;
 }
 
+.playerNote {
+  max-width: 68ch;
+  margin: 14px 0 0;
+  color: #ead7a4;
+}
+
+
 .heroVisual {
   position: relative;
   height: 270px;
@@ -184,6 +191,23 @@
   text-decoration-color: currentColor;
 }
 
+.sectionFollow {
+  margin: 16px 0 0;
+}
+
+.sectionFollow a {
+  color: #e0a8f0;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgba(224, 168, 240, 0.55);
+  text-underline-offset: 3px;
+}
+
+.sectionFollow a:hover {
+  color: #f4d8fb;
+  text-decoration-color: currentColor;
+}
+
 .characterGrid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -195,7 +219,7 @@
   grid-template-columns: 74px 1fr;
   min-width: 0;
   gap: 11px;
-  align-items: center;
+  align-items: start;
   padding: 10px;
   border: 1px solid var(--border);
   background: rgba(255, 255, 255, 0.015);
@@ -213,11 +237,22 @@
 }
 
 .character h3 {
-  margin: 0 0 3px;
+  margin: 0 0 4px;
   font-size: 1.5rem;
 }
 
-.character span {
+.characterMeta {
+  min-width: 0;
+}
+
+.characterRole {
+  margin: 0 0 6px;
+  color: var(--text-soft);
+  font-size: 0.88rem;
+  line-height: 1.35;
+}
+
+.characterLink {
   color: var(--green);
   font-size: 0.85rem;
 }
@@ -300,10 +335,6 @@
   line-height: 1;
 }
 
-.achievementCard h3 a:hover {
-  color: var(--green-bright);
-}
-
 .achievementCard p {
   margin: 0;
   color: var(--text-soft);
@@ -314,6 +345,19 @@
   margin-top: 7px;
   color: #d8cda6;
   font-size: 0.84rem;
+}
+
+.achievementCard .unlock a {
+  color: #e0a8f0;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgba(224, 168, 240, 0.55);
+  text-underline-offset: 3px;
+}
+
+.achievementCard .unlock a:hover {
+  color: #f4d8fb;
+  text-decoration-color: currentColor;
 }
 
 .routeChecks {
@@ -485,6 +529,14 @@
   color: #c7b5d1;
 }
 
+.pitfall {
+  margin: 14px 0 0;
+  padding: 10px 12px;
+  border: 1px solid rgba(213, 186, 118, 0.55);
+  background: rgba(213, 186, 118, 0.1);
+  color: #ead7a4;
+}
+
 .stepLink {
   margin: 12px 0 0;
   color: var(--text-soft);
@@ -652,6 +704,19 @@
   font-size: 1.9rem;
 }
 
+.sidePanel p a {
+  color: #e0a8f0;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgba(224, 168, 240, 0.55);
+  text-underline-offset: 3px;
+}
+
+.sidePanel p a:hover {
+  color: #f4d8fb;
+  text-decoration-color: currentColor;
+}
+
 .toc {
   display: grid;
   gap: 5px;
@@ -752,6 +817,10 @@
 @media (max-width: 1024px) {
   .pageGrid {
     grid-template-columns: 1fr;
+  }
+
+  .characterGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .sidebar {

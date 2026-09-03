@@ -165,7 +165,8 @@
     "seo": {
       "title": "Sally Face Chapter 1 Guide – Steps and Route",
       "description": "Complete the Sally Face Chapter 1 walkthrough with the 5364 dream code, Gear Boy route, Charley tea outcomes, key items, missables and all seven achievements."
-    }
+    },
+    "playerNote": "Write down 5364 and finish one tea route before you leave. Both come back later."
   },
   {
     "slug": "chapter-2-the-wretched",
@@ -333,7 +334,8 @@
     "seo": {
       "title": "Sally Face Chapter 2 Guide – Steps and Route",
       "description": "Complete The Wretched with all four seals, Super Gear Boy chapters, the puzzle-box chip, room 403, hidden conversations and every Chapter 2 achievement."
-    }
+    },
+    "playerNote": "Talk to Larry more than once, and check room 403 before the story moves on."
   },
   {
     "slug": "chapter-3-the-bologna-incident",
@@ -547,7 +549,8 @@
     "seo": {
       "title": "Sally Face Chapter 3 Guide – Steps and Codes",
       "description": "Use this Bologna Incident guide for the timed white-room code, 3141 desk code, 491145 password, journal pages, school clues and all Chapter 3 achievements."
-    }
+    },
+    "playerNote": "The school desk and Henry’s computer use different codes. Travis’s bathroom talk is easy to miss."
   },
   {
     "slug": "chapter-4-the-trial",
@@ -758,7 +761,8 @@
     "seo": {
       "title": "Sally Face Chapter 4 Guide – Steps and Route",
       "description": "Follow The Trial route for the bird-cage teeth solution, 867 gallery-door input, 435542 panel code, all VHS tapes, character routes and Chapter 4 achievements."
-    }
+    },
+    "playerNote": "The wall number is a clue, not the door code. Reload if a rhythm challenge fails."
   },
   {
     "slug": "chapter-5-memories-and-dreams",
@@ -991,6 +995,7 @@
     "seo": {
       "title": "Sally Face Chapter 5 Guide – Steps and Route",
       "description": "Finish Memories and Dreams with the 4035364 shed code, DOG color pieces, deathless sequences, secret routes, ending context and Chapter 5 achievements."
-    }
+    },
+    "playerNote": "The shed code is 403 plus the Chapter 1 dream code, entered as one number."
   }
 ]
