@@ -9,6 +9,19 @@ import { articleSchema, breadcrumbSchema, faqSchema } from "@/seo/schema";
 import primitives from "@/style/common/primitives.module.css";
 import styles from "@/style/page/content/article.module.css";
 
+type TimelineItem = {
+  when: string;
+  title: string;
+  detail: string;
+  href?: string;
+  highlight?: boolean;
+};
+
+type TimelineEra = {
+  era: string;
+  items: TimelineItem[];
+};
+
 const faqs = [
   { question: "What is the Sally Face 2 release date?", answer: "Portable Moose lists the date as TBD on the Press Kit and Steam page. The sequel was announced on August 16, 2026. Adding it to a wishlist is not a launch window." },
   { question: "When is Sally Face 2 coming out?", answer: "There is no confirmed year, month or day. The official first step is Steam Early Access on Windows, macOS and Linux." },
@@ -30,7 +43,7 @@ const features = [
   "Hand-crafted by humans — no AI-generated content",
 ];
 
-const history = [
+const history: TimelineEra[] = [
   {
     era: "2006–2014",
     items: [

@@ -38,7 +38,12 @@ export type LegalDocument = {
 };
 
 const email = siteConfig.email;
-const updated = "September 2, 2026";
+const updated = new Date(`${siteConfig.contentUpdated}T00:00:00Z`).toLocaleDateString("en-US", {
+  month: "long",
+  day: "numeric",
+  year: "numeric",
+  timeZone: "UTC",
+});
 
 const related = {
   privacy: { href: "/legal/privacy-policy", label: "Privacy Policy", blurb: "What this fan site does and does not collect." },
