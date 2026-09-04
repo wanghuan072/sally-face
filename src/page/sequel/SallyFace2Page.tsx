@@ -20,6 +20,7 @@ const faqs = [
   { question: "What platforms will Sally Face 2 be on?", answer: "Steam Early Access is first (Windows, macOS and Linux). The Press Kit says consoles and mobile will follow. No console SKUs or mobile store pages exist yet." },
   { question: "Who is developing Sally Face 2?", answer: "Portable Moose. Steve Gabry wrote the outline, then hired Michael Thomas (programming), Emily Zahn (backgrounds) and Katie Tealwen (character art and animation), expanding from a solo studio to a four-person team." },
   { question: "Does Sally Face 2 use AI-generated content?", answer: "No. The Press Kit, Steam page and Portable Moose press release all say the game is hand-crafted by humans, with no AI-generated content." },
+  { question: "What is the Sally Face timeline from Episode One to Sally Face 2?", answer: "Gabry first sketched Sally Face around 2006–2007 as a darker 1990s-style cartoon. The cartoon never shipped. In 2015 he rewrote it as a five-episode adventure game. Episode One: Strange Neighbors launched on August 16, 2016, and the original five chapters ran through 2019. Portable Moose announced Sally Face 2 on August 16, 2026. Steam Early Access is planned to start with Episode Six. The sequel’s release date is still TBD." },
 ];
 
 const features = [
@@ -29,19 +30,48 @@ const features = [
   "Hand-crafted by humans — no AI-generated content",
 ];
 
-const timeline = [
-  { when: "2021–2023", detail: "Steve Gabry wrote the sequel outline while porting the original game to consoles and working on other projects." },
-  { when: "2024", detail: "Pre-production on Sally Face 2 began." },
-  { when: "2025", detail: "Portable Moose made its first hire, programmer Michael Thomas, then brought on artists Emily Zahn and Katie Tealwen after more than 10,000 applications." },
-  { when: "2025–2026", detail: "The studio expanded from a solo operation to a four-person team focused on producing the sequel." },
-  { when: "16 Aug 2026", detail: "Sally Face 2 was announced on the tenth anniversary of Episode One, with an official teaser and a Steam wishlist page. The original game also launched on iOS and Android the same day." },
-  { when: "Current", detail: "Production continues. The release date is still TBD. Wishlisting on Steam is the only official next step." },
+const history = [
+  {
+    era: "2006–2014",
+    items: [
+      { when: "2006–2007", title: "A sketch named Sally Face", detail: "Gabry has written that, around 2006 and 2007, a creepy sketch and the name “Sally Face” arrived together. He later tied that drawing to an odd dream from his college years." },
+      { when: "2007", title: "Sal, Larry and the apartments", detail: "Over the following weeks he imagined a boy in a building of odd tenants, and a cape-wearing friend in the basement. That pairing became Sal and Larry." },
+      { when: "2007", title: "A darker 1990s cartoon", detail: "Within months he had a backstory, a cast and a world. The first sewn-on face became a prosthetic mask. He wanted the look of 1990s Nicktoons with darker, more mature stories." },
+      { when: "2007", title: "An internet cartoon that fell apart", detail: "Gabry tried to gather artist and animator friends for an online cartoon. Nobody could commit, the project collapsed, and the idea sat unused for years." },
+    ],
+  },
+  {
+    era: "2015–2019",
+    items: [
+      { when: "2015", title: "From cartoon to adventure game", detail: "The concept returned as a game instead of a cartoon. He rewrote it as a five-episode story and began Episode One in his free time as Portable Moose." },
+      { when: "16 Aug 2016", title: "Episode One: Strange Neighbors", detail: "Sally Face Episode One launched. Portable Moose marks this date as the series’ starting anniversary.", href: "/chapters/chapter-1-strange-neighbors" },
+      { when: "2016–2019", title: "Five chapters, one developer", detail: "Gabry released the original story across five episodes, making the art, music, narrative and design himself.", href: "/chapters" },
+    ],
+  },
+  {
+    era: "2021–2025",
+    items: [
+      { when: "21 Jan 2021", title: "Nintendo Switch and a physical run", detail: "With help from Michael Thomas, the complete game reached Nintendo Switch. Super Rare Games produced a limited physical edition." },
+      { when: "2021–2023", title: "Sally Face 2 outline", detail: "While porting the original game and working on other projects, Gabry wrote the outline for the sequel." },
+      { when: "15 Apr 2022", title: "PlayStation and Xbox", detail: "The original game arrived on PlayStation and Xbox. The technical port was handled by The Knights of Unity." },
+      { when: "2022–2024", title: "Board game and art book", detail: "Maestro Media published the Strange Nightmares board game. Titan Books published the official art book in 2024." },
+      { when: "2024", title: "Sequel pre-production", detail: "Gabry began pre-production on Sally Face 2." },
+      { when: "2025", title: "A team of four", detail: "Michael Thomas joined as the first hire. After more than 10,000 applications, Emily Zahn and Katie Tealwen joined for backgrounds and character art." },
+    ],
+  },
+  {
+    era: "2026–",
+    items: [
+      { when: "16 Aug 2026", title: "Tenth anniversary and Sally Face 2", detail: "On the tenth anniversary of Episode One, the original game launched on iOS and Android, and Portable Moose announced Sally Face 2 with a teaser and a Steam wishlist page.", highlight: true },
+      { when: "Next", title: "Episode Six in Early Access", detail: "Steam’s plan is to open Early Access with Sally Face 2, Episode Six, under one purchase. The sequel’s release date remains TBD." },
+    ],
+  },
 ];
 
 export default function SallyFace2Page() {
   const path = "/sally-face-2";
   const title = "Sally Face 2 — Release Status, Trailer & Confirmed Details";
-  const description = "Confirmed Sally Face 2 facts from Portable Moose: announced 16 August 2026, release date TBD, Steam Early Access first with Episode Six, official teaser, platforms and the Early Access plan.";
+  const description = "Sally Face timeline from Gabry’s unused cartoon sketch to the Sally Face 2 announcement, plus the official teaser, Episode Six Early Access plan and a TBD release date.";
 
   return (
     <main id="main-content">
@@ -51,7 +81,7 @@ export default function SallyFace2Page() {
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Sally Face 2" }]} />
           <div className={styles.heroGrid}>
             <div>
-              <p className={styles.eyebrow}>Last reviewed September 3, 2026</p>
+              <p className={styles.eyebrow}>Last reviewed September 4, 2026</p>
               <h1>Sally Face 2 <span>Release Status, Trailer & Confirmed Details</span></h1>
               <p className={styles.lead}>Sally Face 2 was announced on August 16, 2026, the tenth anniversary of Episode One. The release date is still TBD. Steam Early Access comes first, starting with Episode Six.</p>
               <AuthorByline />
@@ -85,22 +115,36 @@ export default function SallyFace2Page() {
             </ul>
           </section>
 
+          <section className={styles.section} id="timeline">
+            <h2>Sally Face Timeline: From a Sketch to Sally Face 2</h2>
+            <p>This timeline starts before Sally Face was a game: Gabry’s early sketches, the cartoon that never shipped, then the five chapters, the ports, and the tenth-anniversary announcement of Sally Face 2. It follows only what he and Portable Moose have said in public. It is not a plot recap.</p>
+            <div className={styles.eras}>
+              {history.map((group) => (
+                <div className={styles.era} key={group.era}>
+                  <header className={styles.eraHead}>
+                    <h3>{group.era}</h3>
+                  </header>
+                  <div className={styles.timeline}>
+                    {group.items.map((item) => (
+                      <article className={`${styles.timelineItem} ${item.highlight ? styles.timelineHighlight : ""}`} key={`${group.era}-${item.when}-${item.title}`}>
+                        <span className={styles.timelineNode} aria-hidden="true" />
+                        <strong>{item.when}</strong>
+                        <div>
+                          <h4>{item.href ? <Link href={item.href}>{item.title}</Link> : item.title}</h4>
+                          <p>{item.detail}</p>
+                        </div>
+                      </article>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
           <section className={styles.section} id="release">
             <h2>Sally Face 2 Release Date</h2>
             <p>The official release date is TBD on both the Press Kit and the Steam listing. Portable Moose said in the anniversary stream that a date is not ready to announce yet, and that wishlisting on Steam is the helpful next step. Any page claiming a confirmed year, month or Early Access day is speculating unless those two sources change.</p>
             <p>Steam’s Early Access FAQ also quotes a hope of staying in Early Access for less than one year. That is a hope, not a launch window, and it is not a calendar for Episode Six.</p>
-          </section>
-
-          <section className={styles.section} id="status">
-            <h2>Current Development Status</h2>
-            <div className={styles.timeline}>
-              {timeline.map((item) => (
-                <div className={styles.timelineItem} key={item.when}>
-                  <strong>{item.when}</strong>
-                  <span>{item.detail}</span>
-                </div>
-              ))}
-            </div>
           </section>
 
           <section className={styles.section} id="trailer">
@@ -188,8 +232,8 @@ export default function SallyFace2Page() {
             <h2>On This Page</h2>
             <nav>
               <a href="#overview">Overview</a>
+              <a href="#timeline">Sketch to Sally Face 2</a>
               <a href="#release">Release date</a>
-              <a href="#status">Development status</a>
               <a href="#trailer">Official teaser</a>
               <a href="#story">Story & characters</a>
               <a href="#early-access">Early Access plan</a>

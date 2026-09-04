@@ -106,8 +106,8 @@ export const legalPages: Record<string, LegalDocument> = {
       {
         heading: "Cookies, fonts and analytics",
         body: [
-          "The site may use storage that is required to deliver a page, apply a basic preference or protect the service. It does not currently run a marketing pixel, session-replay recorder or advertising network on these pages.",
-          "Display fonts are bundled with the site rather than loaded from a third-party font foundry at visit time. If an analytics or similar service is added later, this policy will be updated to name the provider and the relevant visitor choices before that feature is treated as part of the site.",
+          "The site may use storage that is required to deliver a page, apply a basic preference or protect the service. Pages also load Google Analytics (gtag.js, measurement ID G-T1G5XL3ZDE) so visits can be counted in aggregate. Google may set cookies or similar storage for that measurement; browser or Google controls can limit it. The site does not run a marketing pixel, session-replay recorder or a separate advertising network on these pages.",
+          "Display fonts are bundled with the site rather than loaded from a third-party font foundry at visit time.",
         ],
         list: {
           title: "External services you may meet after a click",

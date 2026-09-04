@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
+import Script from "next/script";
 import "@fontsource/amatic-sc/400.css";
 import "@fontsource/amatic-sc/700.css";
 import "@fontsource/patrick-hand/400.css";
@@ -36,6 +37,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body>
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-T1G5XL3ZDE" strategy="afterInteractive" />
+        <Script id="gtag-init" strategy="afterInteractive">{`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-T1G5XL3ZDE');`}</Script>
         <a className="skip-link" href="#main-content">Skip to content</a>
         <JsonLd data={[organizationSchema(), personSchema()]} />
         <SiteHeader />
