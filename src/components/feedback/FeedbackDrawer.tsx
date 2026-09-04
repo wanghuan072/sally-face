@@ -18,9 +18,16 @@ type ReviewResponse = {
 };
 
 const ratings = [1, 2, 3, 4, 5];
+type SocialNetwork = "facebook" | "x" | "reddit";
 
 function dateLabel(value: string) {
   return new Intl.DateTimeFormat("en", { month: "short", day: "numeric", year: "numeric" }).format(new Date(value));
+}
+
+function SocialIcon({ network }: { network: SocialNetwork }) {
+  if (network === "facebook") return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.7 20v-7h2.5l.4-2.8h-2.9V8.4c0-.8.3-1.4 1.5-1.4h1.6V4.5c-.3 0-1.2-.2-2.3-.2-2.3 0-3.8 1.3-3.8 3.8v2.1H8.1V13h2.6v7h3Z" /></svg>;
+  if (network === "x") return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4.5 18.5 19.5M18.7 4.5 12.8 11M11.2 13 5.3 19.5" /></svg>;
+  return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 12c0-1.1-.9-2-2-2-.3 0-.6.1-.8.2-.4-2.2-2.3-3.9-4.7-3.9s-4.3 1.7-4.7 3.9c-.3-.1-.5-.2-.8-.2-1.1 0-2 .9-2 2 0 .8.5 1.5 1.2 1.8-.1.3-.2.6-.2 1 0 1.1.9 2 2 2 .5 0 .9-.2 1.3-.5.8.8 1.9 1.2 3.2 1.2s2.4-.4 3.2-1.2c.3.3.8.5 1.3.5 1.1 0 2-.9 2-2 0-.3-.1-.7-.2-1 .7-.3 1.2-1 1.2-1.8Z" /><path d="M9.8 12.8h.1M15 12.8h.1M10.2 15c.8.5 2.8.5 3.6 0M12.7 9.8v-2" /></svg>;
 }
 
 export function FeedbackDrawer() {
@@ -81,6 +88,17 @@ export function FeedbackDrawer() {
     }
   }
 
+  function shareTo(network: SocialNetwork) {
+    const pageUrl = encodeURIComponent(window.location.href);
+    const title = encodeURIComponent(document.title);
+    const destinations: Record<SocialNetwork, string> = {
+      facebook: `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`,
+      x: `https://x.com/intent/tweet?url=${pageUrl}&text=${title}`,
+      reddit: `https://www.reddit.com/submit?url=${pageUrl}&title=${title}`,
+    };
+    window.open(destinations[network], "_blank", "noopener,noreferrer");
+  }
+
   async function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setMessage("");
@@ -109,6 +127,13 @@ export function FeedbackDrawer() {
 
   return (
     <>
+      <div className={styles.shareRail} aria-label="Share this page">
+        {(["facebook", "x", "reddit"] as const).map((network) => (
+          <button className={`${styles.networkButton} ${styles[network]}`} type="button" key={network} aria-label={`Share on ${network === "x" ? "X" : network[0].toUpperCase() + network.slice(1)}`} onClick={() => shareTo(network)}>
+            <SocialIcon network={network} />
+          </button>
+        ))}
+      </div>
       <button className={styles.launcher} type="button" aria-expanded={open} aria-controls="feedback-drawer" onClick={openDrawer}>
         <svg className={styles.launcherIcon} viewBox="0 0 24 24" aria-hidden="true">
           <path d="M5.2 5.7h13.6v9.1H10l-4.8 3.7v-3.7H5.2z" />
