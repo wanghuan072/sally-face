@@ -7,6 +7,7 @@ import "@fontsource/patrick-hand/400.css";
 import "@/style/globals.css";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
+import { FeedbackDrawer } from "@/components/feedback/FeedbackDrawer";
 import { siteConfig } from "@/config/site";
 import { JsonLd } from "@/seo/JsonLd";
 import { organizationSchema, personSchema } from "@/seo/schema";
@@ -44,6 +45,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <SiteHeader />
         {children}
         <SiteFooter />
+        <FeedbackDrawer />
       </body>
     </html>
   );

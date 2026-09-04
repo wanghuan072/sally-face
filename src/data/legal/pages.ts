@@ -56,24 +56,24 @@ const related = {
 export const legalPages: Record<string, LegalDocument> = {
   "privacy-policy": {
     title: "Privacy Policy",
-    intro: "Sally Face Guide is a public reference, not an account service. You can read Chapter routes, character pages and achievement lists without signing in. This policy describes the limited information that can appear when a page is requested or when you choose to email the site.",
+    intro: "Sally Face Guide is a public reference, not an account service. You can read Chapter routes, character pages and achievement lists without signing in. This policy describes the limited information that can appear when a page is requested, when you leave a public feedback note, or when you choose to email the site.",
     facts: [
       { label: "Accounts", value: "None" },
       { label: "Newsletter", value: "Not offered" },
-      { label: "Contact", value: email },
+      { label: "Contact", value: `${email} or a public feedback note` },
     ],
     sections: [
       {
         heading: "What this policy covers",
         body: [
           "This policy applies to sallyface.org, including Chapter routes, Guides, character profiles, the achievement checklist, download pages, the Sally Face 2 status page and these legal pages. It does not apply to Portable Moose, Steam, Google Play, the App Store, console stores or any other site reached through an outbound link.",
-          "The site publishes player-reference material. It does not create accounts, accept comments, take payments, host game files or keep a profile of how you play Sally Face.",
+          "The site publishes player-reference material. It does not create accounts, take payments, host game files or keep a profile of how you play Sally Face. You may optionally leave a public feedback note with a display name, a one-to-five rating and a message.",
         ],
       },
       {
         heading: "The short version",
         body: [
-          "Reading the site does not require a name, email address, save file or store login. There is no shopping cart, wishlist or membership. The only direct contact channel is an email address you choose to use.",
+          "Reading the site does not require a name, email address, save file or store login. There is no shopping cart, wishlist or membership. You can contact the editor by email, or leave an optional public feedback note without creating an account.",
           "The servers that deliver a page can still see ordinary connection data, the same way almost any website can. That information is used to serve the page, keep the site available and investigate abuse—not to follow you across the web or score you as a player.",
         ],
         list: {
@@ -106,6 +106,13 @@ export const legalPages: Record<string, LegalDocument> = {
         examples: [
           { label: "Useful to include", detail: "The page URL, Chapter or Guide name, PC / mobile / console, and the step that did not match your game." },
           { label: "Leave out", detail: "Account emails, order IDs, recovery codes, full save files, or another person’s private information." },
+        ],
+      },
+      {
+        heading: "Public feedback notes",
+        body: [
+          "The feedback panel lets you post an optional display name, a one-to-five rating and a message about the guide. Your note is public when it is submitted, so do not include an email address, account details, spoilers you do not want others to see, or other personal information.",
+          "The feedback service records the submitted fields, the time of submission and limited technical information used to prevent repeated automated posts. Notes may be removed when they are abusive, off-topic, contain personal information, or need correction. To request removal of a note, email the editor with its text and date so it can be located.",
         ],
       },
       {
@@ -374,7 +381,7 @@ export const legalPages: Record<string, LegalDocument> = {
       {
         heading: "What this site will not do",
         body: [
-          "It will not host Sally Face, a modified APK, or a “free download” mirror. It will not run a comment section, paid placement, merch shop or unofficial patch notes feed. It will not pretend to recover a Steam account or refund a console purchase.",
+          "It will not host Sally Face, a modified APK, or a “free download” mirror. It will not run a social forum, paid placement, merch shop or unofficial patch notes feed. Public feedback notes are for guide corrections and player tips, not account support or live discussion. It will not pretend to recover a Steam account or refund a console purchase.",
           "It also will not replace credits, official announcements or Portable Moose support. When the honest next step is a store or developer page, the guide links out and stops.",
         ],
       },
@@ -396,10 +403,10 @@ export const legalPages: Record<string, LegalDocument> = {
   },
   "contact-us": {
     title: "Contact Us",
-    intro: "Email is the only contact channel. Use it for a route that no longer matches the game, a broken link, an attribution question or a copyright notice. It is not Portable Moose support, Steam support or a place to ask for a free copy of the game.",
+    intro: "Use the public feedback panel for a quick guide tip or correction, and email for a route that no longer matches the game, an attribution question or a copyright notice. Neither channel is Portable Moose support, Steam support or a place to ask for a free copy of the game.",
     facts: [
       { label: "Email", value: email },
-      { label: "Tickets / chat", value: "Not available" },
+      { label: "Public notes", value: "Available from the feedback panel" },
       { label: "Best for", value: "Corrections and rights notices" },
     ],
     sections: [
@@ -453,12 +460,12 @@ export const legalPages: Record<string, LegalDocument> = {
         heading: "Replies and records",
         body: [
           "Messages are read when reasonably possible. Accuracy, broken pages, accessibility and rights issues are more likely to get a reply than a request for official support this site cannot provide. A response time is not guaranteed.",
-          "A message may be kept while the issue is open and for a reasonable time after, so a correction has context. The Privacy Policy explains how email is handled. There is no contact form, ticket portal or phone line.",
+          "A message may be kept while the issue is open and for a reasonable time after, so a correction has context. The Privacy Policy explains how email and public feedback notes are handled. There is no ticket portal or phone line.",
         ],
       },
     ],
     faqs: [
-      { question: "Is there a Discord or comment form?", answer: "No. Email is the contact method so a report stays attached to a URL and a specific page." },
+      { question: "Is there a Discord or comment form?", answer: "There is a public feedback panel for tips and guide comments. Use email when a report needs a URL, platform details, a rights notice or a private reply." },
       { question: "Will you add my fan theory or a leaked sequel date?", answer: "No. Character pages and the Sally Face 2 page stay with what the game and Portable Moose have made public." },
       { question: "I need help buying or installing the game.", answer: "Use the Download page for official listings. Install and purchase problems belong to that store’s support, not this inbox." },
     ],
