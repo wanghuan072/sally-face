@@ -1,7 +1,7 @@
 "use client";
 
 import Script from "next/script";
-import { useEffect, useState } from "react";
+import { useEffect, useId, useState } from "react";
 import styles from "@/style/ads/ad-slot.module.css";
 
 type AdFormat = "native" | "rectangle" | "leaderboard" | "responsive";
@@ -18,13 +18,6 @@ const bannerOptions = {
   rectangle: { key: "35ee345c5a0ae58d0205272c1a163244", width: 300, height: 250 },
   leaderboard: { key: "21138cd816ae45697e316c2c882d1d41", width: 728, height: 90 },
 };
-
-function bannerDocument({ key, width, height }: { key: string; width: number; height: number }) {
-  const scriptUrl = `https://www.highrevenueformat.com/${key}/invoke.js`;
-
-  // 每个横幅在独立 iframe 中执行，避免不同广告位共享 window.atOptions 而相互覆盖。
-  return `<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;padding:0;overflow:hidden;background:transparent}</style></head><body><script>atOptions={key:'${key}',format:'iframe',height:${height},width:${width},params:{}};</script><script src="${scriptUrl}"></script></body></html>`;
-}
 
 function NativeBanner({ visibility }: { visibility: DeviceVisibility }) {
   return (
@@ -53,6 +46,26 @@ function ResponsiveBanner() {
   return <AdSlot format={isMobile ? "rectangle" : "leaderboard"} />;
 }
 
+function Banner({ format, visibility }: { format: "rectangle" | "leaderboard"; visibility: DeviceVisibility }) {
+  const option = bannerOptions[format];
+  const slotId = useId().replace(/:/g, "");
+  const config = JSON.stringify({
+    key: option.key,
+    format: "iframe",
+    height: option.height,
+    width: option.width,
+    params: {},
+  });
+
+  return (
+    <section className={`${styles.slot} ${styles[format]} ${visibility === "desktop" ? styles.desktopOnly : ""} ${visibility === "mobile" ? styles.mobileOnly : ""}`} aria-label="Advertisement">
+      {/* 保持广告商给出的页面内脚本形式，确保脚本能识别真实站点域名。 */}
+      <Script id={`banner-options-${slotId}`} strategy="afterInteractive">{`window.atOptions=${config};`}</Script>
+      <Script id={`banner-invoke-${slotId}`} src={`https://www.highrevenueformat.com/${option.key}/invoke.js`} strategy="afterInteractive" />
+    </section>
+  );
+}
+
 export function AdSlot({ format, visibility = "all" }: AdSlotProps) {
   // 响应式横幅：PC 只加载 728×90，手机只加载 300×250。
   if (format === "responsive") {
@@ -61,10 +74,5 @@ export function AdSlot({ format, visibility = "all" }: AdSlotProps) {
 
   if (format === "native") return <NativeBanner visibility={visibility} />;
 
-  const option = bannerOptions[format];
-  return (
-    <section className={`${styles.slot} ${styles[format]} ${visibility === "desktop" ? styles.desktopOnly : ""} ${visibility === "mobile" ? styles.mobileOnly : ""}`} aria-label="Advertisement">
-      <iframe className={styles.frame} title="Advertisement" loading="lazy" scrolling="no" width={option.width} height={option.height} srcDoc={bannerDocument(option)} />
-    </section>
-  );
+  return <Banner format={format} visibility={visibility} />;
 }
