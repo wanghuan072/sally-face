@@ -5,6 +5,7 @@ import { characters } from "@/lib/data/characters";
 import { CharacterCard } from "@/components/content/CharacterCard";
 import { CharacterExplorer } from "@/page/characters/components/CharacterExplorer";
 import { SectionTitle } from "@/components/common/SectionTitle";
+import { AdSlot } from "@/components/ads/AdSlot";
 import primitives from "@/style/common/primitives.module.css";
 import styles from "@/style/page/characters/characters.module.css";
 import { JsonLd } from "@/seo/JsonLd";
@@ -21,10 +22,14 @@ export default function CharactersPage() {
           <aside className={styles.heroMeta} aria-label="Character guide highlights"><div><strong>10</strong><span>Character profiles</span></div><div><strong>5</strong><span>Story Chapters</span></div><div><strong>↗</strong><span>Linked timelines</span></div></aside>
         </div>
       </section>
+      {/* 内页广告位 1：Hero 下方。 */}
+      <div className="container"><AdSlot format="responsive" /></div>
       <div className={`container ${styles.content}`}>
         <Suspense fallback={<div className={styles.characterGrid}>{characters.map((character) => <CharacterCard character={character} variant="row" key={character.slug} />)}</div>}>
           <CharacterExplorer characters={characters} />
         </Suspense>
+        {/* 内页广告位 2：角色列表之后。 */}
+        <AdSlot format="responsive" />
         <section className={primitives.section}>
           <SectionTitle title="Character Guides & Chapter Connections" />
           <div className={styles.linksStrip}>

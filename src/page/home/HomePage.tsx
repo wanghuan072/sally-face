@@ -5,6 +5,7 @@ import { CharacterCard } from "@/components/content/CharacterCard";
 import { AchievementTable } from "@/components/content/AchievementTable";
 import { FaqList } from "@/components/common/FaqList";
 import { SectionTitle } from "@/components/common/SectionTitle";
+import { AdSlot } from "@/components/ads/AdSlot";
 import { episodes } from "@/lib/data/episodes";
 import { characters } from "@/lib/data/characters";
 import { achievements } from "@/lib/data/achievements";
@@ -53,6 +54,9 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* 首页广告位 1：Hero 下方，PC 为 728×90、移动端为 300×250。 */}
+      <div className="container"><AdSlot format="responsive" /></div>
+
       <div className={`container ${styles.main}`}>
         <section className={primitives.section}>
           <SectionTitle title="Find Help for Your Current Chapter" />
@@ -68,6 +72,9 @@ export default function HomePage() {
           <div className={styles.chapterList}>{episodes.map((episode) => <EpisodeCard key={episode.slug} episode={episode} variant="row" />)}</div>
         </section>
 
+        {/* 首页广告位 2：经过两个完整内容板块后再出现。 */}
+        <AdSlot format="responsive" />
+
         <section className={primitives.section}>
           <SectionTitle title="Missables, Achievements & Puzzle Help" href="/guides" linkLabel="View all guides" />
           <div className={styles.featuredGuidesGrid}>
@@ -79,6 +86,9 @@ export default function HomePage() {
           <SectionTitle title="Characters & Story Connections" href="/characters" linkLabel="View all characters" />
           <div className={cards.characterGrid}>{featuredCharacters.map((character) => <CharacterCard key={character.slug} character={character} />)}</div>
         </section>
+
+        {/* 首页广告位 3：攻略与角色两个整行板块之后。 */}
+        <AdSlot format="responsive" />
 
         <section className={primitives.section}>
           <SectionTitle title="All 35 Achievement Unlocks" href="/achievements" linkLabel="View all 35 achievements" />
@@ -99,6 +109,9 @@ export default function HomePage() {
             ))}
           </div>
         </section>
+
+        {/* 首页广告位 4：成就与下载两个整行板块之后。 */}
+        <AdSlot format="responsive" />
 
         <section className={primitives.section}>
           <div className={styles.sequel}>
@@ -124,6 +137,9 @@ export default function HomePage() {
           <SectionTitle title="Questions New Players Ask" />
           <FaqList faqs={faqs} />
         </section>
+
+        {/* 首页广告位 5：最后一个内容板块结束后、页脚之前。 */}
+        <AdSlot format="responsive" />
       </div>
     </main>
   );

@@ -4,6 +4,7 @@ import type { Episode } from "@/types/game";
 import { AuthorByline } from "@/components/common/AuthorByline";
 import { Breadcrumbs } from "@/components/common/Breadcrumbs";
 import { FaqList } from "@/components/common/FaqList";
+import { AdSlot } from "@/components/ads/AdSlot";
 import { getCharactersBySlugs } from "@/lib/data/characters";
 import { getChapterSlug, getNextEpisode, getPreviousEpisode } from "@/lib/data/episodes";
 import { getChapterGuide } from "@/lib/data/guides";
@@ -65,6 +66,9 @@ export default function EpisodeDetailPage({ episode }: { episode: Episode }) {
         </div>
       </header>
 
+      {/* 内页广告位 1：Hero 下方。 */}
+      <div className="container"><AdSlot format="responsive" /></div>
+
       <div className={`container ${styles.pageGrid}`}>
         <article className={styles.article}>
           <section className={`${styles.sectionPanel} ${styles.overview}`}>
@@ -89,6 +93,9 @@ export default function EpisodeDetailPage({ episode }: { episode: Episode }) {
               ))}
             </div>
           </section>
+
+          {/* 内页广告位 1：放在完整攻略步骤之后，不夹在步骤与标题之间。 */}
+          <AdSlot format="responsive" />
 
           <section className={styles.sectionPanel} id="route-checks">
             <NumberedHeading number={3} title={`Chapter ${episode.number} Route Checks`} id="route-checks-heading" />
@@ -157,6 +164,9 @@ export default function EpisodeDetailPage({ episode }: { episode: Episode }) {
               ))}
             </div>
           </section>
+
+          {/* 内页广告位 2：与第一广告位由多个信息区块隔开。 */}
+          <AdSlot format="native" />
 
           <section className={styles.sectionPanel}>
             <NumberedHeading number={7} title={`Chapter ${episode.number} Puzzle Solutions & Codes`} id="puzzles" />

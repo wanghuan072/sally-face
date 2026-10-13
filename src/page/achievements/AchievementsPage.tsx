@@ -6,6 +6,7 @@ import { getChapterSlug, getEpisodeBySlug } from "@/lib/data/episodes";
 import { AchievementTable } from "@/components/content/AchievementTable";
 import { FaqList } from "@/components/common/FaqList";
 import { SectionTitle } from "@/components/common/SectionTitle";
+import { AdSlot } from "@/components/ads/AdSlot";
 import { JsonLd } from "@/seo/JsonLd";
 import { faqSchema } from "@/seo/schema";
 import primitives from "@/style/common/primitives.module.css";
@@ -34,10 +35,14 @@ export default function AchievementsPage() {
         <Image className={styles.heroImage} src="/images/walkthrough/episode-two-bathroom-surge.webp" alt="Official Chapter Two screenshot of Sal and Larry during a supernatural surge" fill loading="eager" sizes="100vw" />
         <div className={`container ${styles.heroInner}`}><div><h1>Sally Face Achievements <span>All 35 Unlock Conditions</span></h1><p>Check every unlock in one place, then open the right Chapter for missable conversations, collectibles, codes and performance challenges.</p><div className={styles.heroActions}><a className={`${primitives.button} ${primitives.buttonPrimary}`} href="#master-table">Open master checklist ↓</a><Link className={primitives.button} href="/chapters">Chapter routes →</Link></div></div><aside className={styles.heroMeta} aria-label="Achievement guide highlights"><div><strong>35</strong><span>Steam achievements</span></div><div><strong>7</strong><span>Per Chapter</span></div><div><strong>!</strong><span>Hidden & missable</span></div></aside></div>
       </section>
+      {/* 内页广告位 1：Hero 下方。 */}
+      <div className="container"><AdSlot format="responsive" /></div>
       <div className={`container ${styles.content}`}>
         <section className={styles.notice}><strong>Before you replay:</strong> Only the first achievement listed for each Chapter is unmissable. Make saves before Chapter One's tea choice and Chapter Four's guitar sequences; for Escaping Death, treat any Chapter Five game over as a failed clean attempt.</section>
         <section className={styles.notice}><strong>Steam achievement missing in-game?</strong> Open the in-game Achievements menu and select <em>Sync</em> in its top-right corner. It refreshes the game’s achievement list against the same Steam account; then revisit the affected Chapter route only if the requirement still shows incomplete.</section>
         <section className={primitives.section} id="master-table"><SectionTitle title="All 35 Achievements & Unlock Conditions" /><AchievementTable achievements={achievements} anchorRows /></section>
+        {/* 内页广告位 2：完整成就表之后。 */}
+        <AdSlot format="responsive" />
         <section className={primitives.section}>
           <SectionTitle title="Missable Achievement Notes by Chapter" />
           <div className={styles.chapterNotes}>

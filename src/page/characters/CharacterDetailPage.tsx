@@ -4,6 +4,7 @@ import type { Character } from "@/types/game";
 import { AuthorByline } from "@/components/common/AuthorByline";
 import { Breadcrumbs } from "@/components/common/Breadcrumbs";
 import { FaqList } from "@/components/common/FaqList";
+import { AdSlot } from "@/components/ads/AdSlot";
 import { getChapterSlug, getEpisodeBySlug } from "@/lib/data/episodes";
 import { CharacterRelationshipMap } from "@/components/content/CharacterRelationshipMap";
 import { getCharacterProfileDetails } from "@/data/game/character-profile-details";
@@ -48,12 +49,17 @@ export default function CharacterDetailPage({ character }: { character: Characte
         </div>
       </header>
 
+      {/* 内页广告位 1：Hero 下方。 */}
+      <div className="container"><AdSlot format="responsive" /></div>
+
       <div className={`container ${styles.layout}`}>
         <article className={styles.article}>
           {character.slug === "sal-fisher" ? <section className={`${styles.section} ${styles.maskSection}`} id="mask"><h2>Sal Fisher's Mask and Face Explained</h2><p className={styles.warning}>Major Chapter Five spoilers appear in this section.</p><h3>Why Sal wears a mask</h3><p>Sal’s pale face is a prosthetic, not a costume. It protects damaged areas after a childhood attack and becomes the image strangers notice before they know him. The game treats it as part of his daily life and identity, rather than a spectacle.</p><h3>What happened to Sal's face</h3><p>Late-game memories connect Sal’s injuries to Kenneth Phelps, Diane Fisher’s death, and the cult’s influence. The story reveals those events in fragments, so the important point is the human consequence: Sal survives a traumatic attack and grows up under other people’s curiosity, pity, and judgment.</p><h3>Where the story explains it</h3><p><Link href="/chapters/chapter-1-strange-neighbors">Chapter One</Link> establishes the prosthetic and the DOG dream clues. <Link href="/chapters/chapter-4-the-trial">Chapter Four</Link> puts Sal’s appearance under public scrutiny. <Link href="/chapters/chapter-5-memories-and-dreams">Chapter Five</Link> connects the childhood memory to the full story.</p></section> : null}
           {storyDetail.arc.length ? <section className={`${styles.section} ${styles.storyStart}`} id="arc"><h2>{character.name}'s Story Arc</h2>{storyDetail.arc.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</section> : null}
           {storyDetail.moments.length ? <section className={styles.section} id="moments"><h2>Key {character.name} Story Moments</h2><p className={styles.sectionLead}>Open a Chapter when you want the scene in context. Codes, item routes, and achievement steps stay in the Chapter guide where they belong.</p><div className={styles.playerNotes}>{storyDetail.moments.map((moment) => <Link className={styles.playerNote} href={moment.href} key={moment.title}><span>{moment.spoiler} · Chapter {getEpisodeBySlug(moment.chapterSlug)?.number}</span><h3>{moment.title}</h3><p>{moment.detail}</p></Link>)}</div></section> : null}
           {profileDetails.playerNotes.length ? <section className={styles.section} id="player-routes"><h2>Where to Follow {character.name} in the Game</h2><p className={styles.sectionLead}>These links go to the profile section or Chapter route that answers the question players usually have next.</p><div className={styles.playerNotes}>{profileDetails.playerNotes.map((note) => <Link className={styles.playerNote} href={note.href} key={`${note.href}-${note.title}`}><span>{note.eyebrow}</span><h3>{note.title}</h3><p>{note.detail}</p></Link>)}</div></section> : null}
+          {/* 内页广告位 1：放在角色故事区块之间，避免围绕标题堆放。 */}
+          <AdSlot format="responsive" />
           <section className={styles.section} id="appearance"><h2>What Does {character.name} Look Like?</h2><p>{character.appearance}</p></section>
           <section className={styles.section} id="personality"><h2>{character.name}'s Personality</h2><p>{character.personality}</p></section>
           <section className={styles.section} id="role"><h2>{character.name}'s Role in Sally Face</h2><p>{character.storyRole}</p></section>
@@ -82,6 +88,8 @@ export default function CharacterDetailPage({ character }: { character: Characte
               })}
             </ol>
           </section>
+          {/* 内页广告位 2：与第一广告位之间已有多段角色资料。 */}
+          <AdSlot format="native" />
           <section className={styles.section} id="trivia"><h2>{character.name} Details Players Often Miss</h2><ul className={styles.trivia}>{character.trivia.map((item) => <li key={item}>{item}</li>)}</ul></section>
           <section className={styles.section} id="faq"><h2>Questions About {character.name}</h2><FaqList faqs={character.faqs} /></section>
         </article>

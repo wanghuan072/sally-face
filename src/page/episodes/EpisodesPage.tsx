@@ -5,6 +5,7 @@ import { characters } from "@/lib/data/characters";
 import { EpisodeExplorer } from "@/page/episodes/components/EpisodeExplorer";
 import { FaqList } from "@/components/common/FaqList";
 import { SectionTitle } from "@/components/common/SectionTitle";
+import { AdSlot } from "@/components/ads/AdSlot";
 import { JsonLd } from "@/seo/JsonLd";
 import { collectionSchema, faqSchema } from "@/seo/schema";
 import styles from "@/style/page/episodes/episodes.module.css";
@@ -30,6 +31,9 @@ export default function EpisodesPage() {
         </div>
       </section>
 
+      {/* 内页广告位 1：Hero 下方。 */}
+      <div className="container"><AdSlot format="responsive" /></div>
+
       <div className={`container ${styles.explorer}`}>
         <div className={styles.layout}>
           <EpisodeExplorer episodes={episodes} />
@@ -49,6 +53,8 @@ export default function EpisodesPage() {
             </Link>
           </aside>
         </div>
+        {/* 内页广告位 2：章节列表之后，FAQ 之前。 */}
+        <AdSlot format="responsive" />
         <section className={styles.faqSection}>
           <SectionTitle title="Frequently Asked Questions" />
           <FaqList faqs={faqs} />

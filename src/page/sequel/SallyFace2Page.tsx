@@ -4,6 +4,7 @@ import { siteConfig } from "@/config/site";
 import { AuthorByline } from "@/components/common/AuthorByline";
 import { Breadcrumbs } from "@/components/common/Breadcrumbs";
 import { FaqList } from "@/components/common/FaqList";
+import { AdSlot } from "@/components/ads/AdSlot";
 import { JsonLd } from "@/seo/JsonLd";
 import { articleSchema, breadcrumbSchema, faqSchema } from "@/seo/schema";
 import primitives from "@/style/common/primitives.module.css";
@@ -109,6 +110,8 @@ export default function SallyFace2Page() {
           </div>
         </div>
       </header>
+      {/* 内页广告位 1：Hero 下方。 */}
+      <div className="container"><AdSlot format="responsive" /></div>
       <div className={`container ${styles.layout}`}>
         <article className={styles.article}>
           <section className={styles.quickAnswer}>
@@ -153,6 +156,9 @@ export default function SallyFace2Page() {
               ))}
             </div>
           </section>
+
+          {/* 内页广告位 2：概览与时间线两个完整区块之后。 */}
+          <AdSlot format="responsive" />
 
           <section className={styles.section} id="release">
             <h2>Sally Face 2 Release Date</h2>

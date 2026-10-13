@@ -118,12 +118,14 @@ export const legalPages: Record<string, LegalDocument> = {
       {
         heading: "Cookies, fonts and analytics",
         body: [
-          "The site may use storage that is required to deliver a page, apply a basic preference or protect the service. Pages also load Google Analytics (gtag.js, measurement ID G-T1G5XL3ZDE) so visits can be counted in aggregate. Google may set cookies or similar storage for that measurement; browser or Google controls can limit it. The site does not run a marketing pixel, session-replay recorder or a separate advertising network on these pages.",
+          "The site may use storage that is required to deliver a page, apply a basic preference or protect the service. Pages also load Google Analytics (gtag.js, measurement ID G-T1G5XL3ZDE) so visits can be counted in aggregate. Google may set cookies or similar storage for that measurement; browser or Google controls can limit it.",
+          "Pages may also load advertising supplied by ProfitableRateCPMNetwork. That provider may use cookies, similar storage, device or connection information, and destination links to serve or measure ads. A popunder script may ask your browser to open an advertising page; browser settings, content blockers, and privacy controls can restrict that behavior. The site does not run a separate marketing pixel or session-replay recorder.",
           "Display fonts are bundled with the site rather than loaded from a third-party font foundry at visit time.",
         ],
         list: {
           title: "External services you may meet after a click",
           items: [
+            "ProfitableRateCPMNetwork advertising and its advertising destinations",
             "Portable Moose pages and press materials",
             "Steam, Google Play, the App Store, PlayStation Store, Xbox and Nintendo eShop listings",
             "Any community page a guide mentions only as a source check, if you follow that link yourself",

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { getGuideCategories, getGuidesByCategoryParam, guideCategoryParam, guides } from "@/lib/data/guides";
 import { SectionTitle } from "@/components/common/SectionTitle";
+import { AdSlot } from "@/components/ads/AdSlot";
 import primitives from "@/style/common/primitives.module.css";
 import styles from "@/style/page/guides/guides.module.css";
 import { JsonLd } from "@/seo/JsonLd";
@@ -29,6 +30,8 @@ export default function GuidesPage({ category }: { category?: string }) {
       <div className={styles.heroShade} />
       <div className={`container ${styles.heroInner}`}><div className={styles.heroCopy}><p className={styles.eyebrow}>Player-focused chapter walkthroughs</p><h1>Sally Face Walkthrough Guides <span>Chapter Help When You Need It</span></h1><p>Choose the Chapter that matches your save for missables, achievement timing, codes, and route-specific help without losing your place in the story.</p></div><aside className={styles.heroMeta} aria-label="Guide highlights"><div><strong>{categories.length}</strong><span>{categories.length === 1 ? "Guide category" : "Guide categories"}</span></div><div><strong>35</strong><span>Steam achievements</span></div><div><strong>5</strong><span>Story Chapters</span></div></aside></div>
     </section>
+    {/* 内页广告位 1：Hero 下方。 */}
+    <div className="container"><AdSlot format="responsive" /></div>
     <div className={`container ${styles.content}`}>
       <section className={styles.categoryIntro} aria-labelledby="guide-categories"><h2 id="guide-categories">Browse by Chapter or Goal</h2><nav className={styles.guideFilters} aria-label="Guide categories"><Link className={!category ? styles.activeFilter : undefined} href="/guides" aria-current={!category ? "page" : undefined}>All Guides</Link>{categories.map((name) => {
         const href = `/guides?category=${guideCategoryParam(name)}`;
@@ -36,6 +39,8 @@ export default function GuidesPage({ category }: { category?: string }) {
         return <Link className={isActive ? styles.activeFilter : undefined} href={href} aria-current={isActive ? "page" : undefined} key={name}>{name}</Link>;
       })}</nav></section>
       <section className={primitives.section}><SectionTitle title={activeLabel === "All Guides" ? "Sally Face Walkthrough Guides by Chapter" : activeLabel} /><p className={styles.categoryLead}>Chapter guides keep missables, replay-only achievements, and codes in one place. Use the Chapter route when you want the story in order.</p><div className={styles.grid}>{visibleGuides.map((guide) => <GuideCard guide={guide} key={guide.slug} />)}</div></section>
+      {/* 内页广告位 2：完整攻略列表之后。 */}
+      <AdSlot format="responsive" />
       <section className={styles.routeStrip}><div><p className={styles.eyebrow}>Playing for the first time?</p><h2>Start With the Chapter You’re Playing</h2><p>These guides solve one job at a time. For the story in order, begin with the Chapter route that matches your save.</p></div><Link className={primitives.button} href="/chapters">Browse all Chapters →</Link></section>
     </div>
   </main>;
