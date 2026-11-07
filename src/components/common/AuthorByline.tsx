@@ -8,7 +8,7 @@ function updatedMonth(isoDate: string) {
 export function AuthorByline() {
   return (
     <p className={styles.byline}>
-      <span>作者：{siteConfig.author.name}</span>
+      <span>By {siteConfig.author.name}</span>
       <span>Updated {updatedMonth(siteConfig.contentUpdated)}</span>
     </p>
   );
